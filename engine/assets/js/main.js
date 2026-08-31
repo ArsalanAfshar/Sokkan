@@ -488,6 +488,34 @@
   });
 
   /* ---------------- MOBILE NAV ---------------- */
+  // Fix: Move mobile nav out of header's stacking context.
+  // The header uses backdrop-filter (blur) which creates a new containing
+  // block — causing position:fixed children to be positioned relative to
+  // the header instead of the viewport. By moving .main-nav to <body>,
+  // it is always positioned relative to the viewport.
+  const mainNav = $('#mainNav');
+  const headerEl = $('#siteHeader');
+  const mobileQuery = window.matchMedia('(max-width: 991px)');
+  let navMoved = false;
+
+  function handleNavPlacement() {
+    if (!mainNav || !headerEl) return;
+    if (mobileQuery.matches && !navMoved) {
+      // Mobile: move nav to body (after header) so it's outside the
+      // header's stacking context and fixed positioning works correctly
+      headerEl.parentNode.insertBefore(mainNav, headerEl.nextSibling);
+      mainNav.classList.add('nav-mobile-detached');
+      navMoved = true;
+    } else if (!mobileQuery.matches && navMoved) {
+      // Desktop: move nav back inside header
+      headerEl.querySelector('.header-in').appendChild(mainNav);
+      mainNav.classList.remove('nav-mobile-detached');
+      navMoved = false;
+    }
+  }
+  handleNavPlacement();
+  mobileQuery.addEventListener('change', handleNavPlacement);
+
   // full-screen scrim: dims the page, click/tap = close
   const scrim = document.createElement('button');
   scrim.type = 'button';
@@ -508,7 +536,10 @@
   }
   burger.addEventListener('click', () => setNav(!document.body.classList.contains('nav-open')));
   scrim.addEventListener('click', () => setNav(false));
-  $$('.main-nav a').forEach(a => a.addEventListener('click', () => setNav(false)));
+  // Use event delegation on body since nav may have been moved
+  document.body.addEventListener('click', e => {
+    if (e.target.closest('.main-nav a')) setNav(false);
+  });
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') setNav(false);
   });

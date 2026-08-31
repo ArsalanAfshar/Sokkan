@@ -61,6 +61,22 @@
   border-bottom-color: var(--line);
 }
 
+/* Mobile: remove backdrop-filter from header to prevent it from
+   becoming a containing block for the fixed-position mobile nav.
+   backdrop-filter creates a new stacking context which causes
+   position:fixed children to be positioned relative to the header
+   instead of the viewport — breaking the mobile menu. */
+@media (max-width: 991px) {
+  .site-header.scrolled {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    /* Use a fully opaque background instead */
+    background: var(--bg);
+    border-bottom-color: var(--line);
+    box-shadow: var(--shadow-sm);
+  }
+}
+
 .header-in {
   height: 100%;
   display: flex;
@@ -210,6 +226,13 @@ body.nav-open .nav-scrim { opacity: 1; visibility: visible; }
     opacity: 0;
     visibility: hidden;
     transition: opacity var(--t-base) var(--ease-out), transform var(--t-base) var(--ease-out), visibility var(--t-base);
+  }
+  /* When nav is detached from header to body (JS fix for stacking context) */
+  .main-nav.nav-mobile-detached {
+    position: fixed;
+    top: var(--header-h);
+    inset-inline: 0;
+    bottom: 0;
   }
   body.nav-open .main-nav { opacity: 1; visibility: visible; transform: none; }
 
