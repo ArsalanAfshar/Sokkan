@@ -122,31 +122,84 @@
 }
 .icon-btn svg { width: 18px; height: 18px; }
 
+/* ================= LANGUAGE TOGGLE ================= */
 .lang-toggle {
-  width: auto;
-  min-width: 48px;
-  height: 40px;
-  padding-inline: 0.85rem;
+  /* Standalone component — does NOT inherit from .icon-btn */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  min-width: 46px;
+  padding: 0 0.75rem;
+  background: var(--surface);
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
   font-family: var(--font-mono);
-  font-size: var(--text-sm);
+  font-size: 0.8125rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
-  gap: 0.3rem;
-  color: var(--text-primary);
-  overflow: visible;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  cursor: pointer;
+  transition: all var(--t-fast) var(--ease);
+  flex-shrink: 0;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
 }
-.lang-full { display: none; }
-.lang-short { 
-  display: inline;
-  color: var(--text-primary);
+
+.lang-toggle:hover {
+  background: var(--surface-hover);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
 }
-@media (min-width: 1200px) {
-  .lang-full { 
-    display: inline;
-    color: var(--text-primary);
+
+.lang-toggle:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Language label visibility — mobile shows short, desktop shows full */
+.lang-toggle .lang-short { display: inline; }
+.lang-toggle .lang-full { display: none; }
+
+@media (min-width: 1100px) {
+  .lang-toggle {
+    min-width: 80px;
+    padding: 0 1rem;
+    font-size: var(--text-sm);
   }
-  .lang-short { display: none; }
-  .lang-toggle { min-width: 90px; }
+  .lang-toggle .lang-short { display: none; }
+  .lang-toggle .lang-full { display: inline; }
+}
+
+/* Ensure contrast in both themes */
+:root[data-theme="light"] .lang-toggle {
+  background: var(--bg-elevated);
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-xs);
+}
+
+:root[data-theme="light"] .lang-toggle:hover {
+  background: var(--surface);
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+
+:root[data-theme="dark"] .lang-toggle {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text-primary);
+}
+
+:root[data-theme="dark"] .lang-toggle:hover {
+  background: var(--surface-hover);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 /* ================= THEME TOGGLE (Sliding) ================= */
