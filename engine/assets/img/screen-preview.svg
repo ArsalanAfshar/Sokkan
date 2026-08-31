@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1117"/>
+      <stop offset="100%" stop-color="#1a1d27"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2dd4a0"/>
+      <stop offset="100%" stop-color="#1a9d73"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffb443"/>
+      <stop offset="100%" stop-color="#d4922a"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2dd4a0"/>
+      <stop offset="100%" stop-color="#ffb443"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="500" fill="#0a0c12" opacity="0.8"/>
+  <rect x="20" y="24" width="140" height="12" rx="6" fill="#2dd4a0" opacity="0.35"/>
+  <rect x="20" y="60" width="100" height="8" rx="4" fill="#ffffff" opacity="0.08"/>
+  <rect x="20" y="82" width="120" height="8" rx="4" fill="#ffffff" opacity="0.06"/>
+  <rect x="20" y="104" width="90" height="8" rx="4" fill="#ffffff" opacity="0.06"/>
+  <rect x="20" y="126" width="110" height="8" rx="4" fill="#ffffff" opacity="0.06"/>
+  <rect x="20" y="160" width="80" height="8" rx="4" fill="#ffffff" opacity="0.04"/>
+  <rect x="20" y="182" width="100" height="8" rx="4" fill="#ffffff" opacity="0.04"/>
+  <rect x="20" y="204" width="70" height="8" rx="4" fill="#ffffff" opacity="0.04"/>
+  <!-- Active sidebar item -->
+  <rect x="12" y="78" width="156" height="20" rx="6" fill="#2dd4a0" opacity="0.1"/>
+  <!-- Top bar -->
+  <rect x="200" y="16" width="200" height="14" rx="7" fill="#ffffff" opacity="0.06"/>
+  <circle cx="750" cy="23" r="14" fill="#ffffff" opacity="0.06"/>
+  <circle cx="714" cy="23" r="14" fill="#ffffff" opacity="0.04"/>
+  <!-- Stats cards row -->
+  <rect x="200" y="56" width="138" height="80" rx="10" fill="#161820"/>
+  <rect x="220" y="72" width="60" height="8" rx="4" fill="#ffffff" opacity="0.1"/>
+  <rect x="220" y="92" width="80" height="18" rx="4" fill="#ffffff" opacity="0.15"/>
+  <rect x="220" y="118" width="40" height="6" rx="3" fill="#2dd4a0" opacity="0.5"/>
+  <rect x="350" y="56" width="138" height="80" rx="10" fill="#161820"/>
+  <rect x="370" y="72" width="50" height="8" rx="4" fill="#ffffff" opacity="0.1"/>
+  <rect x="370" y="92" width="70" height="18" rx="4" fill="#ffffff" opacity="0.15"/>
+  <rect x="370" y="118" width="44" height="6" rx="3" fill="#ffb443" opacity="0.5"/>
+  <rect x="500" y="56" width="138" height="80" rx="10" fill="#161820"/>
+  <rect x="520" y="72" width="70" height="8" rx="4" fill="#ffffff" opacity="0.1"/>
+  <rect x="520" y="92" width="90" height="18" rx="4" fill="#ffffff" opacity="0.15"/>
+  <rect x="520" y="118" width="36" height="6" rx="3" fill="#2dd4a0" opacity="0.5"/>
+  <rect x="650" y="56" width="138" height="80" rx="10" fill="#161820"/>
+  <rect x="670" y="72" width="55" height="8" rx="4" fill="#ffffff" opacity="0.1"/>
+  <rect x="670" y="92" width="65" height="18" rx="4" fill="#ffffff" opacity="0.15"/>
+  <rect x="670" y="118" width="42" height="6" rx="3" fill="#ff6b4a" opacity="0.5"/>
+  <!-- Main chart area -->
+  <rect x="200" y="156" width="388" height="230" rx="10" fill="#161820"/>
+  <rect x="220" y="172" width="100" height="10" rx="5" fill="#ffffff" opacity="0.12"/>
+  <rect x="220" y="188" width="60" height="6" rx="3" fill="#ffffff" opacity="0.06"/>
+  <!-- Chart line -->
+  <polyline points="240,340 280,310 320,325 360,280 400,260 440,240 480,250 520,220 560,200"
+    fill="none" stroke="url(#line)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <!-- Chart area fill -->
+  <polygon points="240,340 280,310 320,325 360,280 400,260 440,240 480,250 520,220 560,200 560,360 240,360"
+    fill="#2dd4a0" opacity="0.06"/>
+  <!-- Chart grid lines -->
+  <line x1="240" y1="220" x2="560" y2="220" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="240" y1="260" x2="560" y2="260" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="240" y1="300" x2="560" y2="300" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="240" y1="340" x2="560" y2="340" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <!-- Chart dots -->
+  <circle cx="360" cy="280" r="4" fill="#2dd4a0"/>
+  <circle cx="520" cy="220" r="4" fill="#ffb443"/>
+  <circle cx="560" cy="200" r="5" fill="#2dd4a0" opacity="0.9"/>
+  <circle cx="560" cy="200" r="8" fill="#2dd4a0" opacity="0.2"/>
+  <!-- Right panel - bar chart -->
+  <rect x="600" y="156" width="188" height="230" rx="10" fill="#161820"/>
+  <rect x="620" y="172" width="80" height="10" rx="5" fill="#ffffff" opacity="0.12"/>
+  <!-- Bars -->
+  <rect x="625" y="260" width="20" height="100" rx="4" fill="url(#bar1)" opacity="0.7"/>
+  <rect x="655" y="230" width="20" height="130" rx="4" fill="url(#bar1)" opacity="0.85"/>
+  <rect x="685" y="280" width="20" height="80" rx="4" fill="url(#bar2)" opacity="0.7"/>
+  <rect x="715" y="210" width="20" height="150" rx="4" fill="url(#bar2)" opacity="0.85"/>
+  <rect x="745" y="250" width="20" height="110" rx="4" fill="url(#bar1)" opacity="0.7"/>
+  <!-- Bottom row - table -->
+  <rect x="200" y="400" width="588" height="88" rx="10" fill="#161820"/>
+  <rect x="220" y="416" width="120" height="8" rx="4" fill="#ffffff" opacity="0.12"/>
+  <rect x="220" y="438" width="548" height="1" fill="#ffffff" opacity="0.05"/>
+  <rect x="220" y="452" width="80" height="6" rx="3" fill="#ffffff" opacity="0.06"/>
+  <rect x="380" y="452" width="60" height="6" rx="3" fill="#ffffff" opacity="0.06"/>
+  <rect x="520" y="452" width="70" height="6" rx="3" fill="#2dd4a0" opacity="0.4"/>
+  <rect x="700" y="448" width="50" height="14" rx="7" fill="#2dd4a0" opacity="0.15"/>
+  <rect x="220" y="472" width="548" height="1" fill="#ffffff" opacity="0.03"/>
+</svg>
