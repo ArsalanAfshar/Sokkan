@@ -1,5 +1,11 @@
 /* ============================================================
-   ENGINE | انجین — main.js
+   SOKKAN | سُکّان — Milad Template — main.js
+   Pack: Sokkan — Template: Milad
+   Vanilla ES6+. Modules:
+   1. i18n (Persian RTL / English LTR)  2. Theme (dark/light)
+   3. Preloader  4. Matrix canvas  5. Ticker  6. Scroll reveal
+   7. Counters  8. Header / nav / scrollspy  9. FAQ accordion
+   10. Terminal  11. Contact form  12. To-top & toast  13. 3D Product Showcase
    Vanilla ES6+. Modules:
    1. i18n (Persian RTL / English LTR)  2. Theme (dark/light)
    3. Preloader  4. Matrix canvas  5. Ticker  6. Scroll reveal
@@ -19,33 +25,33 @@
 
   /* ---------------- i18n ---------------- */
   const EN = {
-    loaderTxt: 'Igniting the engine…',
-    brandName: 'Engine',
+    loaderTxt: 'Igniting Sokkan… — Milad template',
+    brandName: 'Sokkan',
     navServices: 'Services', navFeatures: 'Features', navProcess: 'Process',
     navWorks: 'Work', navPricing: 'Pricing', navFaq: 'FAQ',
     navCta: 'Free consultation', navFootNote: 'Sat–Thu, 9–18 (IRST)',
-    heroBadge: 'Digital services studio — Tehran, since 2013',
-    heroYear: '2026',
-    heroL1: 'The', heroL2: 'engine', heroL2b: 'of your digital business',
-    heroSub: 'From website and app design to branding, SEO and campaigns — the Engine team designs, builds and grows your entire digital journey.',
+    heroBadge: 'Milad template from Sokkan Pack — Tehran, since 2013',
+    heroYear: '2026 • Milad',
+    heroL1: 'The', heroL2: 'Sokkan', heroL2b: 'Milad template',
+    heroSub: 'From website and app design to branding, SEO and campaigns — Sokkan Milad template helps you design, build and grow your digital journey.',
     heroCta1: 'Start a project', heroCta2: 'See our work',
     statLabel1: 'Delivered projects', statLabel2: 'experience',
     statLabel3: 'Client satisfaction', statLabel4: 'on the team',
     statSuffix2: ' yrs', statSuffix4: ' specialists',
     heroScroll: 'Scroll down',
     tickerItems: ['AI solutions', 'Web development', 'Mobile apps', 'Digital marketing', 'SaaS products', 'Brand identity', 'Automation', 'Growth consulting'],
-    introEyebrow: 'About Engine',
+    introEyebrow: 'About Sokkan — Milad',
     introTitle1: 'We came from the past', introTitle2: 'to build the future.',
-    introP1: 'Engine is a digital services studio where engineering precision meets the spirit of old craftsmanship. We see every project as a motor: every part in its place, running quietly, built to last for years.',
-    introP2: 'Since 2013 we have been building for Iranian businesses — from early startups to large organizations. Websites, apps, brands and campaigns: we speak plainly, deliver precisely, and stay by your side long after launch.',
-    signName: 'Engine Studio', signRole: 'Tehran — since 2013',
+    introP1: 'Sokkan is a premium Persian template pack; Milad is its first template — where engineering precision where engineering precision meets the spirit of old craftsmanship. We see every project as a motor: every part in its place, running quietly, built to last for years.',
+    introP2: 'Since 2013 inspired by Iranian businesses — from early startups to large organizations. Websites, apps, brands and campaigns: we speak plainly, deliver precisely, and stay by your side long after launch.',
+    signName: 'Sokkan — Milad Template', signRole: 'Tehran — since 2013 • Sokkan Pack',
     fileNo1: 'Principle 01', fileTitle1: 'Simplicity is the peak of complexity',
     fileDesc1: 'Simple design means work done right; we solve the complexity behind the scenes so the user only sees simplicity.',
     fileNo2: 'Principle 02', fileTitle2: 'Quality is not negotiable',
     fileDesc2: 'We are flexible about timelines, never about quality; every deliverable passes several review rounds before release.',
     fileNo3: 'Principle 03', fileTitle3: 'Every project, a fresh engine',
     fileDesc3: 'We use no templates; we design from scratch for every business so the result is truly its own.',
-    trustLabel: 'Brands whose engines we started',
+    trustLabel: 'Brands growing with Sokkan',
     servicesEyebrow: 'Our services',
     servicesTitle: 'Six services, one destination: digital growth',
     servicesSub: 'Every service feeds the next — from idea and design to development, marketing and support, all under one roof.',
@@ -63,7 +69,7 @@
     sv6Desc: 'Intelligent support assistants, Telegram bots and unified management dashboards; hand the repetitive work to the system and keep your team focused on growth.',
     sv6Tag1: 'Bots & API', sv6Tag2: 'Dashboard', sv6Tag3: 'Integration',
     cardLink: 'Start a conversation',
-    featuresEyebrow: 'Why Engine?',
+    featuresEyebrow: 'Why Sokkan — Milad?',
     featuresTitle: 'A standard you can feel in every part',
     featuresSub: 'We care about details the user feels — even when they don’t see them: from speed and security to support.',
     feat1Title: 'Unmatched speed', feat1Desc: 'Sub-second loading with full Core Web Vitals compliance; speed means more customers.',
@@ -100,11 +106,11 @@
       '⣿ analyzing project …………… OK',
       '⣿ bundling assets ……………… OK',
       '⣿ deploying to server ………… OK',
-      '✓ engine started — 0.8s'
+      '✓ sokkan milad — 0.8s — ready'
     ],
     worksEyebrow: 'Selected work',
-    worksTitle: 'Engines that got running',
-    worksSub: 'Three short stories of projects that moved forward with the Engine team.',
+    worksTitle: 'Products that launched with Sokkan — Milad',
+    worksSub: 'Three short stories of projects that moved forward with Sokkan Milad template.',
     work1Cat: 'SaaS product', work1Year: '2025',
     work1Title: 'Arya Fintech', work1Desc: 'A unified financial services platform with online payments; we took product design, web app development and payment infrastructure from zero to launch.',
     work1Tag1: 'Product design', work1Tag2: 'Web app', work1Tag3: 'SEO',
@@ -121,9 +127,9 @@
     testiTitle: 'What clients say',
     q1: 'They took our platform from a raw idea to a product that processes thousands of financial transactions daily. The weekly reports and their transparency were truly exemplary.',
     q1Name: 'Sara Mohammadi', q1Role: 'Product Manager, Arya Fintech',
-    q2: 'Our store’s speed was always painful; after Engine’s redesign, speed doubled and monthly sales grew 32%. The post-launch support is outstanding — they even respond on weekends.',
+    q2: 'Our store’s speed was always painful; after Sokkan’s Milad redesign, speed doubled and monthly sales grew 32%. The post-launch support is outstanding — they even respond on weekends.',
     q2Name: 'Amir Rezaei', q2Role: 'Founder, Zarrin Web',
-    q3: 'What sets Engine apart is their point of view; they don’t just “build a website”, they solve your business problem. The result is a brand our customers are proud of.',
+    q3: 'What sets Sokkan apart is their point of view; they don’t just “build a website”, they solve your business problem. The result is a brand our customers are proud of.',
     q3Name: 'Negar Karimi', q3Role: 'Marketing Director, Mahan Digital',
     pricingEyebrow: 'Pricing',
     pricingTitle: 'A package for every engine',
@@ -134,7 +140,7 @@
     plan1f3: 'Basic SEO & analytics', plan1f4: '2 months free support',
     plan1f5: 'Training & documentation handover',
     planCta: 'Start with Start',
-    plan2Flag: 'Engine’s pick',
+    plan2Flag: 'Sokkan’s pick — Milad',
     plan2Name: 'Motion', plan2For: 'For growing businesses',
     priceUnit2: 'million Toman / project',
     plan2f1: 'Full website or app MVP', plan2f2: 'Everything in Start',
@@ -151,7 +157,7 @@
     faqEyebrow: 'FAQ', faqTitle: 'Ask us anything',
     faqSub: 'If your answer isn’t here, talk to us directly.',
     faqCtaTitle: 'Still have a question?', faqCtaDesc: 'We are available Sat–Thu, 9–18.',
-    faqCtaBtn: 'Contact Engine',
+    faqCtaBtn: 'Contact Sokkan',
     faq1q: 'How long does a project take?',
     faq1a: 'It depends on the scope: a landing page takes about 2 weeks, a full website 4–6 weeks, and an app MVP around 2 months. You receive a precise phased timeline at the first meeting — and we stick to it.',
     faq2q: 'Can the project be delivered in phases?',
@@ -165,7 +171,7 @@
     faq6q: 'How do contract and payment work?',
     faq6a: 'With a formal, transparent contract; payment is usually split into two or three installments aligned with delivery milestones. All commitments, timelines and deliverables are written in the contract.',
     finalEyebrow: 'The next move is yours',
-    finalTitle1: 'Start your', finalTitle2: 'engine.',
+    finalTitle1: 'Start your', finalTitle2: 'Sokkan.',
     finalSub: 'Fill the form; within 24 business hours we will call you to schedule a free consultation. No commitment, no cost.',
     finalAddr: 'Tehran, Valiasr St., Mahtab Alley, No. 12',
     formTitle: 'Request a free consultation',
@@ -181,7 +187,7 @@
     formSuccessDesc: 'We’ll call you soon to schedule your free consultation.',
     toastSuccess: '✓ Request received — we’ll be in touch within 24 hours.',
     toastError: 'Please fill in your name and phone number.',
-    footerDesc: 'A digital services studio; web, app, brand and marketing for Iranian businesses — since 2013.',
+    footerDesc: 'Sokkan Template Pack — Milad Template; web, app, brand and marketing for Iranian businesses — since 2013.',
     fCol1Title: 'Quick links',
     fLinkAbout: 'About us', fLinkServices: 'Services', fLinkWorks: 'Work',
     fLinkPricing: 'Pricing', fLinkFaq: 'FAQ',
@@ -196,12 +202,12 @@
     slotHintPay: 'Gateway logo — 78×48',
     trustNote: '<strong>Optional area.</strong> This section is ready for the E-namad trust seal and payment gateway logos; just drop an image inside each frame — no structural changes needed.',
     fHours: 'Sat — Thu, 9–18',
-    footerRights: '© 2026 Engine Studio — All rights reserved.',
+    footerRights: '© 2026 Sokkan Pack — Milad Template — All rights reserved.',
     legalPrivacy: 'Privacy', legalTerms: 'Terms',
-    footerMade: 'Made with ♥ and tea in Tehran',
+    footerMade: 'Made with ♥ and tea in Tehran — Sokkan 2026 — Milad',
     langShort: 'فا', langFull: 'فارسی',
-    docTitle: 'Engine | The engine of your digital business — Engine Digital Studio',
-    docDesc: 'Engine, an Iranian digital studio; web design, apps, branding and digital marketing. The engine of your business growth.'
+    docTitle: 'Sokkan | Milad Template — Sokkan Pack — Premium Persian Template',
+    docDesc: 'Sokkan Pack — Milad Template: premium Persian RTL template for digital agencies, SaaS, AI tools and startups.'
   };
 
   const EN_ARIA = {
@@ -212,7 +218,7 @@
     stat1: '128', stat2: '12', stat3: '98', stat4: '9'
   };
 
-  let lang = store.get('engine-lang') || 'fa';
+  let lang = store.get('sokkan-lang') || store.get('engine-lang') || 'fa';
 
   // Capture original Persian strings once (innerHTML keeps inline tags like <strong>)
   $$('[data-i18n]').forEach(el => {
@@ -249,12 +255,12 @@
       el.setAttribute('aria-label', isEn && EN_ARIA[k] !== undefined ? EN_ARIA[k] : (el.dataset.faAria || ''));
     });
 
-    document.title = isEn ? EN.docTitle : 'انجین | موتور کسب‌وکار دیجیتال شما — استودیو دیجیتال انجین';
+    document.title = isEn ? EN.docTitle : 'سُکّان | قالب میلاد — موتور کسب‌وکار دیجیتال شما — پک سُکّان';
     const desc = $('meta[name="description"]');
-    if (desc) desc.setAttribute('content', isEn ? EN.docDesc : 'انجین، استودیوی دیجیتال ایرانی؛ طراحی وب‌سایت، اپلیکیشن، برندینگ و دیجیتال مارکتینگ. موتورِ رشد کسب‌وکار شما.');
+    if (desc) desc.setAttribute('content', isEn ? EN.docDesc : 'سُکّان، پک قالب فارسی پریمیوم؛ قالب میلاد، موتور رشد کسب‌وکار دیجیتال شما.');
 
     buildTicker();
-    store.set('engine-lang', l);
+    store.set('sokkan-lang', l);
   }
 
   const langToggle = $('#langToggle');
@@ -262,7 +268,7 @@
 
   /* ---------------- THEME ---------------- */
   const themeToggle = $('#themeToggle');
-  let theme = store.get('engine-theme');
+  let theme = store.get('sokkan-theme') || store.get('engine-theme');
   if (!theme) {
     theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
   }
@@ -270,7 +276,7 @@
   themeToggle.addEventListener('click', () => {
     theme = theme === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', theme);
-    store.set('engine-theme', theme);
+    store.set('sokkan-theme', theme);
     if (matrix) matrixTheme();
   });
 
@@ -533,7 +539,7 @@
           '⣿ تحلیل پروژه ………………… OK',
           '⣿ آماده‌سازی دارایی‌ها ……… OK',
           '⣿ استقرار روی سرور ………… OK',
-          '✓ موتور روشن شد — ۰٫۸ ثانیه'
+          '✓ سُکّان آماده — قالب میلاد — ۰٫۸ ثانیه'
         ];
         lines.forEach((ln, i) => {
           setTimeout(() => {
@@ -599,6 +605,65 @@
     form.classList.add('submitted');
     showToast(lang === 'en' ? EN.toastSuccess : '✓ درخواست شما ثبت شد — تا ۲۴ ساعت آینده با شما تماس می‌گیریم.');
   });
+
+
+  /* ---------------- 3D PRODUCT SHOWCASE — Milad / Sokkan ----------------
+     Reusable CSS 3D monitor with subtle mouse parallax.
+     Customizable via CSS variables: --rx, --ry, --showcase-scale, etc.
+     Buyer: replace .monitor-screen-content inner HTML with your own preview.
+     Performance: transform-only, rAF, fine-pointer only, respects reduced-motion. */
+  (function initShowcase() {
+    const showcase = document.getElementById('productShowcase');
+    if (!showcase || REDUCED) return;
+    const inner = showcase.querySelector('.product-showcase-inner');
+    if (!inner) return;
+    const canTilt = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (!canTilt) return;
+
+    let rect = null;
+    let rafId = null;
+    let targetRx = null, targetRy = null;
+    const baseRx = -8, baseRy = 18;
+
+    const updateRect = () => { rect = showcase.getBoundingClientRect(); };
+    window.addEventListener('resize', updateRect, { passive: true });
+    updateRect();
+
+    const apply = () => {
+      rafId = null;
+      if (targetRx === null || targetRy === null) {
+        inner.style.setProperty('--rx', baseRx + 'deg');
+        inner.style.setProperty('--ry', baseRy + 'deg');
+      } else {
+        inner.style.setProperty('--rx', targetRx.toFixed(2) + 'deg');
+        inner.style.setProperty('--ry', targetRy.toFixed(2) + 'deg');
+      }
+    };
+
+    showcase.addEventListener('pointermove', (e) => {
+      if (!rect) return;
+      const x = (e.clientX - rect.left) / rect.width - 0.5; // -0.5..0.5
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      // Subtle: max ~8deg Y, ~6deg X
+      targetRx = baseRx + y * -8;
+      targetRy = baseRy + x * 14;
+      if (!rafId) rafId = requestAnimationFrame(apply);
+    });
+
+    showcase.addEventListener('pointerleave', () => {
+      targetRx = null; targetRy = null;
+      if (!rafId) rafId = requestAnimationFrame(apply);
+    });
+
+    // Pause floating animation when user interacts for premium feel
+    showcase.addEventListener('pointerenter', () => {
+      inner.style.animationPlayState = 'paused';
+    });
+    showcase.addEventListener('pointerleave', () => {
+      inner.style.animationPlayState = '';
+    });
+  })();
+
 
   /* ---------------- INIT ---------------- */
   applyLang(lang);

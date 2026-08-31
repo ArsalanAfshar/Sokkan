@@ -1,6 +1,7 @@
 /* ============================================================
-   ENGINE | انجین — base.css
+   SOKKAN | سُکّان — Milad Template — base.css
    Design tokens · Reset · Typography · Utilities · Motion
+   Pack: Sokkan (سُکّان) — Template: Milad (میلاد)
    The whole visual identity lives here: colors, fonts, radius,
    shadows, spacing scale, reveal & ambient animations.
    ============================================================ */
@@ -62,19 +63,21 @@
 }
 
 /* ---------- 2. THEMES ---------- */
-/* DARK — «مشکیِ جوهر» paper-ink world, amber + matrix green */
+/* DARK — «مشکیِ جوهر» — Milad/Sokkan — high contrast audit
+   bg: page, bg-2: section alt, bg-3: cards (clear step from bg-2)
+   ink: deep panels (final CTA) — darker than cards for separation */
 :root[data-theme="dark"] {
-  --bg: #0b0b0e;           /* page background      */
-  --bg-2: #101016;         /* raised surfaces      */
-  --bg-3: #15151d;         /* cards                */
-  --ink: #1b1b24;          /* solid panels (inverted) */
+  --bg: #0a0a0f;           /* page background — deepest */
+  --bg-2: #12121c;         /* raised surfaces — +1 step */
+  --bg-3: #1e1e2e;         /* cards — +2 step, clearly lighter than bg-2 */
+  --ink: #16161f;          /* solid panels (inverted) — distinct from cards */
   --text: #ece7da;         /* primary text (bone)  */
-  --text-2: #b3ad9e;       /* secondary text       */
-  --text-3: #8a8477;       /* faint text (≥4.5:1)  */
-  --line: rgba(236, 231, 218, .14);
-  --line-2: rgba(236, 231, 218, .25);
+  --text-2: #c2bcad;       /* secondary — brighter for WCAG */
+  --text-3: #9e988a;       /* faint — improved contrast */
+  --line: rgba(236, 231, 218, .13);
+  --line-2: rgba(236, 231, 218, .26);
 
-  --accent: #ffb443;       /* amber — brand        */
+  --accent: #ffb443;       /* amber — brand Sokkan */
   --accent-2: #2dd4a0;     /* matrix green         */
   --accent-3: #ff6b4a;     /* tomato — sparingly   */
   --accent-ink: #1c1204;   /* text on accent bg    */
@@ -83,12 +86,12 @@
   --paper-ink: #14121a;
   --paper-mut: rgba(20, 18, 26, .66);
 
-  --shadow-sm: 0 2px 10px rgba(0,0,0,.35);
-  --shadow-md: 0 14px 40px rgba(0,0,0,.45);
-  --shadow-lg: 0 30px 80px rgba(0,0,0,.55);
-  --header-bg: rgba(11, 11, 14, .78);
-  --glow: rgba(255, 180, 67, .16);
-  --glow-green: rgba(45, 212, 160, .14);
+  --shadow-sm: 0 2px 14px rgba(0,0,0,.48);
+  --shadow-md: 0 18px 56px rgba(0,0,0,.58);
+  --shadow-lg: 0 36px 96px rgba(0,0,0,.68);
+  --header-bg: rgba(10, 10, 15, .88);
+  --glow: rgba(255, 180, 67, .20);
+  --glow-green: rgba(45, 212, 160, .18);
   color-scheme: dark;
 }
 
@@ -180,29 +183,74 @@ h1, h2, h3, h4 { line-height: 1.55; font-weight: 800; }
 .mono { font-family: var(--font-mono); font-weight: 500; letter-spacing: .02em; }
 .serif-accent { font-family: var(--font-serif); font-weight: 600; color: var(--accent); }
 
-/* ---------- 4b. OUTLINE / HOLLOW TYPE (fixed rendering) ----------
-   Strokes scale with font-size (em), positive letter-spacing so
-   glyphs never touch, inline padding so strokes never clip into
-   neighboring words. Works for Persian + Latin alike. */
+/* ---------- 4b. PREMIUM 3D / EXTRUDED TYPE ----------
+   Replaces simple stroke with layered extruded effect.
+   - Uses em-based offsets → scales with font-size, responsive
+   - Lightweight CSS only, no overflow
+   - Works in dark & light, Persian & Latin
+   - Subtle retro-futuristic depth, Matrix-inspired accent layers
+   Structure: solid text + accent extrusion layers + soft glow */
 .outline {
-  color: transparent;
-  -webkit-text-stroke: .035em var(--accent);
-  letter-spacing: .015em;
+  --ex-1: var(--accent);
+  --ex-2: color-mix(in srgb, var(--accent) 82%, #000);
+  --ex-3: color-mix(in srgb, var(--accent) 66%, #000);
+  --ex-4: color-mix(in srgb, var(--accent) 48%, #000);
+  --ex-5: color-mix(in srgb, var(--accent) 32%, transparent);
+  color: var(--text);
+  display: inline-block;
+  position: relative;
+  letter-spacing: .01em;
+  line-height: 1.18;
   padding-inline: .06em;
-  paint-order: stroke fill;
+  padding-bottom: .14em; /* room for extrusion */
+  /* 3D layered extrusion — premium, subtle */
+  text-shadow:
+    0.018em 0.018em 0 var(--ex-1),
+    0.036em 0.036em 0 var(--ex-2),
+    0.054em 0.054em 0 var(--ex-3),
+    0.072em 0.072em 0 var(--ex-4),
+    0 0.14em 0.32em color-mix(in srgb, var(--accent) 28%, transparent),
+    0 0.26em 0.64em color-mix(in srgb, var(--accent) 16%, transparent);
+  transform: translateZ(0);
+  will-change: text-shadow;
 }
-@supports not (-webkit-text-stroke: 1px black) {
-  .outline { color: var(--accent); }
+:root[data-theme="dark"] .outline {
+  filter: drop-shadow(0 0 18px color-mix(in srgb, var(--accent) 20%, transparent));
+}
+:root[data-theme="light"] .outline {
+  --ex-2: color-mix(in srgb, var(--accent) 78%, #000);
+  --ex-3: color-mix(in srgb, var(--accent) 62%, #000);
+  --ex-4: color-mix(in srgb, var(--accent) 44%, #000);
+  filter: none;
+}
+@supports not (color-mix(in srgb, red, blue)) {
+  .outline {
+    text-shadow:
+      1px 1px 0 var(--accent),
+      2px 2px 0 #a65a00,
+      3px 3px 0 #7a3f00,
+      0 8px 20px rgba(255,180,67,.25);
+  }
 }
 
-/* Big watermark word (footer) — hollow, intentionally quiet */
+/* Big watermark word (footer) — now subtle 3D emboss, not just hollow */
 .footer-word {
-  -webkit-text-stroke: .022em color-mix(in srgb, var(--text) 32%, transparent);
+  color: transparent;
+  -webkit-text-stroke: .022em color-mix(in srgb, var(--text) 28%, transparent);
   letter-spacing: .02em;
+  display: inline-block;
+  line-height: 1.05;
+  text-shadow:
+    0.04em 0.04em 0 color-mix(in srgb, var(--text) 12%, transparent),
+    0.08em 0.08em 0 color-mix(in srgb, var(--text) 7%, transparent),
+    0 0.22em 0.6em color-mix(in srgb, var(--text) 10%, transparent);
 }
-:root[data-theme="light"] .footer-word { -webkit-text-stroke: .022em color-mix(in srgb, var(--text) 44%, transparent); }
+:root[data-theme="light"] .footer-word {
+  -webkit-text-stroke: .022em color-mix(in srgb, var(--text) 38%, transparent);
+}
 @supports not (-webkit-text-stroke: 1px black) {
-  .footer-word { color: color-mix(in srgb, var(--text) 16%, transparent); }
+  .footer-word { color: color-mix(in srgb, var(--text) 14%, transparent); }
+  .outline { color: var(--text); }
 }
 
 /* ---------- 5. LAYOUT UTILITIES ---------- */
@@ -369,6 +417,9 @@ h1, h2, h3, h4 { line-height: 1.55; font-weight: 800; }
   letter-spacing: .06em;
   color: transparent;
   -webkit-text-stroke: .05em var(--accent);
+  text-shadow:
+    1px 1px 0 color-mix(in srgb, var(--accent) 55%, transparent),
+    0 4px 12px color-mix(in srgb, var(--accent) 22%, transparent);
 }
 @supports not (-webkit-text-stroke: 1px black) {
   .card-index { color: var(--accent); }

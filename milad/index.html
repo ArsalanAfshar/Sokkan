@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <!--
   ─────────────────────────────────────────────────────────────
-  ENGINE | انجین  —  v1.2 «میلاد»
-  Premium Iranian Digital Services Landing Template Foundation
+  SOKKAN | سُکّان — Milad Template (میلاد) v2.0
+  Premium Persian RTL Commercial Template — Sokkan Pack #1 — Milad Template
 
+  Pack: Sokkan (سُکّان) — Template: Milad (میلاد)
   Built with HTML5 + CSS3 + Vanilla JS (ES6+). No frameworks.
-  RTL-first (Persian) with a built-in English (LTR) layer.
-  Theme: «Matrix × Vintage» design system — data-stream hero,
-  parallax depth, 3D wireframe cube, premium mobile navigation.
+  RTL-first (Persian) with English LTR layer.
+  Theme: Matrix × Vintage × Retro-Futuristic — now with 3D Product Showcase.
 
   HOW TO CUSTOMIZE
   • Colors / fonts / radius  →  assets/css/base.css  (design tokens)
@@ -21,11 +21,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>انجین | موتور کسب‌وکار دیجیتال شما — استودیو دیجیتال انجین</title>
-<meta name="description" content="انجین، استودیوی دیجیتال ایرانی؛ طراحی وب‌سایت، اپلیکیشن، برندینگ و دیجیتال مارکتینگ. موتورِ رشد کسب‌وکار شما.">
-<meta name="theme-color" content="#0b0b0e">
-<meta property="og:title" content="انجین | موتور کسب‌وکار دیجیتال شما">
-<meta property="og:description" content="قالب لندینگ پریمیوم ایرانی — طراحی وب، اپلیکیشن، برندینگ و مارکتینگ دیجیتال.">
+<title>سُکّان | قالب میلاد — موتور کسب‌وکار دیجیتال شما — پک سُکّان</title>
+<meta name="description" content="سُکّان، پک قالب فارسی پریمیوم؛ قالب میلاد، موتور رشد کسب‌وکار دیجیتال شما — طراحی وب‌سایت، اپلیکیشن، برندینگ و دیجیتال مارکتینگ.">
+<meta name="theme-color" content="#0a0a0f">
+<meta property="og:title" content="سُکّان | قالب میلاد — موتور کسب‌وکار دیجیتال شما">
+<meta property="og:description" content="قالب لندینگ پریمیوم ایرانی — پک سُکّان، قالب میلاد: طراحی وب، اپلیکیشن، برندینگ و مارکتینگ دیجیتال.">
 <meta property="og:type" content="website">
 <script>document.documentElement.classList.add('js');</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e0e12'/%3E%3Cg stroke='%23ffb443' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M32 10v8M32 46v8M10 32h8M46 32h8M16.5 16.5l5.6 5.6M41.9 41.9l5.6 5.6M47.5 16.5l-5.6 5.6M22.1 41.9l-5.6 5.6'/%3E%3C/g%3E%3Ccircle cx='32' cy='32' r='9' fill='none' stroke='%23ffb443' stroke-width='5'/%3E%3C/svg%3E">
@@ -34,10 +34,10 @@
 <script>
 (function () {
   try {
-    var t = localStorage.getItem('engine-theme');
+    var t = localStorage.getItem('sokkan-theme') || localStorage.getItem('engine-theme');
     var dark = t ? t === 'dark' : !(window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches);
     document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
-    var l = localStorage.getItem('engine-lang');
+    var l = localStorage.getItem('sokkan-lang') || localStorage.getItem('engine-lang');
     if (l === 'en') { document.documentElement.lang = 'en'; document.documentElement.dir = 'ltr'; }
   } catch (e) {}
 })();
@@ -53,8 +53,8 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "انجین | Engine",
-  "description": "استودیوی خدمات دیجیتال — طراحی وب‌سایت، اپلیکیشن، برندینگ و دیجیتال مارکتینگ",
+  "name": "سُکّان | Sokkan — قالب میلاد",
+  "description": "پک قالب سُکّان — قالب میلاد: استودیوی خدمات دیجیتال، طراحی وب‌سایت، اپلیکیشن، برندینگ و دیجیتال مارکتینگ",
   "foundingDate": "2013",
   "areaServed": "IR",
   "address": { "@type": "PostalAddress", "addressLocality": "Tehran", "addressCountry": "IR" }
@@ -67,9 +67,9 @@
 <!-- ============ PRELOADER ============ -->
 <div class="loader" id="loader" aria-hidden="true">
   <div class="loader-inner">
-    <span class="loader-mark">انجین</span>
+    <span class="loader-mark">سُکّان</span>
     <span class="loader-bar"><i></i></span>
-    <span class="loader-txt" data-i18n="loaderTxt">در حال روشن‌کردن موتور…</span>
+    <span class="loader-txt" data-i18n="loaderTxt">در حال روشن‌کردن سُکّان…</span>
   </div>
 </div>
 
@@ -77,7 +77,7 @@
 <header class="site-header" id="siteHeader">
   <div class="container header-in">
 
-    <a class="brand" href="#top" aria-label="انجین — بازگشت به بالای صفحه">
+    <a class="brand" href="#top" aria-label="سُکّان — بازگشت به بالای صفحه">
       <svg class="brand-logo" viewBox="0 0 40 40" aria-hidden="true">
         <circle cx="20" cy="20" r="16.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
         <g stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
@@ -85,7 +85,7 @@
           <path d="M10.4 10.4l3.6 3.6M26 26l3.6 3.6M29.6 10.4L26 14M14 26l-3.6 3.6"/>
         </g>
       </svg>
-      <span class="brand-name" data-i18n="brandName">انجین</span>
+      <span class="brand-name" data-i18n="brandName">سُکّان</span>
       <span class="brand-reg" aria-hidden="true">®</span>
     </a>
 
@@ -154,68 +154,144 @@
   <div class="hero-emblem" aria-hidden="true">
     <svg class="emblem-ring" viewBox="0 0 120 120">
       <defs><path id="emblemPath" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
-      <text class="emblem-text" direction="ltr"><textPath href="#emblemPath" startOffset="0">ENGINE DIGITAL STUDIO • EST. 2013 • TEHRAN • </textPath></text>
+      <text class="emblem-text" direction="ltr"><textPath href="#emblemPath" startOffset="0">SOKKAN TEMPLATE PACK • MILAD • EST. 2013 • TEHRAN • </textPath></text>
     </svg>
-    <span class="emblem-core">انجین</span>
+    <span class="emblem-core">سُکّان</span>
   </div>
 
   <div class="container hero-in">
-    <div class="hero-badge reveal">
-      <span class="pulse-dot" aria-hidden="true"></span>
-      <span data-i18n="heroBadge">استودیوی خدمات دیجیتال — تهران، از ۱۳۹۲</span>
-      <span class="badge-year" data-i18n="heroYear">۱۴۰۵</span>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span data-i18n="heroBadge">قالب میلاد از پک سُکّان — تهران، از ۱۳۹۲</span>
+        <span class="badge-year" data-i18n="heroYear">۱۴۰۵</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line reveal" data-i18n="heroL1">موتورِ</span>
+        <span class="line reveal d2">
+          <span class="outline" data-i18n="heroL2">کسب‌وکار</span>
+          <span class="hero-title-rest" data-i18n="heroL2b">دیجیتالِ شما</span>
+        </span>
+      </h1>
+
+      <p class="hero-sub reveal d3" data-i18n="heroSub">
+        از طراحی وب‌سایت و اپلیکیشن تا برندینگ، سئو و کمپین؛
+        تیم سُکّان کل مسیر دیجیتال شما را طراحی می‌کند، اجرا می‌کند و رشدش می‌دهد.
+      </p>
+
+      <div class="hero-cta reveal d4">
+        <a class="btn btn-primary btn-lg" href="#cta">
+          <span data-i18n="heroCta1">شروع پروژه</span>
+          <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn-ghost btn-lg" href="#works" data-i18n="heroCta2">مشاهدهٔ نمونه‌کارها</a>
+      </div>
+
+      <dl class="hero-stats reveal d5">
+        <div class="stat">
+          <dt><span class="count" data-count="128" data-i18n-aria="stat1">۱۲۸</span><span class="stat-suffix">+</span></dt>
+          <dd data-i18n="statLabel1">پروژهٔ تحویل‌شده</dd>
+        </div>
+        <div class="stat">
+          <dt><span class="count" data-count="12" data-i18n-aria="stat2">۱۲</span><span class="stat-suffix" data-i18n="statSuffix2"> سال</span></dt>
+          <dd data-i18n="statLabel2">تجربهٔ مستمر</dd>
+        </div>
+        <div class="stat">
+          <dt><span class="count" data-count="98" data-i18n-aria="stat3">۹۸</span><span class="stat-suffix">٪</span></dt>
+          <dd data-i18n="statLabel3">رضایت مشتریان</dd>
+        </div>
+        <div class="stat">
+          <dt><span class="count" data-count="9" data-i18n-aria="stat4">۹</span><span class="stat-suffix" data-i18n="statSuffix4"> تیم</span></dt>
+          <dd data-i18n="statLabel4">متخصص تمام‌وقت</dd>
+        </div>
+      </dl>
+
+      <div class="hero-scroll reveal d5">
+        <a href="#intro" aria-label="اسکرول به بخش دربارهٔ ما">
+          <span class="mouse" aria-hidden="true"><i class="wheel"></i></span>
+          <span data-i18n="heroScroll">اسکرول کنید</span>
+        </a>
+      </div>
     </div>
 
-    <h1 class="hero-title">
-      <span class="line reveal" data-i18n="heroL1">موتورِ</span>
-      <span class="line reveal d2">
-        <span class="outline" data-i18n="heroL2">کسب‌وکار</span>
-        <span class="hero-title-rest" data-i18n="heroL2b">دیجیتالِ شما</span>
-      </span>
-    </h1>
-
-    <p class="hero-sub reveal d3" data-i18n="heroSub">
-      از طراحی وب‌سایت و اپلیکیشن تا برندینگ، سئو و کمپین؛
-      تیم انجین کل مسیر دیجیتال شما را طراحی می‌کند، اجرا می‌کند و رشدش می‌دهد.
-    </p>
-
-    <div class="hero-cta reveal d4">
-      <a class="btn btn-primary btn-lg" href="#cta">
-        <span data-i18n="heroCta1">شروع پروژه</span>
-        <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <a class="btn btn-ghost btn-lg" href="#works" data-i18n="heroCta2">مشاهدهٔ نمونه‌کارها</a>
-    </div>
-
-    <dl class="hero-stats reveal d5">
-      <div class="stat">
-        <dt><span class="count" data-count="128" data-i18n-aria="stat1">۱۲۸</span><span class="stat-suffix">+</span></dt>
-        <dd data-i18n="statLabel1">پروژهٔ تحویل‌شده</dd>
+    <div class="hero-visual reveal d3">
+      <!-- 
+        SOKKAN 3D PRODUCT SHOWCASE — Milad Template
+        Reusable CSS 3D monitor component.
+        HOW TO CUSTOMIZE (for buyers):
+        1. Replace .monitor-screen-content inner HTML:
+           - <img src="your-screenshot.jpg"> for website preview
+           - <video> for demo, or custom HTML dashboard
+        2. Adjust CSS variables on .product-showcase:
+           --rx, --ry, --showcase-scale, --float-y, --float-duration
+        3. Animation speed: --float-duration (e.g. 4s fast, 8s slow)
+        4. Position: move .hero-visual or change --rx/--ry
+      -->
+      <div class="product-showcase" id="productShowcase" style="--rx:-8deg; --ry:18deg; --showcase-scale:1; --float-duration:6.5s;">
+        <div class="product-showcase-inner">
+          <div class="monitor">
+            <div class="monitor-frame">
+              <div class="monitor-topbar">
+                <span class="monitor-dot"></span><span class="monitor-dot"></span><span class="monitor-dot"></span>
+                <span class="monitor-url">sokkan.studio/milad — preview</span>
+              </div>
+              <div class="monitor-screen">
+                <div class="monitor-screen-content">
+                  <!-- Replaceable content START — buyer: put your image/dashboard here -->
+                  <div class="demo-ui">
+                    <div class="demo-ui-header">
+                      <span class="demo-ui-title">داشبورد سُکّان</span>
+                      <span class="demo-ui-badge">LIVE • ۱۴۰۵</span>
+                    </div>
+                    <div class="demo-ui-grid">
+                      <div class="demo-ui-card">
+                        <h4>فروش ماه</h4>
+                        <p>۱۲۸٪ رشد نسبت به ماه قبل</p>
+                        <div class="demo-ui-chart">
+                          <span class="demo-ui-bar" style="height:32%"></span>
+                          <span class="demo-ui-bar" style="height:58%"></span>
+                          <span class="demo-ui-bar" style="height:44%"></span>
+                          <span class="demo-ui-bar" style="height:78%"></span>
+                          <span class="demo-ui-bar" style="height:92%"></span>
+                        </div>
+                      </div>
+                      <div class="demo-ui-card">
+                        <h4>کاربران فعال</h4>
+                        <p>۹٬۴۲۱ کاربر امروز</p>
+                        <div class="demo-ui-chart">
+                          <span class="demo-ui-bar" style="height:48%"></span>
+                          <span class="demo-ui-bar" style="height:72%"></span>
+                          <span class="demo-ui-bar" style="height:60%"></span>
+                          <span class="demo-ui-bar" style="height:88%"></span>
+                          <span class="demo-ui-bar" style="height:64%"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="demo-ui-card" style="grid-column:1/-1">
+                      <h4>آخرین سفارش‌ها</h4>
+                      <p>۳ سفارش جدید — پرداخت موفق — ارسال امروز</p>
+                    </div>
+                  </div>
+                  <!-- Replaceable content END -->
+                  <span class="showcase-hint">نمایشگر محصول — محتوای قابل تعویض</span>
+                </div>
+              </div>
+            </div>
+            <div class="monitor-stand">
+              <div class="monitor-neck"></div>
+              <div class="monitor-base"></div>
+            </div>
+            <div class="monitor-shadow"></div>
+          </div>
+        </div>
       </div>
-      <div class="stat">
-        <dt><span class="count" data-count="12" data-i18n-aria="stat2">۱۲</span><span class="stat-suffix" data-i18n="statSuffix2"> سال</span></dt>
-        <dd data-i18n="statLabel2">تجربهٔ مستمر</dd>
-      </div>
-      <div class="stat">
-        <dt><span class="count" data-count="98" data-i18n-aria="stat3">۹۸</span><span class="stat-suffix">٪</span></dt>
-        <dd data-i18n="statLabel3">رضایت مشتریان</dd>
-      </div>
-      <div class="stat">
-        <dt><span class="count" data-count="9" data-i18n-aria="stat4">۹</span><span class="stat-suffix" data-i18n="statSuffix4"> تیم</span></dt>
-        <dd data-i18n="statLabel4">متخصص تمام‌وقت</dd>
-      </div>
-    </dl>
-
-    <div class="hero-scroll reveal d5">
-      <a href="#intro" aria-label="اسکرول به بخش دربارهٔ ما">
-        <span class="mouse" aria-hidden="true"><i class="wheel"></i></span>
-        <span data-i18n="heroScroll">اسکرول کنید</span>
-      </a>
     </div>
   </div>
 </section>
 
 <!-- ============ TICKER ============ -->
+
 <div class="ticker" aria-hidden="true">
   <div class="ticker-row ticker-row-a">
     <div class="ticker-track" id="tickerA"></div>
@@ -231,26 +307,26 @@
   <div class="container intro-grid">
 
     <div class="intro-copy">
-      <span class="eyebrow reveal" data-i18n="introEyebrow">دربارهٔ انجین</span>
+      <span class="eyebrow reveal" data-i18n="introEyebrow">دربارهٔ سُکّان</span>
       <h2 class="sec-title reveal">
         <span data-i18n="introTitle1">ما از دلِ گذشته آمده‌ایم</span>
         <span class="serif-accent" data-i18n="introTitle2">تا آینده را بسازیم.</span>
       </h2>
       <p class="reveal" data-i18n="introP1">
-        انجین یک استودیوی خدمات دیجیتال است؛ جایی که دقتِ مهندسی با روحِ صنعت‌گریِ قدیم ترکیب می‌شود.
-        ما هر پروژه را مثل یک موتور می‌بینیم: هر قطعه سرِ جای خودش، بی‌صدا، و برای سال‌ها کارکرد.
+        سُکّان یک پک قالب پریمیوم است؛ قالب میلاد، جایی که دقتِ مهندسی با روحِ صنعت‌گریِ قدیم ترکیب می‌شود.
+        ما هر قالب را مثل یک موتور می‌بینیم: هر قطعه سرِ جای خودش، بی‌صدا، و برای سال‌ها کارکرد.
       </p>
       <p class="reveal" data-i18n="introP2">
-        از سال ۱۳۹۲ برای کسب‌وکارهای ایرانی می‌سازیم — از استارتاپ‌های تازه‌کار تا سازمان‌های بزرگ.
+        از سال ۱۳۹۲ برای کسب‌وکارهای ایرانی الهام می‌گیریم — از استارتاپ‌های تازه‌کار تا سازمان‌های بزرگ.
         وب‌سایت، اپلیکیشن، برند و کمپین؛ ساده می‌گوییم، دقیق تحویل می‌دهیم و بعد از تحویل هم کنار شما می‌مانیم.
       </p>
       <div class="intro-sign reveal">
-        <span class="sign-name" data-i18n="signName">مدیریت انجین</span>
+        <span class="sign-name" data-i18n="signName">تیم سُکّان — قالب میلاد</span>
         <span class="sign-role" data-i18n="signRole">تهران، از ۱۳۹۲ تا امروز</span>
         <svg class="sign-stamp" viewBox="0 0 80 80" aria-hidden="true">
           <circle cx="40" cy="40" r="34" fill="none" stroke="currentColor" stroke-width="2.5"/>
           <circle cx="40" cy="40" r="26" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 4"/>
-          <text x="40" y="47" text-anchor="middle" font-size="20">انجین</text>
+          <text x="40" y="47" text-anchor="middle" font-size="20">سُکّان</text>
         </svg>
       </div>
     </div>
@@ -291,7 +367,7 @@
   </div>
 
   <div class="container trust-strip reveal">
-    <p class="trust-label" data-i18n="trustLabel">برندهایی که موتورشان با ما روشن شد</p>
+    <p class="trust-label" data-i18n="trustLabel">برندهایی که با سُکّان رشد کردند</p>
     <ul class="trust-list" aria-hidden="true">
       <li>آریا فین‌تک</li>
       <li>پارس رایان</li>
@@ -309,7 +385,7 @@
   <div class="container">
     <div class="sec-head">
       <span class="eyebrow reveal" data-i18n="servicesEyebrow">خدمات ما</span>
-      <h2 class="sec-title reveal" data-i18n="servicesTitle">شش خدمت، یک مقصد: رشدِ دیجیتال</h2>
+      <h2 class="sec-title reveal" data-i18n="servicesTitle">شش خدمت، یک مقصد: رشدِ دیجیتال با سُکّان</h2>
       <p class="sec-sub reveal" data-i18n="servicesSub">هر خدمت، ورودیِ خدمت بعدی است؛ از ایده و طراحی تا توسعه، مارکتینگ و پشتیبانی — همه زیر یک سقف.</p>
     </div>
 
@@ -413,7 +489,7 @@
   <div class="container features-grid">
 
     <div class="features-copy">
-      <span class="eyebrow reveal" data-i18n="featuresEyebrow">چرا انجین؟</span>
+      <span class="eyebrow reveal" data-i18n="featuresEyebrow">چرا سُکّان؟</span>
       <h2 class="sec-title reveal" data-i18n="featuresTitle">استانداردی که در هر قطعه حس می‌شود</h2>
       <p class="sec-sub reveal" data-i18n="featuresSub">ما به جزئیاتی اهمیت می‌دهیم که کاربر حس می‌کند، حتی اگر نبیند — از سرعت تا امنیت و پشتیبانی.</p>
 
@@ -503,7 +579,7 @@
         <svg viewBox="0 0 90 90">
           <circle cx="45" cy="45" r="38" fill="none" stroke="currentColor" stroke-width="2.5"/>
           <circle cx="45" cy="45" r="29" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 5"/>
-          <text x="45" y="52" text-anchor="middle" font-size="22">انجین</text>
+          <text x="45" y="52" text-anchor="middle" font-size="22">سُکّان</text>
         </svg>
       </div>
     </aside>
@@ -626,7 +702,7 @@
     <div class="sec-head">
       <span class="eyebrow reveal" data-i18n="worksEyebrow">منتخب کارها</span>
       <h2 class="sec-title reveal" data-i18n="worksTitle">موتورهایی که راه افتادند</h2>
-      <p class="sec-sub reveal" data-i18n="worksSub">سه روایت کوتاه از پروژه‌هایی که با همکاری تیم انجین به حرکت درآمدند.</p>
+      <p class="sec-sub reveal" data-i18n="worksSub">سه روایت کوتاه از پروژه‌هایی که با قالب میلاد از پک سُکّان به حرکت درآمدند.</p>
     </div>
 
     <div class="works-grid">
@@ -724,7 +800,7 @@
       <figure class="quote-card reveal">
         <span class="quote-mark" aria-hidden="true">”</span>
         <div class="stars" role="img" aria-label="۵ از ۵ ستاره"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-        <blockquote data-i18n="q1">تیم انجین محصول ما را از یک ایدهٔ خام به پلتفرمی رساندند که امروز روزانه چند هزار تراکنش مالی پردازش می‌کند. گزارش‌های هفتگی و شفافیتشان در طول پروژه واقعاً مثال‌زدنی بود.</blockquote>
+        <blockquote data-i18n="q1">تیم سُکّان محصول ما را از یک ایدهٔ خام به پلتفرمی رساندند که امروز روزانه چند هزار تراکنش مالی پردازش می‌کند. گزارش‌های هفتگی و شفافیتشان در طول پروژه واقعاً مثال‌زدنی بود.</blockquote>
         <figcaption>
           <span class="quote-avatar" aria-hidden="true">س</span>
           <span class="quote-meta">
@@ -737,7 +813,7 @@
       <figure class="quote-card reveal d2">
         <span class="quote-mark" aria-hidden="true">”</span>
         <div class="stars" role="img" aria-label="۵ از ۵ ستاره"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-        <blockquote data-i18n="q2">سرعت فروشگاه ما همیشه آزاردهنده بود؛ بعد از بازطراحی انجین، سرعت دو برابر شد و فروش ماهانه ۳۲٪ رشد کرد. پشتیبانی بعد از تحویل هم بی‌نظیر است — حتی آخر هفته‌ها پاسخ‌گو هستند.</blockquote>
+        <blockquote data-i18n="q2">سرعت فروشگاه ما همیشه آزاردهنده بود؛ بعد از بازطراحی سُکّان، سرعت دو برابر شد و فروش ماهانه ۳۲٪ رشد کرد. پشتیبانی بعد از تحویل هم بی‌نظیر است — حتی آخر هفته‌ها پاسخ‌گو هستند.</blockquote>
         <figcaption>
           <span class="quote-avatar" aria-hidden="true">ا</span>
           <span class="quote-meta">
@@ -750,7 +826,7 @@
       <figure class="quote-card reveal d3">
         <span class="quote-mark" aria-hidden="true">”</span>
         <div class="stars" role="img" aria-label="۵ از ۵ ستاره"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-        <blockquote data-i18n="q3">چیزی که انجین را متفاوت می‌کند نگاه آن‌هاست؛ فقط «سایت نمی‌سازند»، مسئلهٔ کسب‌وکار شما را حل می‌کنند. نتیجه، برندی بود که مشتریانمان حالا به آن افتخار می‌کنند.</blockquote>
+        <blockquote data-i18n="q3">چیزی که سُکّان را متفاوت می‌کند نگاه آن‌هاست؛ فقط «سایت نمی‌سازند»، مسئلهٔ کسب‌وکار شما را حل می‌کنند. نتیجه، برندی بود که مشتریانمان حالا به آن افتخار می‌کنند.</blockquote>
         <figcaption>
           <span class="quote-avatar" aria-hidden="true">ن</span>
           <span class="quote-meta">
@@ -795,7 +871,7 @@
       </article>
 
       <article class="price-card price-featured reveal d2">
-        <span class="price-flag" data-i18n="plan2Flag">پیشنهاد انجین</span>
+        <span class="price-flag" data-i18n="plan2Flag">پیشنهاد سُکّان — قالب میلاد</span>
         <header class="price-head">
           <h3 data-i18n="plan2Name">حرکت</h3>
           <p data-i18n="plan2For">برای کسب‌وکارهای در حال رشد</p>
@@ -854,7 +930,7 @@
         </span>
         <h3 data-i18n="faqCtaTitle">هنوز سوالی دارید؟</h3>
         <p data-i18n="faqCtaDesc">شنبه تا پنجشنبه، ۹ تا ۱۸ پاسخ‌گوی شما هستیم.</p>
-        <a class="btn btn-primary btn-block" href="#cta" data-i18n="faqCtaBtn">تماس با انجین</a>
+        <a class="btn btn-primary btn-block" href="#cta" data-i18n="faqCtaBtn">تماس با سُکّان</a>
       </div>
     </div>
 
@@ -932,7 +1008,7 @@
       <div class="final-copy">
         <span class="eyebrow eyebrow-inv" data-i18n="finalEyebrow">قدم بعدی با شماست</span>
         <h2 class="final-title">
-          <span data-i18n="finalTitle1">موتورِ خود را</span>
+          <span data-i18n="finalTitle1">سُکّانِ خود را</span>
           <span class="serif-accent" data-i18n="finalTitle2">روشن کنید.</span>
         </h2>
         <p data-i18n="finalSub">فرم را پر کنید؛ حداکثر تا ۲۴ ساعت کاری آینده برای یک جلسهٔ مشاورهٔ رایگان با شما تماس می‌گیریم. بدون تعهد، بدون هزینه.</p>
@@ -1004,7 +1080,7 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <a class="brand" href="#top" aria-label="انجین — بازگشت به بالای صفحه">
+        <a class="brand" href="#top" aria-label="سُکّان — بازگشت به بالای صفحه">
           <svg class="brand-logo" viewBox="0 0 40 40" aria-hidden="true">
             <circle cx="20" cy="20" r="16.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
             <g stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
@@ -1012,14 +1088,14 @@
               <path d="M10.4 10.4l3.6 3.6M26 26l3.6 3.6M29.6 10.4L26 14M14 26l-3.6 3.6"/>
             </g>
           </svg>
-          <span class="brand-name" data-i18n="brandName">انجین</span>
+          <span class="brand-name" data-i18n="brandName">سُکّان</span>
         </a>
-        <p class="footer-desc" data-i18n="footerDesc">استودیوی خدمات دیجیتال؛ طراحی وب، اپلیکیشن، برند و مارکتینگ برای کسب‌وکارهای ایرانی — از ۱۳۹۲.</p>
+        <p class="footer-desc" data-i18n="footerDesc">پک قالب سُکّان؛ قالب میلاد — طراحی وب، اپلیکیشن، برند و مارکتینگ برای کسب‌وکارهای ایرانی — از ۱۳۹۲.</p>
         <div class="footer-social">
-          <a href="#" aria-label="اینستاگرام انجین"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></a>
-          <a href="#" aria-label="لینکدین انجین"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 10.5V17M8 7.6v.1M12 17v-3.8a2.2 2.2 0 0 1 4.4 0V17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
-          <a href="#" aria-label="تلگرام انجین"><svg viewBox="0 0 24 24"><path d="M21 4.5L2.8 11.5c-.9.35-.85 1.6.06 1.9l4.5 1.4 1.7 5.3c.25.8 1.3.95 1.8.28l2.4-3.1 4.6 3.4c.65.5 1.6.15 1.75-.65L22 5.9c.18-.95-.55-1.7-1-1.4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
-          <a href="#" aria-label="دریبل انجین"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5.5 9.2c5.8 1.5 9.7 1.1 13.3-1.2M4.2 13.5c6-1.6 11.2.8 15 5.4M14.6 3.4c-2.4 3.7-3.3 7.6-2.4 12.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+          <a href="#" aria-label="اینستاگرام سُکّان"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="لینکدین سُکّان"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 10.5V17M8 7.6v.1M12 17v-3.8a2.2 2.2 0 0 1 4.4 0V17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+          <a href="#" aria-label="تلگرام سُکّان"><svg viewBox="0 0 24 24"><path d="M21 4.5L2.8 11.5c-.9.35-.85 1.6.06 1.9l4.5 1.4 1.7 5.3c.25.8 1.3.95 1.8.28l2.4-3.1 4.6 3.4c.65.5 1.6.15 1.75-.65L22 5.9c.18-.95-.55-1.7-1-1.4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+          <a href="#" aria-label="دریبل سُکّان"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5.5 9.2c5.8 1.5 9.7 1.1 13.3-1.2M4.2 13.5c6-1.6 11.2.8 15 5.4M14.6 3.4c-2.4 3.7-3.3 7.6-2.4 12.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
         </div>
       </div>
 
@@ -1075,15 +1151,15 @@
       <p class="trust-note" data-i18n="trustNote"><strong>جایگاه اختیاری.</strong> این بخش برای درج نماد اعتماد الکترونیکی و لوگوهای درگاه پرداخت آماده است؛ کافی است تصویر را داخل هر قاب قرار دهید — بدون تغییر در ساختار.</p>
     </div>
 
-    <div class="footer-word" aria-hidden="true">انجین</div>
+    <div class="footer-word" aria-hidden="true">سُکّان</div>
 
     <div class="footer-bottom">
-      <p data-i18n="footerRights">© ۱۴۰۵ استودیو انجین — همهٔ حقوق محفوظ است.</p>
+      <p data-i18n="footerRights">© ۱۴۰۵ پک سُکّان — قالب میلاد — همهٔ حقوق محفوظ است.</p>
       <ul class="footer-legal">
         <li><a href="#" data-i18n="legalPrivacy">حریم خصوصی</a></li>
         <li><a href="#" data-i18n="legalTerms">شرایط استفاده</a></li>
       </ul>
-      <p class="footer-made" data-i18n="footerMade">ساخته‌شده با ♥ و چای در تهران</p>
+      <p class="footer-made" data-i18n="footerMade">ساخته‌شده با ♥ و چای در تهران — سُکّان ۱۴۰۵ — قالب میلاد</p>
     </div>
   </div>
 </footer>
