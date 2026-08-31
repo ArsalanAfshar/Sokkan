@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تراز | نرم‌افزار حسابداری ابری</title>
+  <meta name="description" content="تراز، نرم‌افزار حسابداری ابری هوشمند برای کسب‌وکارهای ایرانی. مدیریت مالی ساده، امن و حرفه‌ای.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2310b981'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-weight='bold'>ت</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#" class="logo">
+          <div class="logo-icon">ت</div>
+          <span>تراز</span>
+        </a>
+        
+        <nav class="nav">
+          <a href="#features" class="nav-link" data-i18n="nav_features">ویژگی‌ها</a>
+          <a href="#benefits" class="nav-link" data-i18n="nav_benefits">مزایا</a>
+          <a href="#pricing" class="nav-link" data-i18n="nav_pricing">تعرفه‌ها</a>
+          <a href="#testimonials" class="nav-link" data-i18n="nav_testimonials">نظرات مشتریان</a>
+          <a href="#faq" class="nav-link" data-i18n="nav_faq">سوالات متداول</a>
+        </nav>
+        
+        <div class="header-actions">
+          <button class="lang-toggle btn btn-ghost btn-sm" aria-label="تغییر زبان">
+            <span>EN</span>
+          </button>
+          <button class="theme-toggle" aria-label="تغییر تم">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <a href="#cta" class="btn btn-primary btn-sm" data-i18n="hero_cta_primary">شروع رایگان</a>
+          <button class="mobile-menu-toggle" aria-label="منوی موبایل">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="#features" class="mobile-nav-link" data-i18n="nav_features">ویژگی‌ها</a>
+    <a href="#benefits" class="mobile-nav-link" data-i18n="nav_benefits">مزایا</a>
+    <a href="#pricing" class="mobile-nav-link" data-i18n="nav_pricing">تعرفه‌ها</a>
+    <a href="#testimonials" class="mobile-nav-link" data-i18n="nav_testimonials">نظرات مشتریان</a>
+    <a href="#faq" class="mobile-nav-link" data-i18n="nav_faq">سوالات متداول</a>
+    <a href="#cta" class="mobile-nav-link" data-i18n="hero_cta_primary">شروع رایگان</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge" data-i18n="hero_badge">🚀 نسخه جدید ۱۴۰۴ منتشر شد</div>
+          <h1 class="hero-title">
+            <span data-i18n="hero_title_1">مدیریت مالی هوشمند</span><br>
+            <span class="accent" data-i18n="hero_title_2">با تراز</span>
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero_subtitle">
+            نرم‌افزار حسابداری ابری تراز، راهکاری جامع برای مدیریت مالی کسب‌وکار شما. از صدور فاکتور تا گزارش‌های تحلیلی، همه چیز در یک پلتفرم.
+          </p>
+          <div class="hero-actions">
+            <a href="#cta" class="btn btn-primary btn-lg" data-i18n="hero_cta_primary">شروع رایگان</a>
+            <a href="#showcase" class="btn btn-secondary btn-lg" data-i18n="hero_cta_secondary">مشاهده دمو</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-value" data-count="10000" data-i18n="hero_stat_1_value">۱۰,۰۰۰+</div>
+              <div class="hero-stat-label" data-i18n="hero_stat_1_label">کسب‌وکار فعال</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value" data-i18n="hero_stat_2_value">۹۹.۹٪</div>
+              <div class="hero-stat-label" data-i18n="hero_stat_2_label">آپتایم سرور</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value" data-i18n="hero_stat_3_value">۲۴/۷</div>
+              <div class="hero-stat-label" data-i18n="hero_stat_3_label">پشتیبانی</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="dashboard-preview">
+            <div class="dashboard-header">
+              <div class="dashboard-dots">
+                <div class="dashboard-dot"></div>
+                <div class="dashboard-dot"></div>
+                <div class="dashboard-dot"></div>
+              </div>
+              <div class="dashboard-title">داشبورد تراز</div>
+            </div>
+            
+            <div class="dashboard-content">
+              <div class="dashboard-card">
+                <div class="dashboard-card-header">
+                  <div class="dashboard-card-title">درآمد ماهانه</div>
+                  <div class="dashboard-card-value">۴۵,۲۰۰,۰۰۰</div>
+                </div>
+                <div class="dashboard-chart">
+                  <div class="chart-bar" style="height: 40%"></div>
+                  <div class="chart-bar" style="height: 60%"></div>
+                  <div class="chart-bar" style="height: 45%"></div>
+                  <div class="chart-bar" style="height: 80%"></div>
+                  <div class="chart-bar" style="height: 65%"></div>
+                  <div class="chart-bar" style="height: 90%"></div>
+                  <div class="chart-bar" style="height: 75%"></div>
+                </div>
+              </div>
+              
+              <div class="dashboard-card">
+                <div class="dashboard-card-header">
+                  <div class="dashboard-card-title">فاکتورهای صادر شده</div>
+                  <div class="dashboard-card-value">۱۲۸</div>
+                </div>
+              </div>
+              
+              <div class="dashboard-card">
+                <div class="dashboard-card-header">
+                  <div class="dashboard-card-title">مطالبات</div>
+                  <div class="dashboard-card-value">۱۲,۵۰۰,۰۰۰</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="floating-card floating-card-1">
+            <div class="floating-card-icon">📈</div>
+            <div class="floating-card-value">+۲۳٪</div>
+            <div class="floating-card-label">رشد درآمد</div>
+          </div>
+          
+          <div class="floating-card floating-card-2">
+            <div class="floating-card-icon">✓</div>
+            <div class="floating-card-value">۱۲۸</div>
+            <div class="floating-card-label">فاکتور پرداخت شده</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-bar-inner">
+        <div class="trust-item">
+          <div class="trust-icon">🛡️</div>
+          <span data-i18n="trust_1">تاییدیه امنیت</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🔒</div>
+          <span data-i18n="trust_2">رمزنگاری SSL</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">💾</div>
+          <span data-i18n="trust_3">پشتیبان‌گیری روزانه</span>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🇮🇷</div>
+          <span data-i18n="trust_4">سرورهای ایران</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge" data-i18n="features_badge">ویژگی‌ها</div>
+        <h2 class="section-title" data-i18n="features_title">همه آنچه برای مدیریت مالی نیاز دارید</h2>
+        <p class="section-subtitle" data-i18n="features_subtitle">
+          تراز با مجموعه‌ای از ابزارهای قدرتمند، مدیریت مالی کسب‌وکار شما را ساده و هوشمند می‌کند.
+        </p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="card">
+          <div class="card-icon">📄</div>
+          <h3 class="card-title" data-i18n="feature_1_title">صدور فاکتور حرفه‌ای</h3>
+          <p class="card-text" data-i18n="feature_1_desc">
+            ایجاد فاکتورهای زیبا و حرفه‌ای در چند ثانیه. ارسال خودکار به مشتری و پیگیری وضعیت پرداخت.
+          </p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">💰</div>
+          <h3 class="card-title" data-i18n="feature_2_title">مدیریت هزینه‌ها</h3>
+          <p class="card-text" data-i18n="feature_2_desc">
+            ثبت و دسته‌بندی تمامی هزینه‌ها. گزارش‌های تفصیلی برای کنترل بهتر بودجه.
+          </p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">📊</div>
+          <h3 class="card-title" data-i18n="feature_3_title">گزارش‌های تحلیلی</h3>
+          <p class="card-text" data-i18n="feature_3_desc">
+            داشبورد هوشمند با نمودارهای تعاملی. تحلیل روند درآمد و هزینه در زمان واقعی.
+          </p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">📦</div>
+          <h3 class="card-title" data-i18n="feature_4_title">مدیریت موجودی</h3>
+          <p class="card-text" data-i18n="feature_4_desc">
+            پیگیری موجودی کالا و انبار. هشدار خودکار برای کالاهای رو به اتمام.
+          </p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">🧮</div>
+          <h3 class="card-title" data-i18n="feature_5_title">محاسبه مالیات</h3>
+          <p class="card-text" data-i18n="feature_5_desc">
+            محاسبه خودکار مالیات بر ارزش افزوده. تهیه گزارش‌های مالیاتی مطابق استانداردها.
+          </p>
+        </div>
+        
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3 class="card-title" data-i18n="feature_6_title">اپلیکیشن موبایل</h3>
+          <p class="card-text" data-i18n="feature_6_desc">
+            دسترسی به تمامی امکانات از طریق اپلیکیشن موبایل. مدیریت مالی در هر زمان و مکان.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Showcase -->
+  <section id="showcase" class="section dashboard-showcase">
+    <div class="container">
+      <div class="dashboard-showcase-grid">
+        <div class="showcase-content">
+          <div class="section-badge" data-i18n="showcase_badge">پیش‌نمایش محصول</div>
+          <h2 class="section-title" data-i18n="showcase_title">داشبورد قدرتمند و کاربرپسند</h2>
+          <p class="section-subtitle" data-i18n="showcase_subtitle">
+            با داشبورد تراز، تمامی اطلاعات مالی کسب‌وکارتان را در یک نگاه مشاهده کنید.
+          </p>
+          <ul class="showcase-features">
+            <li>
+              <span class="check-icon">✓</span>
+              <span data-i18n="showcase_feature_1">نمایش实时 درآمد و هزینه</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span data-i18n="showcase_feature_2">نمودارهای تعاملی و قابل تنظیم</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span data-i18n="showcase_feature_3">هشدارهای هوشمند برای رویدادهای مهم</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span data-i18n="showcase_feature_4">گزارش‌گیری با یک کلیک</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="showcase-visual">
+          <img src="assets/img/dashboard-preview.svg" alt="پیش‌نمایش داشبورد تراز" class="showcase-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge" data-i18n="benefits_badge">چرا تراز؟</div>
+        <h2 class="section-title" data-i18n="benefits_title">مزایای استفاده از تراز</h2>
+        <p class="section-subtitle" data-i18n="benefits_subtitle">
+          تراز انتخاب اول هزاران کسب‌وکار موفق در ایران است.
+        </p>
+      </div>
+      
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">⚡</div>
+          <div class="benefit-content">
+            <h3 data-i18n="benefit_1_title">صرفه‌جویی در زمان</h3>
+            <p data-i18n="benefit_1_desc">اتوماسیون فرآیندهای تکراری. کاهش ۷۰٪ زمان صرف شده برای امور مالی.</p>
+          </div>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">✓</div>
+          <div class="benefit-content">
+            <h3 data-i18n="benefit_2_title">کاهش خطا</h3>
+            <p data-i18n="benefit_2_desc">محاسبات خودکار و دقیق. حذف خطاهای انسانی در ثبت اطلاعات.</p>
+          </div>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">🌐</div>
+          <div class="benefit-content">
+            <h3 data-i18n="benefit_3_title">دسترسی از هر جا</h3>
+            <p data-i18n="benefit_3_desc">پلتفرم ابری با دسترسی از هر دستگاه. همکاری تیمی بدون محدودیت.</p>
+          </div>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">🔐</div>
+          <div class="benefit-content">
+            <h3 data-i18n="benefit_4_title">امنیت بانکی</h3>
+            <p data-i18n="benefit_4_desc">رمزنگاری سطح بانکی. پشتیبان‌گیری خودکار روزانه. سرورهای امن در ایران.</p>
+          </div>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">🎧</div>
+          <div class="benefit-content">
+            <h3 data-i18n="benefit_5_title">پشتیبانی ۲۴/۷</h3>
+            <p data-i18n="benefit_5_desc">تیم پشتیبانی متخصص در تمامی ساعات. پاسخگویی از طریق چت، تلفن و ایمیل.</p>
+          </div>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">🔄</div>
+          <div class="benefit-content">
+            <h3 data-i18n="benefit_6_title">به‌روزرسانی مداوم</h3>
+            <p data-i18n="benefit_6_desc">اضافه شدن ویژگی‌های جدید هر ماه. سازگاری با آخرین تغییرات قوانین مالیاتی.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge" data-i18n="pricing_badge">تعرفه‌ها</div>
+        <h2 class="section-title" data-i18n="pricing_title">پلن مناسب کسب‌وکار خود را انتخاب کنید</h2>
+        <p class="section-subtitle" data-i18n="pricing_subtitle">
+          شروع رایگان. ارتقا در هر زمان. بدون قرارداد طولانی‌مدت.
+        </p>
+      </div>
+      
+      <div class="pricing-grid">
+        <!-- Starter Plan -->
+        <div class="pricing-card">
+          <div class="pricing-name" data-i18n="pricing_starter">استارتر</div>
+          <p class="pricing-desc" data-i18n="pricing_starter_desc">برای کسب‌وکارهای کوچک</p>
+          <div class="pricing-price">
+            <span class="pricing-amount" data-i18n="pricing_starter_price">۲۹۰,۰۰۰</span>
+            <span class="pricing-period" data-i18n="pricing_starter_period">تومان / ماهانه</span>
+          </div>
+          <ul class="pricing-features">
+            <li class="pricing-feature" data-i18n="pricing_starter_feature_1">تا ۱۰۰ فاکتور در ماه</li>
+            <li class="pricing-feature" data-i18n="pricing_starter_feature_2">۱ کاربر</li>
+            <li class="pricing-feature" data-i18n="pricing_starter_feature_3">گزارش‌های پایه</li>
+            <li class="pricing-feature" data-i18n="pricing_starter_feature_4">پشتیبانی ایمیلی</li>
+          </ul>
+          <a href="#cta" class="btn btn-secondary btn-block" data-i18n="pricing_starter_cta">شروع رایگان</a>
+        </div>
+        
+        <!-- Professional Plan -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge" data-i18n="pricing_professional_badge">محبوب‌ترین</div>
+          <div class="pricing-name" data-i18n="pricing_professional">حرفه‌ای</div>
+          <p class="pricing-desc" data-i18n="pricing_professional_desc">برای کسب‌وکارهای در حال رشد</p>
+          <div class="pricing-price">
+            <span class="pricing-amount" data-i18n="pricing_professional_price">۵۹۰,۰۰۰</span>
+            <span class="pricing-period" data-i18n="pricing_professional_period">تومان / ماهانه</span>
+          </div>
+          <ul class="pricing-features">
+            <li class="pricing-feature" data-i18n="pricing_professional_feature_1">فاکتور نامحدود</li>
+            <li class="pricing-feature" data-i18n="pricing_professional_feature_2">تا ۵ کاربر</li>
+            <li class="pricing-feature" data-i18n="pricing_professional_feature_3">گزارش‌های پیشرفته</li>
+            <li class="pricing-feature" data-i18n="pricing_professional_feature_4">پشتیبانی تلفنی</li>
+            <li class="pricing-feature" data-i18n="pricing_professional_feature_5">اپلیکیشن موبایل</li>
+          </ul>
+          <a href="#cta" class="btn btn-primary btn-block" data-i18n="pricing_professional_cta">شروع رایگان</a>
+        </div>
+        
+        <!-- Enterprise Plan -->
+        <div class="pricing-card">
+          <div class="pricing-name" data-i18n="pricing_enterprise">سازمانی</div>
+          <p class="pricing-desc" data-i18n="pricing_enterprise_desc">برای سازمان‌های بزرگ</p>
+          <div class="pricing-price">
+            <span class="pricing-amount" data-i18n="pricing_enterprise_price">تماس بگیرید</span>
+            <span class="pricing-period" data-i18n="pricing_enterprise_period">قیمت سفارشی</span>
+          </div>
+          <ul class="pricing-features">
+            <li class="pricing-feature" data-i18n="pricing_enterprise_feature_1">همه امکانات حرفه‌ای</li>
+            <li class="pricing-feature" data-i18n="pricing_enterprise_feature_2">کاربر نامحدود</li>
+            <li class="pricing-feature" data-i18n="pricing_enterprise_feature_3">API اختصاصی</li>
+            <li class="pricing-feature" data-i18n="pricing_enterprise_feature_4">پشتیبانی اختصاصی ۲۴/۷</li>
+            <li class="pricing-feature" data-i18n="pricing_enterprise_feature_5">آموزش تیمی</li>
+          </ul>
+          <a href="#cta" class="btn btn-secondary btn-block" data-i18n="pricing_enterprise_cta">درخواست دمو</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge" data-i18n="testimonials_badge">نظرات مشتریان</div>
+        <h2 class="section-title" data-i18n="testimonials_title">مشتریان ما چه می‌گویند</h2>
+        <p class="section-subtitle" data-i18n="testimonials_subtitle">
+          بیش از ۱۰,۰۰۰ کسب‌وکار به تراز اعتماد کرده‌اند.
+        </p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text" data-i18n="testimonial_1_text">
+            تراز کار ما را متحول کرد. قبلاً ساعت‌ها وقت صرف امور مالی می‌کردیم، الان همه چیز خودکار است.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">ع</div>
+            <div>
+              <div class="testimonial-name" data-i18n="testimonial_1_name">علی محمدی</div>
+              <div class="testimonial-role" data-i18n="testimonial_1_role">مدیرعامل، شرکت فناوری نوین</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text" data-i18n="testimonial_2_text">
+            رابط کاربری فوق‌العاده و پشتیبانی عالی. تیم تراز همیشه در دسترس هستند و سریع پاسخ می‌دهند.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">س</div>
+            <div>
+              <div class="testimonial-name" data-i18n="testimonial_2_name">سارا احمدی</div>
+              <div class="testimonial-role" data-i18n="testimonial_2_role">حسابدار، فروشگاه آنلاین پارسیان</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text" data-i18n="testimonial_3_text">
+            گزارش‌های تحلیلی تراز به ما کمک کرد تصمیمات بهتری بگیریم. واقعاً ارزش هر ریالش را دارد.
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">ر</div>
+            <div>
+              <div class="testimonial-name" data-i18n="testimonial_3_name">رضا کریمی</div>
+              <div class="testimonial-role" data-i18n="testimonial_3_role">مدیر مالی، گروه صنعتی البرز</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge" data-i18n="faq_badge">سوالات متداول</div>
+        <h2 class="section-title" data-i18n="faq_title">پاسخ به سوالات شما</h2>
+        <p class="section-subtitle" data-i18n="faq_subtitle">
+          اگر سوال دیگری دارید، با ما تماس بگیرید.
+        </p>
+      </div>
+      
+      <div class="faq-grid">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_1_q">آیا می‌توانم تراز را رایگان امتحان کنم؟</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq_1_a">
+              بله، تمامی پلن‌ها شامل ۱۴ روز استفاده رایگان هستند. نیازی به وارد کردن اطلاعات کارت بانکی نیست.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_2_q">آیا اطلاعات من امن است؟</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq_2_a">
+              بله، ما از رمزنگاری سطح بانکی (SSL 256-bit) استفاده می‌کنیم. سرورهای ما در دیتاسنترهای امن در ایران قرار دارند و روزانه پشتیبان‌گیری خودکار انجام می‌شود.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_3_q">آیا می‌توانم اطلاعات را از نرم‌افزار قبلی منتقل کنم؟</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq_3_a">
+              بله، تیم پشتیبانی ما در فرآیند انتقال اطلاعات به شما کمک می‌کند. این سرویس برای تمامی پلن‌ها رایگان است.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_4_q">آیا تراز با قوانین مالیاتی ایران سازگار است؟</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq_4_a">
+              بله، تراز کاملاً با آخرین تغییرات قوانین مالیاتی ایران سازگار است. محاسبه مالیات بر ارزش افزوده و تهیه گزارش‌های مالیاتی به صورت خودکار انجام می‌شود.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_5_q">آیا اپلیکیشن موبایل دارید؟</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq_5_a">
+              بله، اپلیکیشن تراز برای iOS و Android در دسترس است. تمامی امکانات نسخه وب در اپلیکیشن موبایل نیز موجود است.
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_6_q">نحوه پشتیبانی چگونه است؟</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq_6_a">
+              پشتیبانی از طریق چت آنلاین، تلفن و ایمیل ارائه می‌شود. پلن‌های حرفه‌ای و سازمانی شامل پشتیبانی اختصاصی ۲۴/۷ هستند.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="section cta-section">
+    <div class="container">
+      <div class="cta-content text-center">
+        <h2 class="cta-title" data-i18n="cta_title">آماده شروع هستید؟</h2>
+        <p class="cta-subtitle" data-i18n="cta_subtitle">
+          همین امروز ثبت‌نام کنید و ۱۴ روز رایگان از تمامی امکانات تراز استفاده کنید.
+        </p>
+        <form class="cta-form">
+          <input type="email" class="form-input" placeholder="ایمیل خود را وارد کنید" data-i18n-placeholder="cta_placeholder" required>
+          <button type="submit" class="btn btn-primary" data-i18n="cta_button">شروع رایگان</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">ت</div>
+            <span>تراز</span>
+          </a>
+          <p data-i18n="footer_desc">
+            تراز، نرم‌افزار حسابداری ابری برای کسب‌وکارهای ایرانی. ساده، هوشمند، امن.
+          </p>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title" data-i18n="footer_product">محصول</h4>
+          <ul class="footer-links">
+            <li><a href="#features" class="footer-link" data-i18n="footer_product_1">ویژگی‌ها</a></li>
+            <li><a href="#pricing" class="footer-link" data-i18n="footer_product_2">تعرفه‌ها</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_product_3">به‌روزرسانی‌ها</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_product_4">نقشه راه</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title" data-i18n="footer_company">شرکت</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link" data-i18n="footer_company_1">درباره ما</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_company_2">وبلاگ</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_company_3">فرصت‌های شغلی</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_company_4">تماس با ما</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title" data-i18n="footer_resources">منابع</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link" data-i18n="footer_resources_1">مستندات</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_resources_2">راهنمای استفاده</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_resources_3">ویدیوهای آموزشی</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_resources_4">مرکز پشتیبانی</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p data-i18n="footer_rights">© ۱۴۰۴ تراز. تمامی حقوق محفوظ است.</p>
+        <div class="footer-legal">
+          <a href="#" class="footer-link" data-i18n="footer_legal_1">شرایط استفاده</a>
+          <a href="#" class="footer-link" data-i18n="footer_legal_2">حریم خصوصی</a>
+          <a href="#" class="footer-link" data-i18n="footer_legal_3">امنیت</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
