@@ -55,27 +55,28 @@
   --z-toast: 1100;
 }
 
-/* ---------- LIGHT THEME ---------- */
+/* ---------- LIGHT THEME (high contrast) ---------- */
 :root[data-theme="light"] {
-  --bg: #fafbfc;
-  --bg-alt: #f0f4f8;
+  --bg: #f4f6f9;
+  --bg-alt: #eef1f5;
   --bg-elevated: #ffffff;
-  --surface: #f1f5f9;
-  --surface-hover: #e2e8f0;
-  --surface-glass: rgba(255, 255, 255, 0.72);
+  --bg-card: #ffffff;
+  --surface: #f8f9fb;
+  --surface-hover: #eef1f5;
+  --surface-glass: rgba(255, 255, 255, 0.78);
 
   --text-primary: #0c1b33;
-  --text-secondary: #4a5568;
-  --text-muted: #94a3b8;
+  --text-secondary: #3d4f6c;
+  --text-muted: #7a8ba8;
   --text-inverse: #ffffff;
 
-  --border: #e2e8f0;
-  --border-strong: #cbd5e1;
-  --border-accent: rgba(5, 150, 105, 0.3);
+  --border: #dde2ea;
+  --border-strong: #c4ccd8;
+  --border-accent: rgba(5, 150, 105, 0.25);
 
   --accent: #059669;
   --accent-hover: #047857;
-  --accent-light: rgba(5, 150, 105, 0.1);
+  --accent-light: rgba(5, 150, 105, 0.08);
   --accent-dark: #065f46;
 
   --navy: #0c1b33;
@@ -84,10 +85,10 @@
 
   --secondary: #2563eb;
   --secondary-hover: #1d4ed8;
-  --secondary-light: rgba(37, 99, 235, 0.1);
+  --secondary-light: rgba(37, 99, 235, 0.08);
 
   --gold: #d97706;
-  --gold-light: rgba(217, 119, 6, 0.1);
+  --gold-light: rgba(217, 119, 6, 0.08);
 
   --warning: #f59e0b;
   --warning-light: #fef3c7;
@@ -95,15 +96,16 @@
   --danger-light: #fee2e2;
   --success: #10b981;
 
-  --shadow-sm: 0 1px 3px rgba(12, 27, 51, 0.06);
-  --shadow: 0 4px 12px rgba(12, 27, 51, 0.08);
-  --shadow-md: 0 8px 24px rgba(12, 27, 51, 0.1);
-  --shadow-lg: 0 16px 48px rgba(12, 27, 51, 0.12);
-  --shadow-xl: 0 24px 64px rgba(12, 27, 51, 0.16);
-  --shadow-accent: 0 8px 32px rgba(5, 150, 105, 0.2);
+  --shadow-xs: 0 1px 2px rgba(12, 27, 51, 0.04);
+  --shadow-sm: 0 2px 6px rgba(12, 27, 51, 0.06), 0 0 0 1px rgba(12, 27, 51, 0.02);
+  --shadow: 0 4px 16px rgba(12, 27, 51, 0.08), 0 0 0 1px rgba(12, 27, 51, 0.03);
+  --shadow-md: 0 8px 30px rgba(12, 27, 51, 0.1), 0 0 0 1px rgba(12, 27, 51, 0.03);
+  --shadow-lg: 0 16px 48px rgba(12, 27, 51, 0.12), 0 0 0 1px rgba(12, 27, 51, 0.02);
+  --shadow-xl: 0 24px 64px rgba(12, 27, 51, 0.16), 0 4px 16px rgba(12, 27, 51, 0.06);
+  --shadow-accent: 0 8px 32px rgba(5, 150, 105, 0.18);
 
-  --header-bg: rgba(250, 251, 252, 0.85);
-  --glow: rgba(5, 150, 105, 0.06);
+  --header-bg: rgba(255, 255, 255, 0.88);
+  --glow: rgba(5, 150, 105, 0.04);
 
   color-scheme: light;
 }
@@ -111,8 +113,9 @@
 /* ---------- DARK THEME ---------- */
 :root[data-theme="dark"] {
   --bg: #0a1628;
-  --bg-alt: #0f1f38;
+  --bg-alt: #0e1c30;
   --bg-elevated: #142240;
+  --bg-card: #17294a;
   --surface: #1a2d4d;
   --surface-hover: #213a5e;
   --surface-glass: rgba(10, 22, 40, 0.8);
@@ -123,7 +126,7 @@
   --text-inverse: #0c1b33;
 
   --border: rgba(148, 163, 184, 0.12);
-  --border-strong: rgba(148, 163, 184, 0.2);
+  --border-strong: rgba(148, 163, 184, 0.22);
   --border-accent: rgba(16, 185, 129, 0.3);
 
   --accent: #10b981;
@@ -148,11 +151,12 @@
   --danger-light: rgba(248, 113, 113, 0.12);
   --success: #34d399;
 
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
-  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.6);
-  --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.7);
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(148, 163, 184, 0.06);
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(148, 163, 184, 0.06);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(148, 163, 184, 0.05);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(148, 163, 184, 0.04);
+  --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.7), 0 4px 16px rgba(0, 0, 0, 0.3);
   --shadow-accent: 0 8px 32px rgba(16, 185, 129, 0.15);
 
   --header-bg: rgba(10, 22, 40, 0.88);
@@ -183,10 +187,16 @@ body {
   transition: background var(--t-slow) var(--ease), color var(--t-slow) var(--ease);
 }
 
+/* LTR typography adjustments */
+:root[dir="ltr"] body {
+  font-family: var(--font-sans);
+  letter-spacing: -0.01em;
+}
+
 img, svg, video { display: block; max-width: 100%; height: auto; }
 button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
 input, select, textarea { font: inherit; color: inherit; }
-a { color: inherit; text-decoration: none; }
+a { color: inherit; text-decoration: none; transition: color var(--t-fast) var(--ease); }
 ul, ol { list-style: none; }
 h1, h2, h3, h4, h5, h6 { line-height: 1.35; font-weight: 700; }
 
@@ -344,14 +354,14 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.35; font-weight: 700; }
 
 /* Button with arrow indicator */
 .btn-arrow::after {
-  content: "←";
+  content: "\2190";
   font-family: var(--font-mono);
   display: inline-block;
   transition: transform var(--t-base) var(--ease);
   font-size: 0.9em;
   line-height: 1;
 }
-[dir="ltr"] .btn-arrow::after { content: "→"; }
+[dir="ltr"] .btn-arrow::after { content: "\2192"; }
 .btn-arrow:hover::after {
   transform: translateX(calc(-6px * var(--dir, 1)));
 }

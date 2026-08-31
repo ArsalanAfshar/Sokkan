@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="exp-header" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f4f6f9"/>
+  
+  <!-- Main Card -->
+  <rect x="20" y="10" width="560" height="380" rx="10" fill="#ffffff" stroke="#dde2ea" stroke-width="1"/>
+  
+  <!-- Header -->
+  <rect x="20" y="10" width="560" height="48" rx="10" fill="url(#exp-header)"/>
+  <rect x="20" y="38" width="560" height="20" fill="url(#exp-header)"/>
+  <text x="40" y="40" font-family="sans-serif" font-size="13" font-weight="bold" fill="white">مدیریت تراکنش‌ها</text>
+  
+  <!-- Search Bar -->
+  <rect x="300" y="20" width="160" height="26" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="315" y="38" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.7)">🔍 جستجو...</text>
+  
+  <!-- Filter Button -->
+  <rect x="475" y="20" width="85" height="26" rx="4" fill="rgba(255,255,255,0.15)"/>
+  <text x="518" y="38" font-family="sans-serif" font-size="10" fill="white" text-anchor="middle">⚙️ فیلتر</text>
+  
+  <!-- Summary Cards -->
+  <rect x="40" y="72" width="160" height="52" rx="6" fill="#f0fdf4" stroke="#059669" stroke-width="1"/>
+  <text x="55" y="92" font-family="sans-serif" font-size="9" fill="#64748b">واریزی‌ها (ماه)</text>
+  <text x="55" y="112" font-family="sans-serif" font-size="16" font-weight="bold" fill="#059669">۴۵,۲۰۰,۰۰۰</text>
+  
+  <rect x="215" y="72" width="160" height="52" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+  <text x="230" y="92" font-family="sans-serif" font-size="9" fill="#64748b">برداشت‌ها (ماه)</text>
+  <text x="230" y="112" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ef4444">۱۸,۴۵۰,۰۰۰</text>
+  
+  <rect x="390" y="72" width="170" height="52" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+  <text x="405" y="92" font-family="sans-serif" font-size="9" fill="#64748b">موجودی حساب</text>
+  <text x="405" y="112" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2563eb">۸۷,۳۴۰,۰۰۰</text>
+  
+  <!-- Transaction List Header -->
+  <rect x="40" y="140" width="520" height="26" rx="4" fill="#f4f6f9"/>
+  <text x="55" y="157" font-family="sans-serif" font-size="9" font-weight="bold" fill="#4a5568">شرح تراکنش</text>
+  <text x="290" y="157" font-family="sans-serif" font-size="9" font-weight="bold" fill="#4a5568">دسته‌بندی</text>
+  <text x="400" y="157" font-family="sans-serif" font-size="9" font-weight="bold" fill="#4a5568">تاریخ</text>
+  <text x="510" y="157" font-family="sans-serif" font-size="9" font-weight="bold" fill="#4a5568">مبلغ</text>
+  
+  <!-- Transaction 1 -->
+  <rect x="40" y="175" width="520" height="44" rx="0" fill="white"/>
+  <line x1="40" y1="219" x2="560" y2="219" stroke="#f1f5f9" stroke-width="1"/>
+  <circle cx="60" cy="197" r="14" fill="#d1fae5"/>
+  <text x="60" y="201" font-family="sans-serif" font-size="11" text-anchor="middle">↓</text>
+  <text x="82" y="192" font-family="sans-serif" font-size="11" font-weight="bold" fill="#0c1b33">دریافت از شرکت نوین</text>
+  <text x="82" y="207" font-family="sans-serif" font-size="9" fill="#94a3b8">واریز بانکی — شماره پیگیری: ۸۸۷۲</text>
+  <rect x="275" y="187" width="60" height="20" rx="10" fill="#d1fae5"/>
+  <text x="305" y="201" font-family="sans-serif" font-size="9" font-weight="bold" fill="#059669" text-anchor="middle">درآمد</text>
+  <text x="400" y="200" font-family="sans-serif" font-size="9" fill="#64748b">۱۵ شهریور</text>
+  <text x="510" y="200" font-family="sans-serif" font-size="11" font-weight="bold" fill="#059669">+۲,۵۰۰,۰۰۰</text>
+  
+  <!-- Transaction 2 -->
+  <rect x="40" y="219" width="520" height="44" rx="0" fill="#fafbfc"/>
+  <line x1="40" y1="263" x2="560" y2="263" stroke="#f1f5f9" stroke-width="1"/>
+  <circle cx="60" cy="241" r="14" fill="#fee2e2"/>
+  <text x="60" y="245" font-family="sans-serif" font-size="11" text-anchor="middle">↑</text>
+  <text x="82" y="236" font-family="sans-serif" font-size="11" font-weight="bold" fill="#0c1b33">پرداخت اجاره دفتر</text>
+  <text x="82" y="251" font-family="sans-serif" font-size="9" fill="#94a3b8">حواله بانکی — بانک ملت</text>
+  <rect x="275" y="231" width="60" height="20" rx="10" fill="#fee2e2"/>
+  <text x="305" y="245" font-family="sans-serif" font-size="9" font-weight="bold" fill="#ef4444" text-anchor="middle">هزینه</text>
+  <text x="400" y="244" font-family="sans-serif" font-size="9" fill="#64748b">۱۴ شهریور</text>
+  <text x="510" y="244" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ef4444">-۸,۰۰۰,۰۰۰</text>
+  
+  <!-- Transaction 3 -->
+  <rect x="40" y="263" width="520" height="44" rx="0" fill="white"/>
+  <line x1="40" y1="307" x2="560" y2="307" stroke="#f1f5f9" stroke-width="1"/>
+  <circle cx="60" cy="285" r="14" fill="#d1fae5"/>
+  <text x="60" y="289" font-family="sans-serif" font-size="11" text-anchor="middle">↓</text>
+  <text x="82" y="280" font-family="sans-serif" font-size="11" font-weight="bold" fill="#0c1b33">فروش آنلاین — پارسیان</text>
+  <text x="82" y="295" font-family="sans-serif" font-size="9" fill="#94a3b8">درگاه زرین‌پال — شماره: ۹۰۲۱</text>
+  <rect x="275" y="275" width="60" height="20" rx="10" fill="#d1fae5"/>
+  <text x="305" y="289" font-family="sans-serif" font-size="9" font-weight="bold" fill="#059669" text-anchor="middle">فروش</text>
+  <text x="400" y="288" font-family="sans-serif" font-size="9" fill="#64748b">۱۳ شهریور</text>
+  <text x="510" y="288" font-family="sans-serif" font-size="11" font-weight="bold" fill="#059669">+۱,۸۰۰,۰۰۰</text>
+  
+  <!-- Transaction 4 -->
+  <rect x="40" y="307" width="520" height="44" rx="0" fill="#fafbfc"/>
+  <line x1="40" y1="351" x2="560" y2="351" stroke="#f1f5f9" stroke-width="1"/>
+  <circle cx="60" cy="329" r="14" fill="#fee2e2"/>
+  <text x="60" y="333" font-family="sans-serif" font-size="11" text-anchor="middle">↑</text>
+  <text x="82" y="324" font-family="sans-serif" font-size="11" font-weight="bold" fill="#0c1b33">حقوق پرسنل</text>
+  <text x="82" y="339" font-family="sans-serif" font-size="9" fill="#94a3b8">دسته جمعی — ۵ نفر</text>
+  <rect x="275" y="319" width="60" height="20" rx="10" fill="#fef3c7"/>
+  <text x="305" y="333" font-family="sans-serif" font-size="9" font-weight="bold" fill="#d97706" text-anchor="middle">حقوق</text>
+  <text x="400" y="332" font-family="sans-serif" font-size="9" fill="#64748b">۱۰ شهریور</text>
+  <text x="510" y="332" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ef4444">-۶,۵۰۰,۰۰۰</text>
+  
+  <!-- Pagination -->
+  <rect x="40" y="360" width="520" height="25" fill="white"/>
+  <rect x="240" y="363" width="28" height="22" rx="4" fill="#059669"/>
+  <text x="254" y="378" font-family="sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">۱</text>
+  <rect x="275" y="363" width="28" height="22" rx="4" fill="#f4f6f9"/>
+  <text x="289" y="378" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">۲</text>
+  <rect x="310" y="363" width="28" height="22" rx="4" fill="#f4f6f9"/>
+  <text x="324" y="378" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">۳</text>
+  <text x="350" y="378" font-family="sans-serif" font-size="10" fill="#64748b">...</text>
+</svg>
