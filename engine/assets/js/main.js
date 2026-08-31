@@ -40,7 +40,7 @@
     tickerItems: ['AI solutions', 'Web development', 'Mobile apps', 'Digital marketing', 'SaaS products', 'Brand identity', 'Automation', 'Growth consulting'],
     introEyebrow: 'About Sokkan',
     introTitle1: 'We came from the past', introTitle2: 'to build the future.',
-    introP1: 'Engine is a digital services studio where engineering precision meets the spirit of old craftsmanship. We see every project as a motor: every part in its place, running quietly, built to last for years.',
+    introP1: 'Sokkan is a digital services studio where engineering precision meets the spirit of old craftsmanship. We see every project as a motor: every part in its place, running quietly, built to last for years.',
     introP2: 'Since 2013 we have been building for Iranian businesses — from early startups to large organizations. Websites, apps, brands and campaigns: we speak plainly, deliver precisely, and stay by your side long after launch.',
     signName: 'Sokkan Studio', signRole: 'Tehran — since 2013',
     fileNo1: 'Principle 01', fileTitle1: 'Simplicity is the peak of complexity',
@@ -125,7 +125,7 @@
     testiTitle: 'What clients say',
     q1: 'They took our platform from a raw idea to a product that processes thousands of financial transactions daily. The weekly reports and their transparency were truly exemplary.',
     q1Name: 'Sara Mohammadi', q1Role: 'Product Manager, Arya Fintech',
-    q2: 'Our store’s speed was always painful; after Engine’s redesign, speed doubled and monthly sales grew 32%. The post-launch support is outstanding — they even respond on weekends.',
+    q2: 'Our store’s speed was always painful; after Sokkan’s redesign, speed doubled and monthly sales grew 32%. The post-launch support is outstanding — they even respond on weekends.',
     q2Name: 'Amir Rezaei', q2Role: 'Founder, Zarrin Web',
     q3: 'What sets Sokkan apart is their point of view; they don’t just “build a website”, they solve your business problem. The result is a brand our customers are proud of.',
     q3Name: 'Negar Karimi', q3Role: 'Marketing Director, Mahan Digital',
@@ -138,7 +138,7 @@
     plan1f3: 'Basic SEO & analytics', plan1f4: '2 months free support',
     plan1f5: 'Training & documentation handover',
     planCta: 'Start with Start',
-    plan2Flag: 'Engine’s pick',
+    plan2Flag: 'Sokkan’s pick',
     plan2Name: 'Motion', plan2For: 'For growing businesses',
     priceUnit2: 'million Toman / project',
     plan2f1: 'Full website or app MVP', plan2f2: 'Everything in Start',
@@ -614,11 +614,14 @@
   /* ---------------- FORM & TOAST ---------------- */
   const toast = $('#toast');
   let toastTimer;
-  function showToast(msg) {
+  function showToast(msg, type = 'success') {
     toast.textContent = msg;
-    toast.classList.add('show');
+    toast.classList.remove('toast-success', 'toast-error');
+    toast.classList.add('show', `toast-${type}`);
     clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => toast.classList.remove('show'), 3400);
+    toastTimer = setTimeout(() => {
+      toast.classList.remove('show', 'toast-success', 'toast-error');
+    }, 3400);
   }
 
   const form = $('#ctaForm');
@@ -627,12 +630,12 @@
     const name = $('#fName'), phone = $('#fPhone');
     const valid = name.value.trim().length > 1 && phone.value.trim().length > 4;
     if (!valid) {
-      showToast(lang === 'en' ? EN.toastError : 'لطفاً نام و شمارهٔ تماس را کامل وارد کنید.');
+      showToast(lang === 'en' ? EN.toastError : 'لطفاً نام و شمارهٔ تماس را کامل وارد کنید.', 'error');
       (name.value.trim().length > 1 ? phone : name).focus();
       return;
     }
     form.classList.add('submitted');
-    showToast(lang === 'en' ? EN.toastSuccess : '✓ درخواست شما ثبت شد — تا ۲۴ ساعت آینده با شما تماس می‌گیریم.');
+    showToast(lang === 'en' ? EN.toastSuccess : '✓ درخواست شما ثبت شد — تا ۲۴ ساعت آینده با شما تماس می‌گیریم.', 'success');
   });
 
   /* ---------------- 3D DEVICE INTERACTION ---------------- */
