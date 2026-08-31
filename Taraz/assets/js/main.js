@@ -612,6 +612,80 @@
     });
   }
 
+  // ==================== TESTIMONIALS CAROUSEL ====================
+  function initTestimonialsCarousel() {
+    const carousel = document.querySelector('.testimonials-carousel');
+    if (!carousel) return;
+
+    const cards = carousel.querySelectorAll('.testimonial-card');
+    const dots = document.querySelectorAll('.carousel-dot');
+    if (!cards.length) return;
+
+    let currentIndex = 0;
+    let autoplayTimer = null;
+    const AUTOPLAY_DELAY = 5000;
+
+    function setActive(index) {
+      // Clamp index
+      currentIndex = ((index % cards.length) + cards.length) % cards.length;
+
+      cards.forEach((card, i) => {
+        card.classList.toggle('active', i === currentIndex);
+      });
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    }
+
+    function next() {
+      setActive(currentIndex + 1);
+    }
+
+    function startAutoplay() {
+      stopAutoplay();
+      autoplayTimer = setInterval(next, AUTOPLAY_DELAY);
+    }
+
+    function stopAutoplay() {
+      if (autoplayTimer) {
+        clearInterval(autoplayTimer);
+        autoplayTimer = null;
+      }
+    }
+
+    // Dot clicks
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const idx = parseInt(dot.dataset.slide, 10);
+        setActive(idx);
+        startAutoplay(); // Reset timer
+      });
+    });
+
+    // Card clicks
+    cards.forEach((card, i) => {
+      card.addEventListener('click', () => {
+        setActive(i);
+        startAutoplay();
+      });
+    });
+
+    // Pause on hover
+    carousel.addEventListener('mouseenter', stopAutoplay);
+    carousel.addEventListener('mouseleave', startAutoplay);
+
+    // Touch support: pause on touch
+    carousel.addEventListener('touchstart', stopAutoplay, { passive: true });
+    carousel.addEventListener('touchend', () => {
+      // Resume after a small delay
+      setTimeout(startAutoplay, 1000);
+    }, { passive: true });
+
+    // Initialize
+    setActive(0);
+    startAutoplay();
+  }
+
   // ==================== SCREENSHOTS ====================
   function initScreenshots() {
     const tabs = document.querySelectorAll('.screenshot-tab');
@@ -747,6 +821,7 @@
     initHeaderScroll();
     initSmoothScroll();
     initFAQ();
+    initTestimonialsCarousel();
     initScreenshots();
     initForms();
     initReveal();

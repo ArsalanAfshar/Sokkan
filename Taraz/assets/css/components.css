@@ -124,18 +124,27 @@
 
 .lang-toggle {
   width: auto;
-  min-width: 40px;
-  padding-inline: 0.7rem;
+  min-width: 48px;
+  height: 40px;
+  padding-inline: 0.85rem;
   font-family: var(--font-mono);
-  font-size: var(--text-xs);
+  font-size: var(--text-sm);
   font-weight: 700;
   letter-spacing: 0.05em;
   gap: 0.3rem;
+  color: var(--text-primary);
+  overflow: visible;
 }
 .lang-full { display: none; }
-.lang-short { display: inline; }
+.lang-short { 
+  display: inline;
+  color: var(--text-primary);
+}
 @media (min-width: 1200px) {
-  .lang-full { display: inline; }
+  .lang-full { 
+    display: inline;
+    color: var(--text-primary);
+  }
   .lang-short { display: none; }
   .lang-toggle { min-width: 90px; }
 }
