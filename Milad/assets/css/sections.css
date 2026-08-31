@@ -1,5 +1,8 @@
 /* ============================================================
-   ENGINE | انجین — sections.css
+   Sokkan | سکّان — sections.css
+   Template: Milad (میلاد)
+   Part of the Sokkan Template Pack
+
    Hero · Ticker · Intro · Services · Features · Process ·
    Capabilities · Works · Testimonials · Pricing · FAQ · Final CTA
    ============================================================ */
@@ -124,6 +127,158 @@
 .cube-o { transform: rotateX(-90deg) translateZ(37px); }
 @media (max-width: 1023px) { .hero-cube { display: none; } }
 
+/* ================= 3D DEVICE SHOWCASE ================= */
+/* Reusable product showcase component.
+   Structure: .hero-device > .device-tilt (JS) > .device-float (CSS) > .device-frame
+   Tilt and float are separated so mouse interaction never breaks the animation. */
+
+.hero-device {
+  position: absolute;
+  inset-inline-end: clamp(2rem, 6vw, 6rem);
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(260px, 30vw, 400px);
+  z-index: 2;
+  pointer-events: none;
+  perspective: 1200px;
+}
+
+/* Tilt layer – JS writes transform here (smooth, clamped) */
+.device-tilt {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform .45s cubic-bezier(.22, .9, .28, 1);
+}
+
+/* Float layer – CSS animation runs independently */
+.device-float {
+  animation: deviceFloat 7s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes deviceFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-14px); }
+}
+
+.device-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 11;
+}
+
+.device-bezel {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, #1c1c26, #0e0e14);
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow:
+    0 25px 60px rgba(0,0,0,.55),
+    0 0 0 1px rgba(255,255,255,.07),
+    inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+:root[data-theme="light"] .device-bezel {
+  background: linear-gradient(145deg, #28283a, #1a1a28);
+}
+
+.device-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #0c0c12;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,.4);
+}
+
+/* Screen content – simple image-based, cover-fit, easy to replace */
+.screen-content {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.screen-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Screen reflection/glow overlay */
+.screen-glow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    140deg,
+    transparent 30%,
+    rgba(255,255,255,.035) 45%,
+    rgba(255,255,255,.015) 55%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Device base/stand */
+.device-base {
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+}
+
+.base-plate {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.12), transparent);
+  border-radius: 2px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.35);
+}
+
+/* ---- Desktop ---- */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .hero-device {
+    inset-inline-end: 1.5rem;
+    width: 260px;
+  }
+}
+
+/* ---- Mobile: device shown below text, centered ---- */
+@media (max-width: 1023px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+  .hero-device {
+    position: relative;
+    inset-inline: auto;
+    top: auto;
+    transform: none;
+    width: min(85vw, 380px);
+    margin: 2.5rem auto 0;
+    perspective: 1000px;
+  }
+  /* On mobile, apply a fixed gentle tilt (no mouse interaction) */
+  .device-tilt {
+    transform: rotateY(-6deg) rotateX(3deg);
+  }
+  .hero-in {
+    align-items: center !important;
+    text-align: center !important;
+    max-width: 100% !important;
+  }
+  .hero-cta {
+    justify-content: center !important;
+  }
+}
+
 /* floating mono data chips */
 .hero-data {
   position: absolute;
@@ -185,10 +340,7 @@
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-:root[data-theme="dark"] .outline {
-  filter: drop-shadow(0 0 14px color-mix(in srgb, var(--accent) 28%, transparent));
-}
-:root[data-theme="light"] .outline { filter: none; }
+/* Outline text effect now handled in base.css with 3D layered shadows */
 @media (max-width: 1023px) { .hero-emblem { display: none; } }
 
 .hero-in {
@@ -198,6 +350,18 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+/* When 3D device is present (desktop), adjust layout */
+@media (min-width: 1024px) {
+  .hero-in {
+    align-items: flex-start;
+    text-align: start;
+    max-width: 55%;
+  }
+  .hero-cta {
+    justify-content: flex-start;
+  }
 }
 
 .hero-badge {
@@ -1147,13 +1311,83 @@
   z-index: 1;
   background: var(--bg-3);
   color: var(--text);
-  border: 1px solid var(--line);
+  border: 1.5px solid var(--line-2);
   border-radius: var(--radius);
   padding: 1.8rem 1.7rem;
   display: grid;
   gap: 1.1rem;
   align-content: start;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-lg), 0 0 0 1px rgba(255,255,255,.03);
+}
+
+/* ---- Dark Mode: Final CTA section – ensure all text is readable ---- */
+:root[data-theme="dark"] .final-panel {
+  /* darker gradient background with clear separation */
+  background:
+    radial-gradient(ellipse 80% 90% at 85% -20%, var(--glow), transparent 55%),
+    radial-gradient(ellipse 60% 70% at 10% 110%, var(--glow-green), transparent 55%),
+    linear-gradient(135deg, #16161e, #111118);
+  /* override inherited color – text must be light on dark panel */
+  color: #f0ebdc;
+  border-color: rgba(240, 235, 220, .16);
+}
+:root[data-theme="dark"] .final-title {
+  color: #f0ebdc;
+}
+:root[data-theme="dark"] .final-copy > p {
+  color: #b8b2a3;          /* readable secondary text */
+}
+:root[data-theme="dark"] .final-contact li {
+  color: #b8b2a3;          /* contact info text */
+}
+:root[data-theme="dark"] .final-contact .mono {
+  color: #e8e3d4;          /* phone / email – bright enough */
+}
+:root[data-theme="dark"] .final-contact svg {
+  color: var(--accent);    /* icons remain amber */
+}
+:root[data-theme="dark"] .eyebrow-inv {
+  color: var(--accent);
+  border-color: rgba(240, 235, 220, .24);
+}
+:root[data-theme="dark"] .final-grid {
+  background-image:
+    linear-gradient(rgba(240, 235, 220, .07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(240, 235, 220, .07) 1px, transparent 1px);
+}
+
+/* Form card inside the dark panel */
+:root[data-theme="dark"] .final-form {
+  background: #18181f;      /* distinct from panel background */
+  border-color: rgba(240, 235, 220, .22);
+  color: #f0ebdc;
+  box-shadow: var(--shadow-lg), 0 0 40px rgba(45, 212, 160, .06);
+}
+:root[data-theme="dark"] .final-form .form-title {
+  color: #f0ebdc;
+}
+:root[data-theme="dark"] .final-form .field label {
+  color: #c4beaf;
+}
+:root[data-theme="dark"] .final-form .field input,
+:root[data-theme="dark"] .final-form .field select,
+:root[data-theme="dark"] .final-form .field textarea {
+  background: rgba(10, 10, 13, .7);
+  border-color: rgba(240, 235, 220, .22);
+  color: #f0ebdc;
+}
+:root[data-theme="dark"] .final-form .field input::placeholder,
+:root[data-theme="dark"] .final-form .field textarea::placeholder {
+  color: #8a8477;
+}
+:root[data-theme="dark"] .final-form .form-note {
+  color: #8a8477;
+}
+:root[data-theme="dark"] .final-form .form-success h4 {
+  color: #f0ebdc;
+}
+:root[data-theme="dark"] .final-form .form-success p {
+  color: #b8b2a3;
 }
 .form-title { font-size: 1.15rem; margin-bottom: .2rem; }
 .form-fields { display: grid; gap: 1.1rem; }
@@ -1175,3 +1409,76 @@
 
 @media (max-width: 991px) { .final-panel { grid-template-columns: 1fr; } }
 @media (max-width: 560px) { .form-row { grid-template-columns: 1fr; } }
+
+/* ================= DARK MODE IMPROVEMENTS ================= */
+/* Enhanced contrast and separation for dark mode */
+
+:root[data-theme="dark"] .service-card,
+:root[data-theme="dark"] .file-card,
+:root[data-theme="dark"] .quote-card,
+:root[data-theme="dark"] .price-card,
+:root[data-theme="dark"] .step-card,
+:root[data-theme="dark"] .work-card {
+  background: var(--bg-3);
+  border-color: rgba(240, 235, 220, .18);
+}
+
+:root[data-theme="dark"] .service-card:hover,
+:root[data-theme="dark"] .file-card:hover,
+:root[data-theme="dark"] .quote-card:hover,
+:root[data-theme="dark"] .price-card:hover,
+:root[data-theme="dark"] .step-card:hover,
+:root[data-theme="dark"] .work-card:hover {
+  border-color: rgba(240, 235, 220, .32);
+  box-shadow: var(--shadow-md), 0 0 30px rgba(255, 180, 67, .06);
+}
+
+:root[data-theme="dark"] .field input,
+:root[data-theme="dark"] .field select,
+:root[data-theme="dark"] .field textarea {
+  background: rgba(10, 10, 13, .6);
+  border-color: rgba(240, 235, 220, .25);
+}
+
+:root[data-theme="dark"] .field input:focus,
+:root[data-theme="dark"] .field select:focus,
+:root[data-theme="dark"] .field textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(255, 180, 67, .18), 0 0 20px rgba(255, 180, 67, .08);
+}
+
+:root[data-theme="dark"] .faq-item {
+  background: var(--bg-3);
+  border-color: rgba(240, 235, 220, .16);
+}
+
+:root[data-theme="dark"] .faq-item.open {
+  border-color: rgba(255, 180, 67, .45);
+  box-shadow: 0 0 25px rgba(255, 180, 67, .06);
+}
+
+:root[data-theme="dark"] .spec-list {
+  background: var(--bg-3);
+  border-color: rgba(240, 235, 220, .2);
+}
+
+:root[data-theme="dark"] .hero-stats {
+  background: rgba(15, 15, 20, .75);
+  border-color: rgba(240, 235, 220, .28);
+}
+
+:root[data-theme="dark"] .hero-badge {
+  background: rgba(20, 20, 28, .8);
+  border-color: rgba(240, 235, 220, .32);
+}
+
+:root[data-theme="dark"] .gauge-card {
+  background: var(--bg-3);
+  border-color: rgba(240, 235, 220, .25);
+}
+
+:root[data-theme="dark"] .term {
+  background: #0a0a0d;
+  border-color: rgba(45, 212, 160, .4);
+  box-shadow: var(--shadow-md), 0 0 0 1px rgba(0,0,0,.5), 0 0 50px rgba(45, 212, 160, .12);
+}

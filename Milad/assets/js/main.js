@@ -1,10 +1,14 @@
 /* ============================================================
-   ENGINE | انجین — main.js
+   Sokkan | سکّان — main.js
+   Template: Milad (میلاد)
+   Part of the Sokkan Template Pack
+
    Vanilla ES6+. Modules:
    1. i18n (Persian RTL / English LTR)  2. Theme (dark/light)
    3. Preloader  4. Matrix canvas  5. Ticker  6. Scroll reveal
    7. Counters  8. Header / nav / scrollspy  9. FAQ accordion
    10. Terminal  11. Contact form  12. To-top & toast
+   13. 3D Device interaction
    ============================================================ */
 (function () {
   'use strict';
@@ -20,25 +24,25 @@
   /* ---------------- i18n ---------------- */
   const EN = {
     loaderTxt: 'Igniting the engine…',
-    brandName: 'Engine',
+    brandName: 'Sokkan',
     navServices: 'Services', navFeatures: 'Features', navProcess: 'Process',
     navWorks: 'Work', navPricing: 'Pricing', navFaq: 'FAQ',
     navCta: 'Free consultation', navFootNote: 'Sat–Thu, 9–18 (IRST)',
     heroBadge: 'Digital services studio — Tehran, since 2013',
     heroYear: '2026',
     heroL1: 'The', heroL2: 'engine', heroL2b: 'of your digital business',
-    heroSub: 'From website and app design to branding, SEO and campaigns — the Engine team designs, builds and grows your entire digital journey.',
+    heroSub: 'From website and app design to branding, SEO and campaigns — the Sokkan team designs, builds and grows your entire digital journey.',
     heroCta1: 'Start a project', heroCta2: 'See our work',
     statLabel1: 'Delivered projects', statLabel2: 'experience',
     statLabel3: 'Client satisfaction', statLabel4: 'on the team',
     statSuffix2: ' yrs', statSuffix4: ' specialists',
     heroScroll: 'Scroll down',
     tickerItems: ['AI solutions', 'Web development', 'Mobile apps', 'Digital marketing', 'SaaS products', 'Brand identity', 'Automation', 'Growth consulting'],
-    introEyebrow: 'About Engine',
+    introEyebrow: 'About Sokkan',
     introTitle1: 'We came from the past', introTitle2: 'to build the future.',
-    introP1: 'Engine is a digital services studio where engineering precision meets the spirit of old craftsmanship. We see every project as a motor: every part in its place, running quietly, built to last for years.',
+    introP1: 'Sokkan is a digital services studio where engineering precision meets the spirit of old craftsmanship. We see every project as a motor: every part in its place, running quietly, built to last for years.',
     introP2: 'Since 2013 we have been building for Iranian businesses — from early startups to large organizations. Websites, apps, brands and campaigns: we speak plainly, deliver precisely, and stay by your side long after launch.',
-    signName: 'Engine Studio', signRole: 'Tehran — since 2013',
+    signName: 'Sokkan Studio', signRole: 'Tehran — since 2013',
     fileNo1: 'Principle 01', fileTitle1: 'Simplicity is the peak of complexity',
     fileDesc1: 'Simple design means work done right; we solve the complexity behind the scenes so the user only sees simplicity.',
     fileNo2: 'Principle 02', fileTitle2: 'Quality is not negotiable',
@@ -63,7 +67,7 @@
     sv6Desc: 'Intelligent support assistants, Telegram bots and unified management dashboards; hand the repetitive work to the system and keep your team focused on growth.',
     sv6Tag1: 'Bots & API', sv6Tag2: 'Dashboard', sv6Tag3: 'Integration',
     cardLink: 'Start a conversation',
-    featuresEyebrow: 'Why Engine?',
+    featuresEyebrow: 'Why Sokkan?',
     featuresTitle: 'A standard you can feel in every part',
     featuresSub: 'We care about details the user feels — even when they don’t see them: from speed and security to support.',
     feat1Title: 'Unmatched speed', feat1Desc: 'Sub-second loading with full Core Web Vitals compliance; speed means more customers.',
@@ -100,11 +104,11 @@
       '⣿ analyzing project …………… OK',
       '⣿ bundling assets ……………… OK',
       '⣿ deploying to server ………… OK',
-      '✓ engine started — 0.8s'
+      '✓ sokkan started — 0.8s'
     ],
     worksEyebrow: 'Selected work',
     worksTitle: 'Engines that got running',
-    worksSub: 'Three short stories of projects that moved forward with the Engine team.',
+    worksSub: 'Three short stories of projects that moved forward with the Sokkan team.',
     work1Cat: 'SaaS product', work1Year: '2025',
     work1Title: 'Arya Fintech', work1Desc: 'A unified financial services platform with online payments; we took product design, web app development and payment infrastructure from zero to launch.',
     work1Tag1: 'Product design', work1Tag2: 'Web app', work1Tag3: 'SEO',
@@ -121,9 +125,9 @@
     testiTitle: 'What clients say',
     q1: 'They took our platform from a raw idea to a product that processes thousands of financial transactions daily. The weekly reports and their transparency were truly exemplary.',
     q1Name: 'Sara Mohammadi', q1Role: 'Product Manager, Arya Fintech',
-    q2: 'Our store’s speed was always painful; after Engine’s redesign, speed doubled and monthly sales grew 32%. The post-launch support is outstanding — they even respond on weekends.',
+    q2: 'Our store’s speed was always painful; after Sokkan’s redesign, speed doubled and monthly sales grew 32%. The post-launch support is outstanding — they even respond on weekends.',
     q2Name: 'Amir Rezaei', q2Role: 'Founder, Zarrin Web',
-    q3: 'What sets Engine apart is their point of view; they don’t just “build a website”, they solve your business problem. The result is a brand our customers are proud of.',
+    q3: 'What sets Sokkan apart is their point of view; they don’t just “build a website”, they solve your business problem. The result is a brand our customers are proud of.',
     q3Name: 'Negar Karimi', q3Role: 'Marketing Director, Mahan Digital',
     pricingEyebrow: 'Pricing',
     pricingTitle: 'A package for every engine',
@@ -134,7 +138,7 @@
     plan1f3: 'Basic SEO & analytics', plan1f4: '2 months free support',
     plan1f5: 'Training & documentation handover',
     planCta: 'Start with Start',
-    plan2Flag: 'Engine’s pick',
+    plan2Flag: 'Sokkan’s pick',
     plan2Name: 'Motion', plan2For: 'For growing businesses',
     priceUnit2: 'million Toman / project',
     plan2f1: 'Full website or app MVP', plan2f2: 'Everything in Start',
@@ -151,7 +155,7 @@
     faqEyebrow: 'FAQ', faqTitle: 'Ask us anything',
     faqSub: 'If your answer isn’t here, talk to us directly.',
     faqCtaTitle: 'Still have a question?', faqCtaDesc: 'We are available Sat–Thu, 9–18.',
-    faqCtaBtn: 'Contact Engine',
+    faqCtaBtn: 'Contact Sokkan',
     faq1q: 'How long does a project take?',
     faq1a: 'It depends on the scope: a landing page takes about 2 weeks, a full website 4–6 weeks, and an app MVP around 2 months. You receive a precise phased timeline at the first meeting — and we stick to it.',
     faq2q: 'Can the project be delivered in phases?',
@@ -196,12 +200,12 @@
     slotHintPay: 'Gateway logo — 78×48',
     trustNote: '<strong>Optional area.</strong> This section is ready for the E-namad trust seal and payment gateway logos; just drop an image inside each frame — no structural changes needed.',
     fHours: 'Sat — Thu, 9–18',
-    footerRights: '© 2026 Engine Studio — All rights reserved.',
+    footerRights: '© 2026 Sokkan Studio — All rights reserved.',
     legalPrivacy: 'Privacy', legalTerms: 'Terms',
     footerMade: 'Made with ♥ and tea in Tehran',
     langShort: 'فا', langFull: 'فارسی',
-    docTitle: 'Engine | The engine of your digital business — Engine Digital Studio',
-    docDesc: 'Engine, an Iranian digital studio; web design, apps, branding and digital marketing. The engine of your business growth.'
+    docTitle: 'Sokkan | The engine of your digital business — Milad Template',
+    docDesc: 'Sokkan, premium Iranian template pack; Milad template for digital studios, web design, apps, branding and digital marketing. The engine of your business growth.'
   };
 
   const EN_ARIA = {
@@ -212,7 +216,7 @@
     stat1: '128', stat2: '12', stat3: '98', stat4: '9'
   };
 
-  let lang = store.get('engine-lang') || 'fa';
+  let lang = store.get('sokkan-lang') || 'fa';
 
   // Capture original Persian strings once (innerHTML keeps inline tags like <strong>)
   $$('[data-i18n]').forEach(el => {
@@ -249,12 +253,12 @@
       el.setAttribute('aria-label', isEn && EN_ARIA[k] !== undefined ? EN_ARIA[k] : (el.dataset.faAria || ''));
     });
 
-    document.title = isEn ? EN.docTitle : 'انجین | موتور کسب‌وکار دیجیتال شما — استودیو دیجیتال انجین';
+    document.title = isEn ? EN.docTitle : 'سکّان | موتور کسب‌وکار دیجیتال شما — قالب میلاد از مجموعه سکّان';
     const desc = $('meta[name="description"]');
-    if (desc) desc.setAttribute('content', isEn ? EN.docDesc : 'انجین، استودیوی دیجیتال ایرانی؛ طراحی وب‌سایت، اپلیکیشن، برندینگ و دیجیتال مارکتینگ. موتورِ رشد کسب‌وکار شما.');
+    if (desc) desc.setAttribute('content', isEn ? EN.docDesc : 'سکّان، مجموعه قالب‌های پریمیوم ایرانی؛ قالب میلاد برای استودیوی دیجیتال، طراحی وب‌سایت، اپلیکیشن، برندینگ و دیجیتال مارکتینگ. موتورِ رشد کسب‌وکار شما.');
 
     buildTicker();
-    store.set('engine-lang', l);
+    store.set('sokkan-lang', l);
   }
 
   const langToggle = $('#langToggle');
@@ -262,7 +266,7 @@
 
   /* ---------------- THEME ---------------- */
   const themeToggle = $('#themeToggle');
-  let theme = store.get('engine-theme');
+  let theme = store.get('sokkan-theme');
   if (!theme) {
     theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
   }
@@ -270,7 +274,7 @@
   themeToggle.addEventListener('click', () => {
     theme = theme === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', theme);
-    store.set('engine-theme', theme);
+    store.set('sokkan-theme', theme);
     if (matrix) matrixTheme();
   });
 
@@ -484,6 +488,34 @@
   });
 
   /* ---------------- MOBILE NAV ---------------- */
+  // Fix: Move mobile nav out of header's stacking context.
+  // The header uses backdrop-filter (blur) which creates a new containing
+  // block — causing position:fixed children to be positioned relative to
+  // the header instead of the viewport. By moving .main-nav to <body>,
+  // it is always positioned relative to the viewport.
+  const mainNav = $('#mainNav');
+  const headerEl = $('#siteHeader');
+  const mobileQuery = window.matchMedia('(max-width: 991px)');
+  let navMoved = false;
+
+  function handleNavPlacement() {
+    if (!mainNav || !headerEl) return;
+    if (mobileQuery.matches && !navMoved) {
+      // Mobile: move nav to body (after header) so it's outside the
+      // header's stacking context and fixed positioning works correctly
+      headerEl.parentNode.insertBefore(mainNav, headerEl.nextSibling);
+      mainNav.classList.add('nav-mobile-detached');
+      navMoved = true;
+    } else if (!mobileQuery.matches && navMoved) {
+      // Desktop: move nav back inside header
+      headerEl.querySelector('.header-in').appendChild(mainNav);
+      mainNav.classList.remove('nav-mobile-detached');
+      navMoved = false;
+    }
+  }
+  handleNavPlacement();
+  mobileQuery.addEventListener('change', handleNavPlacement);
+
   // full-screen scrim: dims the page, click/tap = close
   const scrim = document.createElement('button');
   scrim.type = 'button';
@@ -504,7 +536,10 @@
   }
   burger.addEventListener('click', () => setNav(!document.body.classList.contains('nav-open')));
   scrim.addEventListener('click', () => setNav(false));
-  $$('.main-nav a').forEach(a => a.addEventListener('click', () => setNav(false)));
+  // Use event delegation on body since nav may have been moved
+  document.body.addEventListener('click', e => {
+    if (e.target.closest('.main-nav a')) setNav(false);
+  });
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') setNav(false);
   });
@@ -579,11 +614,14 @@
   /* ---------------- FORM & TOAST ---------------- */
   const toast = $('#toast');
   let toastTimer;
-  function showToast(msg) {
+  function showToast(msg, type = 'success') {
     toast.textContent = msg;
-    toast.classList.add('show');
+    toast.classList.remove('toast-success', 'toast-error');
+    toast.classList.add('show', `toast-${type}`);
     clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => toast.classList.remove('show'), 3400);
+    toastTimer = setTimeout(() => {
+      toast.classList.remove('show', 'toast-success', 'toast-error');
+    }, 3400);
   }
 
   const form = $('#ctaForm');
@@ -592,13 +630,93 @@
     const name = $('#fName'), phone = $('#fPhone');
     const valid = name.value.trim().length > 1 && phone.value.trim().length > 4;
     if (!valid) {
-      showToast(lang === 'en' ? EN.toastError : 'لطفاً نام و شمارهٔ تماس را کامل وارد کنید.');
+      showToast(lang === 'en' ? EN.toastError : 'لطفاً نام و شمارهٔ تماس را کامل وارد کنید.', 'error');
       (name.value.trim().length > 1 ? phone : name).focus();
       return;
     }
     form.classList.add('submitted');
-    showToast(lang === 'en' ? EN.toastSuccess : '✓ درخواست شما ثبت شد — تا ۲۴ ساعت آینده با شما تماس می‌گیریم.');
+    showToast(lang === 'en' ? EN.toastSuccess : '✓ درخواست شما ثبت شد — تا ۲۴ ساعت آینده با شما تماس می‌گیریم.', 'success');
   });
+
+  /* ---------------- 3D DEVICE INTERACTION ---------------- */
+  // Smooth, clamped mouse-tilt on desktop.
+  // Separated from float animation to prevent conflicts.
+  const device = $('.hero-device');
+  if (device && !REDUCED && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    const hero = $('#hero');
+    const tiltLayer = device.querySelector('.device-tilt');
+    if (!tiltLayer) return;
+
+    let targetX = 0, targetY = 0;
+    let currentX = 0, currentY = 0;
+    let heroRect = null;
+    let rafId = null;
+
+    const MAX_ROTATE_X = 5;   // strict limits
+    const MAX_ROTATE_Y = 8;
+    const LERP_FACTOR = 0.08; // smooth easing
+
+    function lerp(a, b, t) {
+      return a + (b - a) * t;
+    }
+
+    function updateTilt() {
+      // Smooth interpolation toward target
+      currentX = lerp(currentX, targetX, LERP_FACTOR);
+      currentY = lerp(currentY, targetY, LERP_FACTOR);
+
+      // Apply transform (perspective + rotation)
+      tiltLayer.style.transform = `rotateX(${currentX.toFixed(2)}deg) rotateY(${currentY.toFixed(2)}deg)`;
+
+      // Continue animation if not settled
+      if (Math.abs(currentX - targetX) > 0.01 || Math.abs(currentY - targetY) > 0.01) {
+        rafId = requestAnimationFrame(updateTilt);
+      } else {
+        rafId = null;
+      }
+    }
+
+    function onMouseMove(e) {
+      if (!heroRect) heroRect = hero.getBoundingClientRect();
+
+      // Calculate normalized position (-1 to 1)
+      const cx = heroRect.left + heroRect.width / 2;
+      const cy = heroRect.top + heroRect.height / 2;
+      const dx = (e.clientX - cx) / (heroRect.width / 2);
+      const dy = (e.clientY - cy) / (heroRect.height / 2);
+
+      // Clamp to [-1, 1]
+      const clampedX = Math.max(-1, Math.min(1, dx));
+      const clampedY = Math.max(-1, Math.min(1, dy));
+
+      // Calculate target rotation (inverted for natural feel)
+      targetY = clampedX * MAX_ROTATE_Y;
+      targetX = -clampedY * MAX_ROTATE_X;
+
+      // Start animation loop if not running
+      if (!rafId) rafId = requestAnimationFrame(updateTilt);
+    }
+
+    function onMouseEnter() {
+      heroRect = hero.getBoundingClientRect();
+    }
+
+    function onMouseLeave() {
+      heroRect = null;
+      targetX = 0;
+      targetY = 0;
+      if (!rafId) rafId = requestAnimationFrame(updateTilt);
+    }
+
+    function onResize() {
+      heroRect = null;
+    }
+
+    hero.addEventListener('mouseenter', onMouseEnter);
+    hero.addEventListener('mousemove', onMouseMove);
+    hero.addEventListener('mouseleave', onMouseLeave);
+    window.addEventListener('resize', onResize);
+  }
 
   /* ---------------- INIT ---------------- */
   applyLang(lang);

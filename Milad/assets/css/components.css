@@ -1,5 +1,8 @@
 /* ============================================================
-   ENGINE | انجین — components.css
+   Sokkan | سکّان — components.css
+   Template: Milad (میلاد)
+   Part of the Sokkan Template Pack
+
    Shared UI components: preloader, header & navigation,
    ticker, forms, footer (+ trust & payment slots), to-top, toast.
    ============================================================ */
@@ -58,6 +61,22 @@
   border-bottom-color: var(--line);
 }
 
+/* Mobile: remove backdrop-filter from header to prevent it from
+   becoming a containing block for the fixed-position mobile nav.
+   backdrop-filter creates a new stacking context which causes
+   position:fixed children to be positioned relative to the header
+   instead of the viewport — breaking the mobile menu. */
+@media (max-width: 991px) {
+  .site-header.scrolled {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    /* Use a fully opaque background instead */
+    background: var(--bg);
+    border-bottom-color: var(--line);
+    box-shadow: var(--shadow-sm);
+  }
+}
+
 .header-in {
   height: 100%;
   display: flex;
@@ -90,8 +109,9 @@
 
 .icon-btn {
   width: 42px; height: 42px;
-  display: inline-grid;
-  place-items: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--line-2);
   border-radius: var(--radius-sm);
   background: color-mix(in srgb, var(--bg-3) 50%, transparent);
@@ -103,9 +123,27 @@
 .icon-btn svg { width: 19px; height: 19px; transition: transform .5s var(--ease-out); }
 .icon-btn:hover svg { transform: rotate(45deg); }
 
-.lang-toggle { width: auto; padding-inline: .9rem; gap: .45rem; font-family: var(--font-mono); font-size: .82rem; font-weight: 700; letter-spacing: .06em; }
+.lang-toggle {
+  width: auto;
+  min-width: 42px;
+  height: 42px;
+  padding-inline: .9rem;
+  gap: .45rem;
+  font-family: var(--font-mono);
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.lang-short { display: inline-block; }
 .lang-full { display: none; }
-@media (min-width: 992px) { .lang-full { display: inline; } }
+@media (min-width: 992px) {
+  .lang-full { display: inline-block; }
+  .lang-toggle { min-width: 110px; }
+}
 
 .theme-toggle .icon-sun { display: none; }
 :root[data-theme="light"] .theme-toggle .icon-sun { display: block; }
@@ -188,6 +226,13 @@ body.nav-open .nav-scrim { opacity: 1; visibility: visible; }
     opacity: 0;
     visibility: hidden;
     transition: opacity var(--t-base) var(--ease-out), transform var(--t-base) var(--ease-out), visibility var(--t-base);
+  }
+  /* When nav is detached from header to body (JS fix for stacking context) */
+  .main-nav.nav-mobile-detached {
+    position: fixed;
+    top: var(--header-h);
+    inset-inline: 0;
+    bottom: 0;
   }
   body.nav-open .main-nav { opacity: 1; visibility: visible; transform: none; }
 
@@ -313,19 +358,69 @@ body.nav-open .nav-scrim { opacity: 1; visibility: visible; }
   inset-inline-start: 50%;
   transform: translate(50%, 140%);
   z-index: var(--z-toast);
-  background: var(--ink);
-  color: var(--paper-ink);
-  padding: .8rem 1.4rem;
+  background: var(--bg-3);
+  color: var(--text);
+  padding: .85rem 1.6rem;
   border-radius: var(--radius-pill);
-  border: 1px solid var(--line-2);
+  border: 1.5px solid var(--line-2);
   font-size: .92rem;
   font-weight: 600;
-  box-shadow: var(--shadow-md);
-  transition: transform var(--t-base) var(--ease-out);
+  box-shadow: var(--shadow-md), 0 0 0 1px rgba(255,255,255,.03);
+  transition: transform var(--t-base) var(--ease-out), opacity var(--t-base) var(--ease-out);
+  max-width: min(90vw, 480px);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 [dir="ltr"] .toast { transform: translate(-50%, 140%); }
 .toast.show { transform: translate(50%, 0); }
 [dir="ltr"] .toast.show { transform: translate(-50%, 0); }
+
+/* Dark mode toast — ensure readability */
+:root[data-theme="dark"] .toast {
+  background: #1e1e28;
+  color: #f0ebdc;
+  border-color: rgba(240, 235, 220, .22);
+  box-shadow:
+    0 14px 40px rgba(0,0,0,.5),
+    0 0 0 1px rgba(255,255,255,.04),
+    0 0 30px rgba(45, 212, 160, .06);
+}
+
+/* Light mode toast */
+:root[data-theme="light"] .toast {
+  background: #faf6ea;
+  color: #211e16;
+  border-color: rgba(33, 30, 22, .2);
+  box-shadow:
+    0 14px 34px rgba(70, 58, 30, .16),
+    0 0 0 1px rgba(0,0,0,.03);
+}
+
+/* Toast success state (accent green border glow) */
+.toast.toast-success {
+  border-color: color-mix(in srgb, var(--accent-2) 50%, var(--line-2));
+}
+:root[data-theme="dark"] .toast.toast-success {
+  border-color: rgba(45, 212, 160, .4);
+  box-shadow:
+    0 14px 40px rgba(0,0,0,.5),
+    0 0 0 1px rgba(45, 212, 160, .08),
+    0 0 30px rgba(45, 212, 160, .1);
+}
+
+/* Toast error state (accent red border glow) */
+.toast.toast-error {
+  border-color: color-mix(in srgb, var(--accent-3) 50%, var(--line-2));
+}
+:root[data-theme="dark"] .toast.toast-error {
+  border-color: rgba(255, 107, 74, .4);
+  box-shadow:
+    0 14px 40px rgba(0,0,0,.5),
+    0 0 0 1px rgba(255, 107, 74, .08),
+    0 0 30px rgba(255, 107, 74, .08);
+}
 
 /* ---------- BACK TO TOP ---------- */
 .to-top {
