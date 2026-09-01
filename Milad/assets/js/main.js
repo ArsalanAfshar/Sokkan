@@ -24,25 +24,25 @@
   /* ---------------- i18n ---------------- */
   const EN = {
     loaderTxt: 'Igniting the engine…',
-    brandName: 'Sokkan',
+    brandName: 'Milad',
     navServices: 'Services', navFeatures: 'Features', navProcess: 'Process',
     navWorks: 'Work', navPricing: 'Pricing', navFaq: 'FAQ',
     navCta: 'Free consultation', navFootNote: 'Sat–Thu, 9–18 (IRST)',
     heroBadge: 'Digital services studio — Tehran, since 2013',
     heroYear: '2026',
     heroL1: 'The', heroL2: 'engine', heroL2b: 'of your digital business',
-    heroSub: 'From website and app design to branding, SEO and campaigns — the Sokkan team designs, builds and grows your entire digital journey.',
+    heroSub: 'From website and app design to branding, SEO and campaigns — the Milad team designs, builds and grows your entire digital journey.',
     heroCta1: 'Start a project', heroCta2: 'See our work',
     statLabel1: 'Delivered projects', statLabel2: 'experience',
     statLabel3: 'Client satisfaction', statLabel4: 'on the team',
     statSuffix2: ' yrs', statSuffix4: ' specialists',
     heroScroll: 'Scroll down',
     tickerItems: ['AI solutions', 'Web development', 'Mobile apps', 'Digital marketing', 'SaaS products', 'Brand identity', 'Automation', 'Growth consulting'],
-    introEyebrow: 'About Sokkan',
+    introEyebrow: 'About Milad',
     introTitle1: 'We came from the past', introTitle2: 'to build the future.',
-    introP1: 'Sokkan is a digital services studio where engineering precision meets the spirit of old craftsmanship. We see every project as a motor: every part in its place, running quietly, built to last for years.',
+    introP1: 'Milad is a digital services studio where engineering precision meets the spirit of old craftsmanship. We see every project as a motor: every part in its place, running quietly, built to last for years.',
     introP2: 'Since 2013 we have been building for Iranian businesses — from early startups to large organizations. Websites, apps, brands and campaigns: we speak plainly, deliver precisely, and stay by your side long after launch.',
-    signName: 'Sokkan Studio', signRole: 'Tehran — since 2013',
+    signName: 'Milad Studio', signRole: 'Tehran — since 2013',
     fileNo1: 'Principle 01', fileTitle1: 'Simplicity is the peak of complexity',
     fileDesc1: 'Simple design means work done right; we solve the complexity behind the scenes so the user only sees simplicity.',
     fileNo2: 'Principle 02', fileTitle2: 'Quality is not negotiable',
@@ -67,7 +67,7 @@
     sv6Desc: 'Intelligent support assistants, Telegram bots and unified management dashboards; hand the repetitive work to the system and keep your team focused on growth.',
     sv6Tag1: 'Bots & API', sv6Tag2: 'Dashboard', sv6Tag3: 'Integration',
     cardLink: 'Start a conversation',
-    featuresEyebrow: 'Why Sokkan?',
+    featuresEyebrow: 'Why Milad?',
     featuresTitle: 'A standard you can feel in every part',
     featuresSub: 'We care about details the user feels — even when they don’t see them: from speed and security to support.',
     feat1Title: 'Unmatched speed', feat1Desc: 'Sub-second loading with full Core Web Vitals compliance; speed means more customers.',
@@ -108,7 +108,7 @@
     ],
     worksEyebrow: 'Selected work',
     worksTitle: 'Engines that got running',
-    worksSub: 'Three short stories of projects that moved forward with the Sokkan team.',
+    worksSub: 'Three short stories of projects that moved forward with the Milad team.',
     work1Cat: 'SaaS product', work1Year: '2025',
     work1Title: 'Arya Fintech', work1Desc: 'A unified financial services platform with online payments; we took product design, web app development and payment infrastructure from zero to launch.',
     work1Tag1: 'Product design', work1Tag2: 'Web app', work1Tag3: 'SEO',
@@ -127,7 +127,7 @@
     q1Name: 'Sara Mohammadi', q1Role: 'Product Manager, Arya Fintech',
     q2: 'Our store’s speed was always painful; after Sokkan’s redesign, speed doubled and monthly sales grew 32%. The post-launch support is outstanding — they even respond on weekends.',
     q2Name: 'Amir Rezaei', q2Role: 'Founder, Zarrin Web',
-    q3: 'What sets Sokkan apart is their point of view; they don’t just “build a website”, they solve your business problem. The result is a brand our customers are proud of.',
+    q3: 'What sets Milad apart is their point of view; they don’t just “build a website”, they solve your business problem. The result is a brand our customers are proud of.',
     q3Name: 'Negar Karimi', q3Role: 'Marketing Director, Mahan Digital',
     pricingEyebrow: 'Pricing',
     pricingTitle: 'A package for every engine',
@@ -155,7 +155,7 @@
     faqEyebrow: 'FAQ', faqTitle: 'Ask us anything',
     faqSub: 'If your answer isn’t here, talk to us directly.',
     faqCtaTitle: 'Still have a question?', faqCtaDesc: 'We are available Sat–Thu, 9–18.',
-    faqCtaBtn: 'Contact Sokkan',
+    faqCtaBtn: 'Contact Milad',
     faq1q: 'How long does a project take?',
     faq1a: 'It depends on the scope: a landing page takes about 2 weeks, a full website 4–6 weeks, and an app MVP around 2 months. You receive a precise phased timeline at the first meeting — and we stick to it.',
     faq2q: 'Can the project be delivered in phases?',
@@ -186,6 +186,7 @@
     toastSuccess: '✓ Request received — we’ll be in touch within 24 hours.',
     toastError: 'Please fill in your name and phone number.',
     footerDesc: 'A digital services studio; web, app, brand and marketing for Iranian businesses — since 2013.',
+    footerCollection: 'Milad template from the Sokkan collection',
     fCol1Title: 'Quick links',
     fLinkAbout: 'About us', fLinkServices: 'Services', fLinkWorks: 'Work',
     fLinkPricing: 'Pricing', fLinkFaq: 'FAQ',
@@ -200,12 +201,12 @@
     slotHintPay: 'Gateway logo — 78×48',
     trustNote: '<strong>Optional area.</strong> This section is ready for the E-namad trust seal and payment gateway logos; just drop an image inside each frame — no structural changes needed.',
     fHours: 'Sat — Thu, 9–18',
-    footerRights: '© 2026 Sokkan Studio — All rights reserved.',
+    footerRights: '\u00a9 2026 Milad \u2014 A template from the Sokkan collection. All rights reserved.',
     legalPrivacy: 'Privacy', legalTerms: 'Terms',
     footerMade: 'Made with ♥ and tea in Tehran',
     langShort: 'فا', langFull: 'فارسی',
-    docTitle: 'Sokkan | The engine of your digital business — Milad Template',
-    docDesc: 'Sokkan, premium Iranian template pack; Milad template for digital studios, web design, apps, branding and digital marketing. The engine of your business growth.'
+    docTitle: 'Milad | The engine of your digital business \u2014 A template from the Sokkan collection',
+    docDesc: 'Milad, a premium Iranian template from the Sokkan collection; for digital studios, web design, apps, branding and digital marketing. The engine of your business growth.'
   };
 
   const EN_ARIA = {
@@ -253,9 +254,9 @@
       el.setAttribute('aria-label', isEn && EN_ARIA[k] !== undefined ? EN_ARIA[k] : (el.dataset.faAria || ''));
     });
 
-    document.title = isEn ? EN.docTitle : 'سکّان | موتور کسب‌وکار دیجیتال شما — قالب میلاد از مجموعه سکّان';
+    document.title = isEn ? EN.docTitle : 'میلاد | موتور کسب‌وکار دیجیتال شما — قالب میلاد از مجموعه سکّان';
     const desc = $('meta[name="description"]');
-    if (desc) desc.setAttribute('content', isEn ? EN.docDesc : 'سکّان، مجموعه قالب‌های پریمیوم ایرانی؛ قالب میلاد برای استودیوی دیجیتال، طراحی وب‌سایت، اپلیکیشن، برندینگ و دیجیتال مارکتینگ. موتورِ رشد کسب‌وکار شما.');
+    if (desc) desc.setAttribute('content', isEn ? EN.docDesc : 'میلاد، قالب پریمیوم ایرانی از مجموعه سکّان؛ برای استودیوی دیجیتال، طراحی وب‌سایت، اپلیکیشن، برندینگ و دیجیتال مارکتینگ. موتورِ رشد کسب‌وکار شما.');
 
     buildTicker();
     store.set('sokkan-lang', l);

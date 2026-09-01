@@ -463,6 +463,14 @@ body.nav-open .nav-scrim { opacity: 1; visibility: visible; }
 }
 .footer-brand .brand { margin-bottom: 1.1rem; }
 .footer-desc { color: var(--text-2); font-size: .93rem; max-width: 34ch; }
+.footer-collection {
+  margin-top: .6rem;
+  font-family: var(--font-mono);
+  font-size: .78rem;
+  letter-spacing: .06em;
+  color: var(--accent-2);
+  opacity: .85;
+}
 
 .footer-social { display: flex; gap: .6rem; margin-top: 1.3rem; }
 .footer-social a {
@@ -575,16 +583,6 @@ body.nav-open .nav-scrim { opacity: 1; visibility: visible; }
 @media (max-width: 560px) {
   .footer-top { grid-template-columns: 1fr; gap: 2rem; }
   .footer-bottom { justify-content: center; text-align: center; }
-}
-
-.footer-word {
-  text-align: center;
-  font-weight: 900;
-  font-size: clamp(4rem, 15vw, 12rem);
-  line-height: 1.05;
-  color: transparent;
-  user-select: none;
-  pointer-events: none;
 }
 
 .footer-bottom {

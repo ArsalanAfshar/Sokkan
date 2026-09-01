@@ -218,14 +218,8 @@ h1, h2, h3, h4 { line-height: 1.55; font-weight: 800; }
 }
 
 /* Big watermark word (footer) — hollow, intentionally quiet */
-.footer-word {
-  -webkit-text-stroke: .022em color-mix(in srgb, var(--text) 32%, transparent);
-  letter-spacing: .02em;
-}
-:root[data-theme="light"] .footer-word { -webkit-text-stroke: .022em color-mix(in srgb, var(--text) 44%, transparent); }
-@supports not (-webkit-text-stroke: 1px black) {
-  .footer-word { color: color-mix(in srgb, var(--text) 16%, transparent); }
-}
+:root[data-theme="light"] @supports not (-webkit-text-stroke: 1px black) {
+  }
 
 /* ---------- 5. LAYOUT UTILITIES ---------- */
 .container {
