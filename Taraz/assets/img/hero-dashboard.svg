@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ecfdf5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lineAreaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:0" />
+    </linearGradient>
+    <filter id="heroShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#0c1b33" flood-opacity="0.12"/>
+    </filter>
+    <filter id="floatShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0c1b33" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Main Dashboard Panel -->
+  <g filter="url(#heroShadow)">
+    <rect x="80" y="40" width="640" height="420" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Dashboard Header Bar -->
+    <rect x="80" y="40" width="640" height="50" rx="16" fill="#f8f9fb"/>
+    <rect x="80" y="74" width="640" height="16" fill="#f8f9fb"/>
+    
+    <!-- Window dots -->
+    <circle cx="105" cy="65" r="6" fill="#ef4444"/>
+    <circle cx="125" cy="65" r="6" fill="#f59e0b"/>
+    <circle cx="145" cy="65" r="6" fill="#10b981"/>
+    
+    <!-- Dashboard title -->
+    <text x="400" y="70" font-family="Vazirmatn, sans-serif" font-size="13" font-weight="bold" fill="#0c1b33" text-anchor="middle">تراز — داشبورد مدیریت مالی</text>
+    
+    <!-- Sidebar -->
+    <rect x="80" y="90" width="140" height="370" fill="#0c1b33"/>
+    <rect x="95" y="110" width="110" height="32" rx="6" fill="#059669" opacity="0.2"/>
+    <text x="150" y="131" font-family="Vazirmatn, sans-serif" font-size="11" fill="#10b981" text-anchor="middle">📊 داشبورد</text>
+    <text x="150" y="168" font-family="Vazirmatn, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">📄 فاکتورها</text>
+    <text x="150" y="200" font-family="Vazirmatn, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">💰 هزینه‌ها</text>
+    <text x="150" y="232" font-family="Vazirmatn, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">📦 انبار</text>
+    <text x="150" y="264" font-family="Vazirmatn, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">📈 گزارش‌ها</text>
+    <text x="150" y="296" font-family="Vazirmatn, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">👥 مشتریان</text>
+    <text x="150" y="328" font-family="Vazirmatn, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">⚙️ تنظیمات</text>
+    
+    <!-- KPI Cards Row -->
+    <!-- Revenue Card -->
+    <rect x="240" y="108" width="150" height="72" rx="10" fill="#f0fdf4" stroke="#059669" stroke-width="1"/>
+    <text x="255" y="128" font-family="Vazirmatn, sans-serif" font-size="9" fill="#64748b">درآمد ماهانه</text>
+    <text x="255" y="152" font-family="Vazirmatn, sans-serif" font-size="18" font-weight="bold" fill="#059669">۴۵,۲۰۰</text>
+    <text x="255" y="168" font-family="Vazirmatn, sans-serif" font-size="8" fill="#10b981">↑ ۲۳٪ رشد</text>
+    
+    <!-- Expense Card -->
+    <rect x="405" y="108" width="150" height="72" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+    <text x="420" y="128" font-family="Vazirmatn, sans-serif" font-size="9" fill="#64748b">هزینه‌ها</text>
+    <text x="420" y="152" font-family="Vazirmatn, sans-serif" font-size="18" font-weight="bold" fill="#ef4444">۱۸,۴۵۰</text>
+    <text x="420" y="168" font-family="Vazirmatn, sans-serif" font-size="8" fill="#f87171">↑ ۸٪ افزایش</text>
+    
+    <!-- Profit Card -->
+    <rect x="570" y="108" width="135" height="72" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+    <text x="585" y="128" font-family="Vazirmatn, sans-serif" font-size="9" fill="#64748b">سود خالص</text>
+    <text x="585" y="152" font-family="Vazirmatn, sans-serif" font-size="18" font-weight="bold" fill="#2563eb">۲۶,۷۵۰</text>
+    <text x="585" y="168" font-family="Vazirmatn, sans-serif" font-size="8" fill="#60a5fa">حاشیه: ۵۹٪</text>
+    
+    <!-- Revenue Bar Chart -->
+    <rect x="240" y="195" width="280" height="180" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="258" y="218" font-family="Vazirmatn, sans-serif" font-size="11" font-weight="bold" fill="#0c1b33">درآمد ۶ ماه اخیر</text>
+    
+    <!-- Chart bars -->
+    <rect x="268" y="300" width="28" height="50" rx="4" fill="url(#barGrad)" opacity="0.6"/>
+    <rect x="308" y="280" width="28" height="70" rx="4" fill="url(#barGrad)" opacity="0.7"/>
+    <rect x="348" y="290" width="28" height="60" rx="4" fill="url(#barGrad)" opacity="0.75"/>
+    <rect x="388" y="265" width="28" height="85" rx="4" fill="url(#barGrad)" opacity="0.85"/>
+    <rect x="428" y="272" width="28" height="78" rx="4" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="468" y="245" width="28" height="105" rx="4" fill="url(#barGrad)"/>
+    
+    <!-- Chart labels -->
+    <text x="282" y="362" font-family="Vazirmatn, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">فرو</text>
+    <text x="322" y="362" font-family="Vazirmatn, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">اردی</text>
+    <text x="362" y="362" font-family="Vazirmatn, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">خرداد</text>
+    <text x="402" y="362" font-family="Vazirmatn, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">تیر</text>
+    <text x="442" y="362" font-family="Vazirmatn, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">مرداد</text>
+    <text x="482" y="362" font-family="Vazirmatn, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">شهری</text>
+    
+    <!-- Trend Line Chart -->
+    <rect x="535" y="195" width="170" height="180" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="550" y="218" font-family="Vazirmatn, sans-serif" font-size="11" font-weight="bold" fill="#0c1b33">روند سود</text>
+    
+    <!-- Line chart area -->
+    <path d="M555,340 L580,320 L605,325 L630,300 L655,285 L680,270 L690,260 L690,360 L555,360 Z" fill="url(#lineAreaGrad)"/>
+    <path d="M555,340 L580,320 L605,325 L630,300 L655,285 L680,270 L690,260" stroke="#059669" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Line dots -->
+    <circle cx="555" cy="340" r="3.5" fill="#059669" stroke="white" stroke-width="2"/>
+    <circle cx="580" cy="320" r="3.5" fill="#059669" stroke="white" stroke-width="2"/>
+    <circle cx="605" cy="325" r="3.5" fill="#059669" stroke="white" stroke-width="2"/>
+    <circle cx="630" cy="300" r="3.5" fill="#059669" stroke="white" stroke-width="2"/>
+    <circle cx="655" cy="285" r="3.5" fill="#059669" stroke="white" stroke-width="2"/>
+    <circle cx="680" cy="270" r="3.5" fill="#059669" stroke="white" stroke-width="2"/>
+    <circle cx="690" cy="260" r="4" fill="#059669" stroke="white" stroke-width="2"/>
+    
+    <!-- Recent Transactions -->
+    <rect x="240" y="390" width="465" height="60" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="258" y="412" font-family="Vazirmatn, sans-serif" font-size="10" font-weight="bold" fill="#0c1b33">تراکنش‌های اخیر</text>
+    
+    <!-- Transaction items -->
+    <circle cx="265" cy="432" r="8" fill="#d1fae5"/>
+    <text x="265" y="436" font-family="sans-serif" font-size="9" fill="#059669" text-anchor="middle">↓</text>
+    <text x="282" y="435" font-family="Vazirmatn, sans-serif" font-size="9" fill="#0c1b33">دریافت از شرکت نوین</text>
+    <text x="450" y="435" font-family="Vazirmatn, sans-serif" font-size="9" font-weight="bold" fill="#059669">+۲,۵۰۰,۰۰۰</text>
+    
+    <circle cx="545" cy="432" r="8" fill="#fee2e2"/>
+    <text x="545" y="436" font-family="sans-serif" font-size="9" fill="#ef4444" text-anchor="middle">↑</text>
+    <text x="562" y="435" font-family="Vazirmatn, sans-serif" font-size="9" fill="#0c1b33">پرداخت اجاره</text>
+    <text x="680" y="435" font-family="Vazirmatn, sans-serif" font-size="9" font-weight="bold" fill="#ef4444">-۸,۰۰۰,۰۰۰</text>
+  </g>
+  
+  <!-- Floating Revenue Card (top right) -->
+  <g filter="url(#floatShadow)" transform="translate(620, 15)">
+    <rect width="160" height="70" rx="12" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="12" y="12" width="32" height="32" rx="8" fill="#d1fae5"/>
+    <text x="28" y="33" font-family="sans-serif" font-size="16" text-anchor="middle">📈</text>
+    <text x="55" y="27" font-family="Vazirmatn, sans-serif" font-size="9" fill="#64748b">رشد درآمد</text>
+    <text x="55" y="44" font-family="Vazirmatn, sans-serif" font-size="15" font-weight="bold" fill="#059669">+۲۳٪</text>
+  </g>
+  
+  <!-- Floating Invoice Card (bottom left) -->
+  <g filter="url(#floatShadow)" transform="translate(20, 380)">
+    <rect width="150" height="70" rx="12" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="12" y="12" width="32" height="32" rx="8" fill="#eff6ff"/>
+    <text x="28" y="33" font-family="sans-serif" font-size="16" text-anchor="middle">📄</text>
+    <text x="55" y="27" font-family="Vazirmatn, sans-serif" font-size="9" fill="#64748b">فاکتور جدید</text>
+    <text x="55" y="44" font-family="Vazirmatn, sans-serif" font-size="12" font-weight="bold" fill="#2563eb">INV-۱۴۰۴</text>
+  </g>
+  
+  <!-- Floating Payment Card (top left) -->
+  <g filter="url(#floatShadow)" transform="translate(10, 60)">
+    <rect width="130" height="60" rx="12" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="10" y="10" width="28" height="28" rx="6" fill="#fef3c7"/>
+    <text x="24" y="29" font-family="sans-serif" font-size="14" text-anchor="middle">✓</text>
+    <text x="48" y="24" font-family="Vazirmatn, sans-serif" font-size="8" fill="#64748b">پرداخت موفق</text>
+    <text x="48" y="38" font-family="Vazirmatn, sans-serif" font-size="11" font-weight="bold" fill="#d97706">۱۲۸ پرداخت</text>
+  </g>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="inv-header" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Invoice Paper -->
+  <rect x="50" y="20" width="500" height="360" rx="8" fill="#ffffff" stroke="#dde2ea" stroke-width="1.5" filter="url(#shadow)"/>
+  
+  <!-- Header Band -->
+  <rect x="50" y="20" width="500" height="60" rx="8" fill="url(#inv-header)"/>
+  <rect x="50" y="60" width="500" height="20" fill="url(#inv-header)"/>
+  
+  <!-- Logo -->
+  <rect x="70" y="35" width="36" height="36" rx="6" fill="rgba(255,255,255,0.2)"/>
+  <text x="79" y="60" font-family="sans-serif" font-size="20" font-weight="bold" fill="white">ت</text>
+  <text x="115" y="60" font-family="sans-serif" font-size="16" font-weight="bold" fill="white">تراز</text>
+  
+  <!-- Invoice Number -->
+  <text x="520" y="45" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.8)" text-anchor="end">فاکتور فروش</text>
+  <text x="520" y="62" font-family="sans-serif" font-size="13" font-weight="bold" fill="white" text-anchor="end">INV-1404-0128</text>
+  
+  <!-- Customer Info -->
+  <text x="70" y="108" font-family="sans-serif" font-size="11" fill="#64748b">خریدار:</text>
+  <text x="70" y="125" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0c1b33">شرکت فناوری نوین</text>
+  <text x="70" y="142" font-family="sans-serif" font-size="10" fill="#94a3b8">شناسه ملی: ۱۴۰۰۱۲۳۴۵۶۷</text>
+  
+  <!-- Date -->
+  <text x="520" y="108" font-family="sans-serif" font-size="11" fill="#64748b" text-anchor="end">تاریخ:</text>
+  <text x="520" y="125" font-family="sans-serif" font-size="13" font-weight="bold" fill="#0c1b33" text-anchor="end">۱۴۰۴/۰۶/۱۵</text>
+  <text x="520" y="142" font-family="sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">سررسید: ۱۴۰۴/۰۷/۱۵</text>
+  
+  <!-- Table Header -->
+  <rect x="70" y="165" width="460" height="30" rx="4" fill="#f4f6f9"/>
+  <text x="85" y="185" font-family="sans-serif" font-size="10" font-weight="bold" fill="#4a5568">شرح کالا / خدمات</text>
+  <text x="320" y="185" font-family="sans-serif" font-size="10" font-weight="bold" fill="#4a5568" text-anchor="middle">تعداد</text>
+  <text x="400" y="185" font-family="sans-serif" font-size="10" font-weight="bold" fill="#4a5568" text-anchor="middle">قیمت واحد</text>
+  <text x="500" y="185" font-family="sans-serif" font-size="10" font-weight="bold" fill="#4a5568" text-anchor="middle">مبلغ کل</text>
+  
+  <!-- Table Rows -->
+  <line x1="70" y1="220" x2="530" y2="220" stroke="#e2e8f0" stroke-width="0.5"/>
+  <text x="85" y="210" font-family="sans-serif" font-size="10" fill="#0c1b33">خدمات طراحی وب‌سایت</text>
+  <text x="320" y="210" font-family="sans-serif" font-size="10" fill="#0c1b33" text-anchor="middle">۱</text>
+  <text x="400" y="210" font-family="sans-serif" font-size="10" fill="#0c1b33" text-anchor="middle">۱۵,۰۰۰,۰۰۰</text>
+  <text x="500" y="210" font-family="sans-serif" font-size="10" fill="#0c1b33" text-anchor="middle">۱۵,۰۰۰,۰۰۰</text>
+  
+  <line x1="70" y1="245" x2="530" y2="245" stroke="#e2e8f0" stroke-width="0.5"/>
+  <text x="85" y="235" font-family="sans-serif" font-size="10" fill="#0c1b33">پشتیبانی ماهانه</text>
+  <text x="320" y="235" font-family="sans-serif" font-size="10" fill="#0c1b33" text-anchor="middle">۳</text>
+  <text x="400" y="235" font-family="sans-serif" font-size="10" fill="#0c1b33" text-anchor="middle">۲,۰۰۰,۰۰۰</text>
+  <text x="500" y="235" font-family="sans-serif" font-size="10" fill="#0c1b33" text-anchor="middle">۶,۰۰۰,۰۰۰</text>
+  
+  <line x1="70" y1="270" x2="530" y2="270" stroke="#e2e8f0" stroke-width="0.5"/>
+  <text x="85" y="260" font-family="sans-serif" font-size="10" fill="#0c1b33">هاستینگ سالانه</text>
+  <text x="320" y="260" font-family="sans-serif" font-size="10" fill="#0c1b33" text-anchor="middle">۱</text>
+  <text x="400" y="260" font-family="sans-serif" font-size="10" fill="#0c1b33" text-anchor="middle">۴,۵۰۰,۰۰۰</text>
+  <text x="500" y="260" font-family="sans-serif" font-size="10" fill="#0c1b33" text-anchor="middle">۴,۵۰۰,۰۰۰</text>
+  
+  <!-- Totals -->
+  <rect x="350" y="285" width="180" height="80" rx="6" fill="#f8f9fb" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="365" y="305" font-family="sans-serif" font-size="10" fill="#64748b">جمع کل:</text>
+  <text x="515" y="305" font-family="sans-serif" font-size="11" font-weight="bold" fill="#0c1b33" text-anchor="end">۲۵,۵۰۰,۰۰۰</text>
+  
+  <text x="365" y="325" font-family="sans-serif" font-size="10" fill="#64748b">مالیات (۹٪):</text>
+  <text x="515" y="325" font-family="sans-serif" font-size="11" fill="#0c1b33" text-anchor="end">۲,۲۹۵,۰۰۰</text>
+  
+  <line x1="360" y1="335" x2="525" y2="335" stroke="#dde2ea" stroke-width="1"/>
+  
+  <text x="365" y="355" font-family="sans-serif" font-size="11" font-weight="bold" fill="#059669">مبلغ قابل پرداخت:</text>
+  <text x="515" y="355" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669" text-anchor="end">۲۷,۷۹۵,۰۰۰</text>
+  
+  <!-- Status Badge -->
+  <rect x="70" y="295" width="100" height="28" rx="14" fill="#d1fae5"/>
+  <text x="120" y="313" font-family="sans-serif" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle">✓ پرداخت شده</text>
+  
+  <!-- QR Code Placeholder -->
+  <rect x="70" y="335" width="40" height="40" rx="4" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="90" y="358" font-family="sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">QR</text>
+</svg>

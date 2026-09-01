@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta_title">تراز | نرم‌افزار حسابداری ابری</title>
+  <meta name="description" data-i18n="meta_description" content="تراز، نرم‌افزار حسابداری ابری هوشمند برای کسب‌وکارهای ایرانی. مدیریت مالی ساده، امن و حرفه‌ای.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo-sm.svg">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <img src="assets/img/logo-sm.svg" alt="تراز" class="logo-img">
+        <span data-i18n="brand">تراز</span>
+      </a>
+      <nav class="nav">
+        <a href="#features" class="nav-link" data-i18n="nav_features">ویژگی‌ها</a>
+        <a href="#charts" class="nav-link" data-i18n="nav_dashboard">داشبورد</a>
+        <a href="#workflow" class="nav-link" data-i18n="nav_workflow">نحوه کار</a>
+        <a href="#pricing" class="nav-link" data-i18n="nav_pricing">تعرفه‌ها</a>
+        <a href="#testimonials" class="nav-link" data-i18n="nav_testimonials">نظرات</a>
+        <a href="#faq" class="nav-link" data-i18n="nav_faq">سوالات</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle" aria-label="تغییر زبان" title="تغییر زبان">
+          <span class="lang-short" data-lang-short>EN</span>
+          <span class="lang-full" data-lang-label>EN</span>
+        </button>
+        <button class="theme-toggle" aria-label="تغییر تم" title="تغییر تم">
+          <div class="theme-toggle-stars">
+            <div class="theme-toggle-star"></div>
+            <div class="theme-toggle-star"></div>
+            <div class="theme-toggle-star"></div>
+          </div>
+          <div class="theme-toggle-knob">
+            <svg class="theme-toggle-icon icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <svg class="theme-toggle-icon icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </div>
+        </button>
+        <a href="#cta" class="btn btn-primary btn-sm btn-arrow" data-i18n="cta_start">شروع رایگان</a>
+        <button class="nav-burger" aria-label="منوی موبایل" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scrim" aria-hidden="true"></div>
+
+  <nav class="mobile-nav" aria-label="منوی موبایل">
+    <a href="#features" class="mobile-nav-link" data-i18n="nav_features">ویژگی‌ها</a>
+    <a href="#charts" class="mobile-nav-link" data-i18n="nav_dashboard">داشبورد تحلیلی</a>
+    <a href="#workflow" class="mobile-nav-link" data-i18n="nav_workflow">نحوه کار</a>
+    <a href="#pricing" class="mobile-nav-link" data-i18n="nav_pricing">تعرفه‌ها</a>
+    <a href="#testimonials" class="mobile-nav-link" data-i18n="nav_testimonials">نظرات مشتریان</a>
+    <a href="#faq" class="mobile-nav-link" data-i18n="nav_faq">سوالات متداول</a>
+    <div class="mobile-nav-cta">
+      <a href="#cta" class="btn btn-primary btn-lg btn-block btn-arrow" data-i18n="cta_start">شروع رایگان</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge reveal" data-i18n="hero_badge">🚀 نسخه جدید ۱۴۰۴ منتشر شد</div>
+            <h1 class="hero-title reveal d2">
+              <span data-i18n="hero_title_1">مدیریت مالی هوشمند</span><br>
+              <span class="accent" data-i18n="hero_title_2">با تراز</span>
+            </h1>
+            <p class="hero-subtitle reveal d3" data-i18n="hero_subtitle">نرم‌افزار حسابداری ابری تراز، راهکاری جامع برای مدیریت مالی کسب‌وکار شما. از صدور فاکتور تا گزارش‌های تحلیلی، همه چیز در یک پلتفرم یکپارچه.</p>
+            <div class="hero-actions reveal d4">
+              <a href="#cta" class="btn btn-primary btn-lg btn-arrow" data-i18n="cta_start">شروع رایگان</a>
+              <a href="#charts" class="btn btn-outline btn-lg" data-i18n="hero_cta_dashboard">مشاهده داشبورد</a>
+            </div>
+            <div class="hero-stats reveal d5">
+              <div class="hero-stat">
+                <div class="hero-stat-value" data-count="10000" data-i18n="hero_stat_1_value">۱۰,۰۰۰+</div>
+                <div class="hero-stat-label" data-i18n="hero_stat_1_label">کسب‌وکار فعال</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-value" data-i18n="hero_stat_2_value">۹۹.۹٪</div>
+                <div class="hero-stat-label" data-i18n="hero_stat_2_label">آپتایم سرور</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-value" data-i18n="hero_stat_3_value">۲۴/۷</div>
+                <div class="hero-stat-label" data-i18n="hero_stat_3_label">پشتیبانی آنلاین</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual reveal d3">
+            <div class="hero-dashboard">
+              <img src="assets/img/hero-dashboard.svg" alt="داشبورد تراز" class="hero-dashboard-img" data-i18n-alt="showcase_alt">
+            </div>
+            <!-- Floating metric cards -->
+            <div class="hero-float hero-float-1">
+              <div class="hero-float-icon" style="background:var(--accent-light);color:var(--accent);">📈</div>
+              <div class="hero-float-text">
+                <div class="hero-float-label" data-i18n="hero_floating_growth_label">رشد درآمد</div>
+                <div class="hero-float-value" data-i18n="hero_floating_growth">+۲۳٪</div>
+              </div>
+            </div>
+            <div class="hero-float hero-float-2">
+              <div class="hero-float-icon" style="background:var(--secondary-light);color:var(--secondary);">📄</div>
+              <div class="hero-float-text">
+                <div class="hero-float-label" data-i18n="hero_dashboard_invoices">فاکتورها</div>
+                <div class="hero-float-value" data-i18n="hero_dashboard_invoices_value">۱۲۸</div>
+              </div>
+            </div>
+            <div class="hero-float hero-float-3">
+              <div class="hero-float-icon" style="background:var(--gold-light);color:var(--gold);">✓</div>
+              <div class="hero-float-text">
+                <div class="hero-float-label" data-i18n="hero_floating_payments_label">پرداخت موفق</div>
+                <div class="hero-float-value" data-i18n="hero_floating_payments">۱۲۸</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST BAR ============ -->
+    <section class="trust-bar">
+      <div class="container">
+        <div class="trust-bar-inner">
+          <div class="trust-item"><div class="trust-icon">🛡️</div><span data-i18n="trust_security">تاییدیه امنیت سایبری</span></div>
+          <div class="trust-item"><div class="trust-icon">🔒</div><span data-i18n="trust_ssl">رمزنگاری SSL ۲۵۶</span></div>
+          <div class="trust-item"><div class="trust-icon">💾</div><span data-i18n="trust_backup">پشتیبان‌گیری روزانه</span></div>
+          <div class="trust-item"><div class="trust-icon">🇮🇷</div><span data-i18n="trust_servers">سرورهای امن ایران</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge reveal" data-i18n="features_badge">ویژگی‌ها</div>
+          <h2 class="section-title reveal d2" data-i18n="features_title">همه آنچه برای مدیریت مالی نیاز دارید</h2>
+          <p class="section-subtitle reveal d3" data-i18n="features_subtitle">تراز با مجموعه‌ای از ابزارهای قدرتمند، مدیریت مالی کسب‌وکار شما را ساده و هوشمند می‌کند.</p>
+        </div>
+        <div class="features-grid">
+          <div class="card reveal"><div class="card-icon">📄</div><h3 class="card-title" data-i18n="feature_1_title">صدور فاکتور حرفه‌ای</h3><p class="card-text" data-i18n="feature_1_desc">ایجاد فاکتورهای زیبا و حرفه‌ای در چند ثانیه. ارسال خودکار به مشتری و پیگیری وضعیت پرداخت.</p></div>
+          <div class="card reveal d2"><div class="card-icon">💰</div><h3 class="card-title" data-i18n="feature_2_title">مدیریت هزینه‌ها</h3><p class="card-text" data-i18n="feature_2_desc">ثبت و دسته‌بندی تمامی هزینه‌ها. گزارش‌های تفصیلی برای کنترل بهتر بودجه و کاهش هزینه‌های اضافی.</p></div>
+          <div class="card reveal d3"><div class="card-icon">📊</div><h3 class="card-title" data-i18n="feature_3_title">گزارش‌های تحلیلی</h3><p class="card-text" data-i18n="feature_3_desc">داشبورد هوشمند با نمودارهای تعاملی. تحلیل روند درآمد و هزینه در زمان واقعی.</p></div>
+          <div class="card reveal"><div class="card-icon">📦</div><h3 class="card-title" data-i18n="feature_4_title">مدیریت موجودی</h3><p class="card-text" data-i18n="feature_4_desc">پیگیری موجودی کالا و انبار. هشدار خودکار برای کالاهای رو به اتمام.</p></div>
+          <div class="card reveal d2"><div class="card-icon">🧮</div><h3 class="card-title" data-i18n="feature_5_title">محاسبه مالیات</h3><p class="card-text" data-i18n="feature_5_desc">محاسبه خودکار مالیات بر ارزش افزوده. تهیه گزارش‌های مالیاتی مطابق آخرین استانداردهای ایران.</p></div>
+          <div class="card reveal d3"><div class="card-icon">📱</div><h3 class="card-title" data-i18n="feature_6_title">اپلیکیشن موبایل</h3><p class="card-text" data-i18n="feature_6_desc">دسترسی به تمامی امکانات از طریق اپلیکیشن موبایل. مدیریت مالی در هر زمان و مکان.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHARTS ============ -->
+    <section id="charts" class="section charts-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge reveal" data-i18n="charts_badge">داشبورد تحلیلی</div>
+          <h2 class="section-title reveal d2" data-i18n="charts_title">نمودارهای هوشمند برای تصمیم‌گیری بهتر</h2>
+          <p class="section-subtitle reveal d3" data-i18n="charts_subtitle">با نمودارهای تعاملی تراز، وضعیت مالی کسب‌وکارتان را در یک نگاه تحلیل کنید و تصمیمات هوشمندانه بگیرید.</p>
+        </div>
+        <div class="charts-grid">
+          <div class="chart-card reveal">
+            <div class="chart-card-header">
+              <h3 class="chart-card-title" data-i18n="chart_bar_title">درآمد ماهانه (میلیون تومان)</h3>
+              <div class="chart-card-badge" data-i18n="chart_bar_badge">↑ ۲۳٪</div>
+            </div>
+            <div class="bar-chart">
+              <div class="bar-group"><div class="bar" style="height:45%"><span class="bar-value" data-i18n="bar_v1">۳۲</span></div><span class="bar-label" data-i18n="bar_l1">فرو</span></div>
+              <div class="bar-group"><div class="bar" style="height:62%"><span class="bar-value" data-i18n="bar_v2">۴۵</span></div><span class="bar-label" data-i18n="bar_l2">اردی</span></div>
+              <div class="bar-group"><div class="bar" style="height:50%"><span class="bar-value" data-i18n="bar_v3">۳۸</span></div><span class="bar-label" data-i18n="bar_l3">خرداد</span></div>
+              <div class="bar-group"><div class="bar" style="height:78%"><span class="bar-value" data-i18n="bar_v4">۵۶</span></div><span class="bar-label" data-i18n="bar_l4">تیر</span></div>
+              <div class="bar-group"><div class="bar" style="height:68%"><span class="bar-value" data-i18n="bar_v5">۴۹</span></div><span class="bar-label" data-i18n="bar_l5">مرداد</span></div>
+              <div class="bar-group"><div class="bar" style="height:92%"><span class="bar-value" data-i18n="bar_v6">۶۷</span></div><span class="bar-label" data-i18n="bar_l6">شهری</span></div>
+            </div>
+            <div class="chart-legend"><div class="legend-item"><div class="legend-dot" style="background:var(--accent);"></div><span data-i18n="legend_net_income">درآمد خالص</span></div></div>
+          </div>
+          <div class="chart-card reveal d2">
+            <div class="chart-card-header">
+              <h3 class="chart-card-title" data-i18n="chart_line_title">روند رشد سود خالص</h3>
+              <div class="chart-card-badge" data-i18n="chart_line_badge">↑ ۱۸٪</div>
+            </div>
+            <div class="line-chart">
+              <svg viewBox="0 0 400 200" preserveAspectRatio="none">
+                <defs><linearGradient id="lineGradient" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="var(--accent)" stop-opacity="0.3"/><stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/></linearGradient></defs>
+                <line x1="0" y1="50" x2="400" y2="50" stroke="var(--border)" stroke-dasharray="4" stroke-width="0.5"/>
+                <line x1="0" y1="100" x2="400" y2="100" stroke="var(--border)" stroke-dasharray="4" stroke-width="0.5"/>
+                <line x1="0" y1="150" x2="400" y2="150" stroke="var(--border)" stroke-dasharray="4" stroke-width="0.5"/>
+                <path class="line-area" d="M0,160 L66,130 L133,140 L200,100 L266,80 L333,60 L400,40 L400,200 L0,200 Z"/>
+                <path class="line-path" d="M0,160 L66,130 L133,140 L200,100 L266,80 L333,60 L400,40"/>
+                <circle class="line-dot" cx="0" cy="160" r="5"/><circle class="line-dot" cx="66" cy="130" r="5"/><circle class="line-dot" cx="133" cy="140" r="5"/><circle class="line-dot" cx="200" cy="100" r="5"/><circle class="line-dot" cx="266" cy="80" r="5"/><circle class="line-dot" cx="333" cy="60" r="5"/><circle class="line-dot" cx="400" cy="40" r="5"/>
+              </svg>
+            </div>
+            <div class="chart-legend"><div class="legend-item"><div class="legend-dot" style="background:var(--accent);"></div><span data-i18n="legend_net_profit">سود خالص</span></div><div class="legend-item"><div class="legend-dot" style="background:var(--secondary);"></div><span data-i18n="legend_target">هدف‌گذاری</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORKFLOW ============ -->
+    <section id="workflow" class="section workflow-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge reveal" data-i18n="workflow_badge">نحوه کار</div>
+          <h2 class="section-title reveal d2" data-i18n="workflow_title">از ثبت اطلاعات تا تصمیم هوشمند</h2>
+          <p class="section-subtitle reveal d3" data-i18n="workflow_subtitle">تراز فرآیند مدیریت مالی شما را در چهار مرحله ساده و خودکار انجام می‌دهد.</p>
+        </div>
+        <div class="workflow-visual reveal d2">
+          <img src="assets/img/workflow.svg" alt="Workflow" class="workflow-img">
+        </div>
+        <div class="workflow-steps">
+          <div class="workflow-step reveal">
+            <div class="workflow-step-num">۱</div>
+            <h3 data-i18n="workflow_step_1_title">ثبت اطلاعات</h3>
+            <p data-i18n="workflow_step_1_desc">فاکتورها، هزینه‌ها و درآمدهای خود را به سادگی ثبت کنید.</p>
+          </div>
+          <div class="workflow-step reveal d2">
+            <div class="workflow-step-num">۲</div>
+            <h3 data-i18n="workflow_step_2_title">پردازش خودکار</h3>
+            <p data-i18n="workflow_step_2_desc">تراز محاسبات، دسته‌بندی و تحلیل را خودکار انجام می‌دهد.</p>
+          </div>
+          <div class="workflow-step reveal d3">
+            <div class="workflow-step-num">۳</div>
+            <h3 data-i18n="workflow_step_3_title">گزارش‌های تحلیلی</h3>
+            <p data-i18n="workflow_step_3_desc">نمودارها و آمار دقیق وضعیت مالی کسب‌وکارتان را ببینید.</p>
+          </div>
+          <div class="workflow-step reveal d4">
+            <div class="workflow-step-num">۴</div>
+            <h3 data-i18n="workflow_step_4_title">تصمیم بهتر</h3>
+            <p data-i18n="workflow_step_4_desc">بر اساس داده‌های دقیق، تصمیمات هوشمندانه‌تری بگیرید.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SCREENSHOTS ============ -->
+    <section id="screenshots" class="section screenshots-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge reveal" data-i18n="screenshots_badge">نمای نرم‌افزار</div>
+          <h2 class="section-title reveal d2" data-i18n="screenshots_title">نگاهی به محیط تراز</h2>
+          <p class="section-subtitle reveal d3" data-i18n="screenshots_subtitle">صفحات مختلف نرم‌افزار را مشاهده کنید و با رابط کاربری حرفه‌ای تراز آشنا شوید.</p>
+        </div>
+        <div class="screenshots-tabs reveal">
+          <button class="screenshot-tab active" data-tab="dashboard" data-i18n="tab_dashboard">داشبورد</button>
+          <button class="screenshot-tab" data-tab="invoice" data-i18n="tab_invoice">فاکتور</button>
+          <button class="screenshot-tab" data-tab="reports" data-i18n="tab_reports">گزارش‌ها</button>
+          <button class="screenshot-tab" data-tab="transactions" data-i18n="tab_transactions">تراکنش‌ها</button>
+        </div>
+        <div class="screenshot-display reveal d2">
+          <div class="screenshot-browser">
+            <div class="screenshot-browser-bar">
+              <div class="browser-dot red"></div><div class="browser-dot yellow"></div><div class="browser-dot green"></div>
+              <div class="browser-url" data-i18n="browser_url">app.taraz.ir/dashboard</div>
+            </div>
+            <div class="screenshot-frame">
+              <img class="screenshot-img" data-screenshot="dashboard" src="assets/img/hero-dashboard.svg" alt="Dashboard">
+              <img class="screenshot-img hidden" data-screenshot="invoice" src="assets/img/invoice-preview.svg" alt="Invoice">
+              <img class="screenshot-img hidden" data-screenshot="reports" src="assets/img/reports-preview.svg" alt="Reports">
+              <img class="screenshot-img hidden" data-screenshot="transactions" src="assets/img/transactions-preview.svg" alt="Transactions">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECURITY ============ -->
+    <section id="security" class="section security-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge reveal" data-i18n="security_badge">امنیت و اعتماد</div>
+          <h2 class="section-title reveal d2" data-i18n="security_title">اطلاعات مالی شما در امن‌ترین حالت</h2>
+          <p class="section-subtitle reveal d3" data-i18n="security_subtitle">تراز با استفاده از پیشرفته‌ترین تکنولوژی‌های امنیتی، اطلاعات مالی کسب‌وکار شما را محافظت می‌کند.</p>
+        </div>
+        <div class="security-grid">
+          <div class="security-card reveal">
+            <div class="security-icon">🔐</div>
+            <h3 data-i18n="security_1_title">رمزنگاری سطح بانکی</h3>
+            <p data-i18n="security_1_desc">تمامی اطلاعات با رمزنگاری SSL ۲۵۶ بیتی محافظت می‌شوند. امنیت در سطح بانک‌های بین‌المللی.</p>
+          </div>
+          <div class="security-card reveal d2">
+            <div class="security-icon">💾</div>
+            <h3 data-i18n="security_2_title">پشتیبان‌گیری خودکار</h3>
+            <p data-i18n="security_2_desc">پشتیبان‌گیری روزانه از تمامی اطلاعات. بازیابی سریع در هر شرایطی.</p>
+          </div>
+          <div class="security-card reveal d3">
+            <div class="security-icon">🛡️</div>
+            <h3 data-i18n="security_3_title">دیتاسنتر امن</h3>
+            <p data-i18n="security_3_desc">سرورهای تراز در دیتاسنترهای معتبر ایران با استانداردهای بین‌المللی قرار دارند.</p>
+          </div>
+          <div class="security-card reveal d4">
+            <div class="security-icon">🔑</div>
+            <h3 data-i18n="security_4_title">احراز هویت دو مرحله‌ای</h3>
+            <p data-i18n="security_4_desc">ورود امن با احراز هویت دو مرحله‌ای. محافظت کامل از حساب کاربری شما.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BENEFITS ============ -->
+    <section id="benefits" class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge reveal" data-i18n="benefits_badge">چرا تراز؟</div>
+          <h2 class="section-title reveal d2" data-i18n="benefits_title">مزایای استفاده از تراز</h2>
+          <p class="section-subtitle reveal d3" data-i18n="benefits_subtitle">تراز انتخاب اول هزاران کسب‌وکار موفق در ایران است.</p>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-card reveal"><div class="benefit-icon">⚡</div><div class="benefit-content"><h3 data-i18n="benefit_1_title">صرفه‌جویی در زمان</h3><p data-i18n="benefit_1_desc">اتوماسیون فرآیندهای تکراری. کاهش ۷۰٪ زمان صرف شده برای امور مالی.</p></div></div>
+          <div class="benefit-card reveal d2"><div class="benefit-icon">✓</div><div class="benefit-content"><h3 data-i18n="benefit_2_title">کاهش خطا</h3><p data-i18n="benefit_2_desc">محاسبات خودکار و دقیق. حذف خطاهای انسانی در ثبت اطلاعات.</p></div></div>
+          <div class="benefit-card reveal d3"><div class="benefit-icon">🌐</div><div class="benefit-content"><h3 data-i18n="benefit_3_title">دسترسی از هر جا</h3><p data-i18n="benefit_3_desc">پلتفرم ابری با دسترسی از هر دستگاه. همکاری تیمی بدون محدودیت.</p></div></div>
+          <div class="benefit-card reveal"><div class="benefit-icon">🔐</div><div class="benefit-content"><h3 data-i18n="benefit_4_title">امنیت بانکی</h3><p data-i18n="benefit_4_desc">رمزنگاری سطح بانکی. پشتیبان‌گیری خودکار روزانه. سرورهای امن در ایران.</p></div></div>
+          <div class="benefit-card reveal d2"><div class="benefit-icon">🎧</div><div class="benefit-content"><h3 data-i18n="benefit_5_title">پشتیبانی ۲۴/۷</h3><p data-i18n="benefit_5_desc">تیم پشتیبانی متخصص در تمامی ساعات. پاسخگویی از طریق چت، تلفن و ایمیل.</p></div></div>
+          <div class="benefit-card reveal d3"><div class="benefit-icon">🔄</div><div class="benefit-content"><h3 data-i18n="benefit_6_title">به‌روزرسانی مداوم</h3><p data-i18n="benefit_6_desc">اضافه شدن ویژگی‌های جدید هر ماه. سازگاری با آخرین تغییرات قوانین مالیاتی.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTEGRATIONS ============ -->
+    <section id="integrations" class="section integrations-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge reveal" data-i18n="integrations_badge">یکپارچه‌سازی</div>
+          <h2 class="section-title reveal d2" data-i18n="integrations_title">سازگار با ابزارهای محبوب</h2>
+          <p class="section-subtitle reveal d3" data-i18n="integrations_subtitle">تراز با سرویس‌ها و ابزارهای پرکاربرد یکپارچه می‌شود تا workflows شما بهینه‌تر شود.</p>
+        </div>
+        <div class="integrations-grid">
+          <div class="integration-card reveal"><div class="integration-icon">🏦</div><div class="integration-name" data-i18n="int_1_name">بانک‌ها</div><div class="integration-desc" data-i18n="int_1_desc">اتصال مستقیم</div></div>
+          <div class="integration-card reveal d2"><div class="integration-icon">💳</div><div class="integration-name" data-i18n="int_2_name">زرین‌پال</div><div class="integration-desc" data-i18n="int_2_desc">درگاه پرداخت</div></div>
+          <div class="integration-card reveal d3"><div class="integration-icon">📧</div><div class="integration-name" data-i18n="int_3_name">ایمیل</div><div class="integration-desc" data-i18n="int_3_desc">ارسال خودکار</div></div>
+          <div class="integration-card reveal"><div class="integration-icon">📲</div><div class="integration-name" data-i18n="int_4_name">پیامک</div><div class="integration-desc" data-i18n="int_4_desc">اطلاع‌رسانی</div></div>
+          <div class="integration-card reveal d2"><div class="integration-icon">🛒</div><div class="integration-name" data-i18n="int_5_name">ووکامرس</div><div class="integration-desc" data-i18n="int_5_desc">فروشگاه آنلاین</div></div>
+          <div class="integration-card reveal d3"><div class="integration-icon">📊</div><div class="integration-name" data-i18n="int_6_name">اکسل</div><div class="integration-desc" data-i18n="int_6_desc">خروجی گزارش</div></div>
+          <div class="integration-card reveal"><div class="integration-icon">🔗</div><div class="integration-name" data-i18n="int_7_name">API</div><div class="integration-desc" data-i18n="int_7_desc">اتصال سفارشی</div></div>
+          <div class="integration-card reveal d2"><div class="integration-icon">☁️</div><div class="integration-name" data-i18n="int_8_name">ابری</div><div class="integration-desc" data-i18n="int_8_desc">همگام‌سازی</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge reveal" data-i18n="pricing_badge">تعرفه‌ها</div>
+          <h2 class="section-title reveal d2" data-i18n="pricing_title">پلن مناسب کسب‌وکار خود را انتخاب کنید</h2>
+          <p class="section-subtitle reveal d3" data-i18n="pricing_subtitle">شروع رایگان. ارتقا در هر زمان. بدون قرارداد طولانی‌مدت.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card reveal">
+            <div class="pricing-name" data-i18n="plan_starter_name">استارتر</div>
+            <p class="pricing-desc" data-i18n="plan_starter_desc">برای کسب‌وکارهای کوچک</p>
+            <div class="pricing-price"><span class="pricing-amount" data-i18n="plan_starter_price">۲۹۰,۰۰۰</span><span class="pricing-period" data-i18n="plan_period_monthly">تومان / ماهانه</span></div>
+            <ul class="pricing-features" style="list-style:none;padding:0;">
+              <li class="pricing-feature" data-i18n="plan_starter_f1">تا ۱۰۰ فاکتور در ماه</li>
+              <li class="pricing-feature" data-i18n="plan_starter_f2">۱ کاربر</li>
+              <li class="pricing-feature" data-i18n="plan_starter_f3">گزارش‌های پایه</li>
+              <li class="pricing-feature" data-i18n="plan_starter_f4">پشتیبانی ایمیلی</li>
+            </ul>
+            <a href="#cta" class="btn btn-outline btn-block" data-i18n="cta_start">شروع رایگان</a>
+          </div>
+          <div class="pricing-card featured reveal d2">
+            <div class="pricing-badge" data-i18n="plan_popular">محبوب‌ترین</div>
+            <div class="pricing-name" data-i18n="plan_pro_name">حرفه‌ای</div>
+            <p class="pricing-desc" data-i18n="plan_pro_desc">برای کسب‌وکارهای در حال رشد</p>
+            <div class="pricing-price"><span class="pricing-amount" data-i18n="plan_pro_price">۵۹۰,۰۰۰</span><span class="pricing-period" data-i18n="plan_period_monthly">تومان / ماهانه</span></div>
+            <ul class="pricing-features" style="list-style:none;padding:0;">
+              <li class="pricing-feature" data-i18n="plan_pro_f1">فاکتور نامحدود</li>
+              <li class="pricing-feature" data-i18n="plan_pro_f2">تا ۵ کاربر</li>
+              <li class="pricing-feature" data-i18n="plan_pro_f3">گزارش‌های پیشرفته</li>
+              <li class="pricing-feature" data-i18n="plan_pro_f4">پشتیبانی تلفنی</li>
+              <li class="pricing-feature" data-i18n="plan_pro_f5">اپلیکیشن موبایل</li>
+            </ul>
+            <a href="#cta" class="btn btn-primary btn-block btn-arrow" data-i18n="cta_start">شروع رایگان</a>
+          </div>
+          <div class="pricing-card reveal d3">
+            <div class="pricing-name" data-i18n="plan_enterprise_name">سازمانی</div>
+            <p class="pricing-desc" data-i18n="plan_enterprise_desc">برای سازمان‌های بزرگ</p>
+            <div class="pricing-price"><span class="pricing-amount" style="font-size:1.75rem;" data-i18n="plan_enterprise_price">تماس بگیرید</span><span class="pricing-period" data-i18n="plan_enterprise_period">قیمت سفارشی</span></div>
+            <ul class="pricing-features" style="list-style:none;padding:0;">
+              <li class="pricing-feature" data-i18n="plan_enterprise_f1">همه امکانات حرفه‌ای</li>
+              <li class="pricing-feature" data-i18n="plan_enterprise_f2">کاربر نامحدود</li>
+              <li class="pricing-feature" data-i18n="plan_enterprise_f3">API اختصاصی</li>
+              <li class="pricing-feature" data-i18n="plan_enterprise_f4">پشتیبانی اختصاصی ۲۴/۷</li>
+              <li class="pricing-feature" data-i18n="plan_enterprise_f5">آموزش تیمی</li>
+            </ul>
+            <a href="#cta" class="btn btn-outline btn-block" data-i18n="plan_enterprise_cta">درخواست دمو</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOWNLOAD ============ -->
+    <section id="download" class="section download-section">
+      <div class="container">
+        <div class="download-grid">
+          <div class="download-content reveal">
+            <div class="section-badge" data-i18n="download_badge">دانلود اپلیکیشن</div>
+            <h2 class="download-title" data-i18n="download_title">تراز را همیشه همراه داشته باشید</h2>
+            <p class="download-subtitle" data-i18n="download_subtitle">اپلیکیشن تراز را روی تمامی دستگاه‌های خود نصب کنید و از هر جا مدیریت مالی انجام دهید.</p>
+            <div class="download-buttons">
+              <a href="#" class="download-btn">
+                <div class="download-btn-icon">🤖</div>
+                <div class="download-btn-text">
+                  <div class="download-btn-label" data-i18n="dl_label_download">دانلود از</div>
+                  <div class="download-btn-platform" data-i18n="dl_android">Google Play</div>
+                  <div class="download-btn-version" data-i18n="dl_version">نسخه ۳.۲.۱ — ۲۴ MB</div>
+                </div>
+                <div class="download-btn-arrow">←</div>
+              </a>
+              <a href="#" class="download-btn">
+                <div class="download-btn-icon">🍎</div>
+                <div class="download-btn-text">
+                  <div class="download-btn-label" data-i18n="dl_label_download">دانلود از</div>
+                  <div class="download-btn-platform" data-i18n="dl_ios">App Store</div>
+                  <div class="download-btn-version" data-i18n="dl_version_ios">نسخه ۳.۲.۰ — ۳۱ MB</div>
+                </div>
+                <div class="download-btn-arrow">←</div>
+              </a>
+              <a href="#" class="download-btn">
+                <div class="download-btn-icon">🖥️</div>
+                <div class="download-btn-text">
+                  <div class="download-btn-label" data-i18n="dl_label_download">دانلود برای</div>
+                  <div class="download-btn-platform" data-i18n="dl_windows">Windows</div>
+                  <div class="download-btn-version" data-i18n="dl_version_win">نسخه ۳.۲.۱ — ۸۵ MB</div>
+                </div>
+                <div class="download-btn-arrow">←</div>
+              </a>
+            </div>
+          </div>
+          <div class="download-visual reveal d2">
+            <div class="device-mockup">
+              <div class="device-phone">
+                <div class="device-phone-notch"></div>
+                <div class="device-phone-screen">
+                  <img src="assets/img/logo-sm.svg" alt="تراز" style="width:48px;height:48px;">
+                  <div class="device-phone-text" data-i18n="brand">تراز</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge reveal" data-i18n="testimonials_badge">نظرات مشتریان</div>
+          <h2 class="section-title reveal d2" data-i18n="testimonials_title">مشتریان ما چه می‌گویند</h2>
+          <p class="section-subtitle reveal d3" data-i18n="testimonials_subtitle">بیش از ۱۰,۰۰۰ کسب‌وکار به تراز اعتماد کرده‌اند.</p>
+        </div>
+        <div class="testimonials-carousel">
+          <div class="testimonial-card active" data-index="0">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-text" data-i18n="test_1_text">«تراز کار ما را متحول کرد. قبلاً ساعت‌ها وقت صرف امور مالی می‌کردیم، الان همه چیز خودکار است و تیم ما روی رشد کسب‌وکار تمرکز دارد.»</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" data-i18n="test_1_avatar">ع</div>
+              <div class="testimonial-info">
+                <h4 data-i18n="test_1_name">علی محمدی</h4>
+                <p data-i18n="test_1_role">مدیرعامل، شرکت فناوری نوین</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-index="1">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-text" data-i18n="test_2_text">«رابط کاربری فوق‌العاده و پشتیبانی عالی. تیم تراز همیشه در دسترس هستند و سریع پاسخ می‌دهند. واقعاً حرفه‌ای کار می‌کنند.»</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" data-i18n="test_2_avatar">س</div>
+              <div class="testimonial-info">
+                <h4 data-i18n="test_2_name">سارا احمدی</h4>
+                <p data-i18n="test_2_role">حسابدار، فروشگاه آنلاین پارسیان</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-index="2">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-text" data-i18n="test_3_text">«گزارش‌های تحلیلی تراز به ما کمک کرد تصمیمات بهتری بگیریم. داشبورد مدیریتی عالی و واقعاً ارزش هر ریالش را دارد.»</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" data-i18n="test_3_avatar">ر</div>
+              <div class="testimonial-info">
+                <h4 data-i18n="test_3_name">رضا کریمی</h4>
+                <p data-i18n="test_3_role">مدیر مالی، گروه صنعتی البرز</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <button class="carousel-dot active" data-slide="0" aria-label="Slide 1"></button>
+          <button class="carousel-dot" data-slide="1" aria-label="Slide 2"></button>
+          <button class="carousel-dot" data-slide="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge reveal" data-i18n="faq_badge">سوالات متداول</div>
+          <h2 class="section-title reveal d2" data-i18n="faq_title">پاسخ به سوالات شما</h2>
+          <p class="section-subtitle reveal d3" data-i18n="faq_subtitle">اگر سوال دیگری دارید، با ما تماس بگیرید.</p>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item active"><button class="faq-question"><span data-i18n="faq_1_q">آیا می‌توانم تراز را رایگان امتحان کنم؟</span><span class="faq-icon">▼</span></button><div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq_1_a">بله، تمامی پلن‌ها شامل ۱۴ روز استفاده رایگان هستند. نیازی به وارد کردن اطلاعات کارت بانکی نیست و می‌توانید تمام امکانات را تست کنید.</div></div></div>
+          <div class="faq-item"><button class="faq-question"><span data-i18n="faq_2_q">آیا اطلاعات من امن است؟</span><span class="faq-icon">▼</span></button><div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq_2_a">بله، ما از رمزنگاری سطح بانکی (SSL ۲۵۶ بیتی) استفاده می‌کنیم. سرورهای ما در دیتاسنترهای امن در ایران قرار دارند و روزانه پشتیبان‌گیری خودکار انجام می‌شود.</div></div></div>
+          <div class="faq-item"><button class="faq-question"><span data-i18n="faq_3_q">آیا می‌توانم اطلاعات را از نرم‌افزار قبلی منتقل کنم؟</span><span class="faq-icon">▼</span></button><div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq_3_a">بله، تیم پشتیبانی ما در فرآیند انتقال اطلاعات به شما کمک می‌کند. این سرویس برای تمامی پلن‌ها رایگان است و شامل آموزش اولیه نیز می‌شود.</div></div></div>
+          <div class="faq-item"><button class="faq-question"><span data-i18n="faq_4_q">آیا تراز با قوانین مالیاتی ایران سازگار است؟</span><span class="faq-icon">▼</span></button><div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq_4_a">بله، تراز کاملاً با آخرین تغییرات قوانین مالیاتی ایران سازگار است. محاسبه مالیات بر ارزش افزوده و تهیه گزارش‌های مالیاتی به صورت خودکار انجام می‌شود.</div></div></div>
+          <div class="faq-item"><button class="faq-question"><span data-i18n="faq_5_q">آیا اپلیکیشن موبایل دارید؟</span><span class="faq-icon">▼</span></button><div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq_5_a">بله، اپلیکیشن تراز برای iOS و Android در دسترس است. تمامی امکانات نسخه وب در اپلیکیشن موبایل نیز موجود است و همگام‌سازی لحظه‌ای دارد.</div></div></div>
+          <div class="faq-item"><button class="faq-question"><span data-i18n="faq_6_q">نحوه پشتیبانی چگونه است؟</span><span class="faq-icon">▼</span></button><div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq_6_a">پشتیبانی از طریق چت آنلاین، تلفن و ایمیل ارائه می‌شود. پلن‌های حرفه‌ای و سازمانی شامل پشتیبانی اختصاصی ۲۴/۷ هستند.</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section id="cta" class="section cta-section">
+      <div class="container">
+        <div class="cta-content text-center">
+          <h2 class="cta-title reveal" data-i18n="cta_title">آماده شروع هستید؟</h2>
+          <p class="cta-subtitle reveal d2" data-i18n="cta_subtitle">همین امروز ثبت‌نام کنید و ۱۴ روز رایگان از تمامی امکانات تراز استفاده کنید.</p>
+          <form class="cta-form reveal d3">
+            <input type="email" class="form-input" data-i18n-placeholder="cta_placeholder" placeholder="ایمیل خود را وارد کنید" required>
+            <button type="submit" class="btn btn-primary btn-arrow" data-i18n="cta_start">شروع رایگان</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo"><img src="assets/img/logo-sm.svg" alt="تراز" class="logo-img"><span data-i18n="brand">تراز</span></a>
+          <p data-i18n="footer_desc">تراز، نرم‌افزار حسابداری ابری برای کسب‌وکارهای ایرانی. ساده، هوشمند، امن. ما به شما کمک می‌کنیم تا مدیریت مالی حرفه‌ای داشته باشید.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title" data-i18n="footer_product">محصول</h4>
+          <ul class="footer-links" style="list-style:none;padding:0;">
+            <li><a href="#features" class="footer-link" data-i18n="footer_product_1">ویژگی‌ها</a></li>
+            <li><a href="#pricing" class="footer-link" data-i18n="footer_product_2">تعرفه‌ها</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_product_3">به‌روزرسانی‌ها</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_product_4">نقشه راه</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title" data-i18n="footer_company">شرکت</h4>
+          <ul class="footer-links" style="list-style:none;padding:0;">
+            <li><a href="#" class="footer-link" data-i18n="footer_company_1">درباره ما</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_company_2">وبلاگ</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_company_3">فرصت‌های شغلی</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_company_4">تماس با ما</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-title" data-i18n="footer_resources">منابع</h4>
+          <ul class="footer-links" style="list-style:none;padding:0;">
+            <li><a href="#" class="footer-link" data-i18n="footer_resources_1">مستندات API</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_resources_2">راهنمای استفاده</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_resources_3">ویدیوهای آموزشی</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer_resources_4">مرکز پشتیبانی</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-trust">
+        <div class="trust-group"><span class="trust-caption" data-i18n="trust_enamad">نماد اعتماد</span><div class="trust-slot"><span class="slot-hint" data-i18n="trust_enamad_hint">نماد<br>اعتماد<br>الکترونیک</span></div></div>
+        <div class="trust-group"><span class="trust-caption" data-i18n="trust_payments">درگاه‌های پرداخت</span><div class="payment-slots"><div class="payment-slot"><span class="slot-hint" data-i18n="pay_zarinpal">زرین‌پال</span></div><div class="payment-slot"><span class="slot-hint" data-i18n="pay_nextpay">نکست‌پی</span></div><div class="payment-slot"><span class="slot-hint" data-i18n="pay_mellat">بانک<br>ملت</span></div><div class="payment-slot"><span class="slot-hint" data-i18n="pay_saman">بانک<br>سامان</span></div></div></div>
+        <div class="trust-group"><span class="trust-caption" data-i18n="trust_certs">گواهینامه‌ها</span><div class="trust-slot"><span class="slot-hint" data-i18n="trust_ssl_hint">گواهینامه<br>امنیتی<br>SSL</span></div></div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_rights">© ۱۴۰۴ تراز. تمامی حقوق محفوظ است.</p>
+        <div class="footer-legal">
+          <a href="#" class="footer-link" data-i18n="footer_legal_1">شرایط استفاده</a>
+          <a href="#" class="footer-link" data-i18n="footer_legal_2">حریم خصوصی</a>
+          <a href="#" class="footer-link" data-i18n="footer_legal_3">امنیت</a>
+        </div>
+        <p class="footer-made" data-i18n="footer_made">ساخته شده با ❤️ در ایران</p>
+      </div>
+      <!-- Sokkan Branding -->
+      <div class="footer-branding">
+        <div class="sokkan-badge">
+          <span class="sokkan-badge-label" data-i18n="sokkan_label">قالب تراز از مجموعه</span>
+          <span class="sokkan-badge-name" data-i18n="sokkan_name">سُکّان</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

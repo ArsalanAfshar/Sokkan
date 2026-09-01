@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <linearGradient id="stepGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <filter id="stepShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0c1b33" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Step 1: Input -->
+  <g filter="url(#stepShadow)">
+    <rect x="10" y="40" width="120" height="120" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="35" y="55" width="70" height="70" rx="35" fill="#f0fdf4"/>
+    <text x="70" y="100" font-family="sans-serif" font-size="28" text-anchor="middle">📥</text>
+    <text x="70" y="145" font-family="Vazirmatn, sans-serif" font-size="12" font-weight="bold" fill="#0c1b33" text-anchor="middle">ثبت اطلاعات</text>
+    <text x="70" y="160" font-family="Vazirmatn, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">فاکتور، هزینه، درآمد</text>
+    <!-- Step number -->
+    <circle cx="25" cy="48" r="12" fill="url(#stepGrad)"/>
+    <text x="25" y="52" font-family="Vazirmatn, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">۱</text>
+  </g>
+  
+  <!-- Arrow 1→2 -->
+  <path d="M140 100 L160 100" stroke="#059669" stroke-width="2" stroke-dasharray="4" opacity="0.5"/>
+  <polygon points="160,95 170,100 160,105" fill="#059669" opacity="0.5"/>
+
+  <!-- Step 2: Processing -->
+  <g filter="url(#stepShadow)">
+    <rect x="170" y="40" width="120" height="120" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="195" y="55" width="70" height="70" rx="35" fill="#eff6ff"/>
+    <text x="230" y="100" font-family="sans-serif" font-size="28" text-anchor="middle">⚙️</text>
+    <text x="230" y="145" font-family="Vazirmatn, sans-serif" font-size="12" font-weight="bold" fill="#0c1b33" text-anchor="middle">پردازش خودکار</text>
+    <text x="230" y="160" font-family="Vazirmatn, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">محاسبات و دسته‌بندی</text>
+    <circle cx="185" cy="48" r="12" fill="url(#stepGrad)"/>
+    <text x="185" y="52" font-family="Vazirmatn, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">۲</text>
+  </g>
+  
+  <!-- Arrow 2→3 -->
+  <path d="M300 100 L320 100" stroke="#059669" stroke-width="2" stroke-dasharray="4" opacity="0.5"/>
+  <polygon points="320,95 330,100 320,105" fill="#059669" opacity="0.5"/>
+
+  <!-- Step 3: Reports -->
+  <g filter="url(#stepShadow)">
+    <rect x="330" y="40" width="120" height="120" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="355" y="55" width="70" height="70" rx="35" fill="#fef3c7"/>
+    <text x="390" y="100" font-family="sans-serif" font-size="28" text-anchor="middle">📊</text>
+    <text x="390" y="145" font-family="Vazirmatn, sans-serif" font-size="12" font-weight="bold" fill="#0c1b33" text-anchor="middle">گزارش‌های تحلیلی</text>
+    <text x="390" y="160" font-family="Vazirmatn, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">نمودار و آمار دقیق</text>
+    <circle cx="345" cy="48" r="12" fill="url(#stepGrad)"/>
+    <text x="345" y="52" font-family="Vazirmatn, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">۳</text>
+  </g>
+  
+  <!-- Arrow 3→4 -->
+  <path d="M460 100 L480 100" stroke="#059669" stroke-width="2" stroke-dasharray="4" opacity="0.5"/>
+  <polygon points="480,95 490,100 480,105" fill="#059669" opacity="0.5"/>
+
+  <!-- Step 4: Decisions -->
+  <g filter="url(#stepShadow)">
+    <rect x="490" y="40" width="100" height="120" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="505" y="55" width="70" height="70" rx="35" fill="#f0fdf4"/>
+    <text x="540" y="100" font-family="sans-serif" font-size="28" text-anchor="middle">🎯</text>
+    <text x="540" y="145" font-family="Vazirmatn, sans-serif" font-size="12" font-weight="bold" fill="#0c1b33" text-anchor="middle">تصمیم بهتر</text>
+    <text x="540" y="160" font-family="Vazirmatn, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">رشد کسب‌وکار</text>
+    <circle cx="505" cy="48" r="12" fill="url(#stepGrad)"/>
+    <text x="505" y="52" font-family="Vazirmatn, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">۴</text>
+  </g>
+</svg>

@@ -1,5 +1,8 @@
 /* ============================================================
-   ENGINE | انجین — base.css
+   Sokkan | سکّان — base.css
+   Template: Milad (میلاد)
+   Part of the Sokkan Template Pack
+
    Design tokens · Reset · Typography · Utilities · Motion
    The whole visual identity lives here: colors, fonts, radius,
    shadows, spacing scale, reveal & ambient animations.
@@ -64,15 +67,15 @@
 /* ---------- 2. THEMES ---------- */
 /* DARK — «مشکیِ جوهر» paper-ink world, amber + matrix green */
 :root[data-theme="dark"] {
-  --bg: #0b0b0e;           /* page background      */
-  --bg-2: #101016;         /* raised surfaces      */
-  --bg-3: #15151d;         /* cards                */
-  --ink: #1b1b24;          /* solid panels (inverted) */
-  --text: #ece7da;         /* primary text (bone)  */
-  --text-2: #b3ad9e;       /* secondary text       */
-  --text-3: #8a8477;       /* faint text (≥4.5:1)  */
-  --line: rgba(236, 231, 218, .14);
-  --line-2: rgba(236, 231, 218, .25);
+  --bg: #0a0a0d;           /* page background (slightly darker for better contrast) */
+  --bg-2: #0f0f14;         /* raised surfaces      */
+  --bg-3: #14141c;         /* cards (lighter for separation) */
+  --ink: #1a1a23;          /* solid panels (inverted, lighter) */
+  --text: #f0ebdc;         /* primary text (bone, brighter) */
+  --text-2: #c4beaf;       /* secondary text (improved contrast) */
+  --text-3: #9a9487;       /* faint text (improved contrast) */
+  --line: rgba(240, 235, 220, .16);
+  --line-2: rgba(240, 235, 220, .28);
 
   --accent: #ffb443;       /* amber — brand        */
   --accent-2: #2dd4a0;     /* matrix green         */
@@ -81,14 +84,14 @@
 
   --paper: #f2ead8;        /* cream — inverted sections */
   --paper-ink: #14121a;
-  --paper-mut: rgba(20, 18, 26, .66);
+  --paper-mut: rgba(20, 18, 26, .72);
 
-  --shadow-sm: 0 2px 10px rgba(0,0,0,.35);
-  --shadow-md: 0 14px 40px rgba(0,0,0,.45);
-  --shadow-lg: 0 30px 80px rgba(0,0,0,.55);
-  --header-bg: rgba(11, 11, 14, .78);
-  --glow: rgba(255, 180, 67, .16);
-  --glow-green: rgba(45, 212, 160, .14);
+  --shadow-sm: 0 2px 10px rgba(0,0,0,.4);
+  --shadow-md: 0 14px 40px rgba(0,0,0,.5);
+  --shadow-lg: 0 30px 80px rgba(0,0,0,.6);
+  --header-bg: rgba(10, 10, 13, .82);
+  --glow: rgba(255, 180, 67, .18);
+  --glow-green: rgba(45, 212, 160, .16);
   color-scheme: dark;
 }
 
@@ -180,30 +183,43 @@ h1, h2, h3, h4 { line-height: 1.55; font-weight: 800; }
 .mono { font-family: var(--font-mono); font-weight: 500; letter-spacing: .02em; }
 .serif-accent { font-family: var(--font-serif); font-weight: 600; color: var(--accent); }
 
-/* ---------- 4b. OUTLINE / HOLLOW TYPE (fixed rendering) ----------
-   Strokes scale with font-size (em), positive letter-spacing so
-   glyphs never touch, inline padding so strokes never clip into
-   neighboring words. Works for Persian + Latin alike. */
+/* ---------- 4b. OUTLINE / HOLLOW TYPE (premium 3D layered effect) ----------
+   Multi-layered text-shadow creates a subtle 3D extrusion effect.
+   Works for Persian + Latin alike. Responsive and performant. */
 .outline {
   color: transparent;
-  -webkit-text-stroke: .035em var(--accent);
-  letter-spacing: .015em;
-  padding-inline: .06em;
+  -webkit-text-stroke: .04em var(--accent);
+  letter-spacing: .02em;
+  padding-inline: .08em;
   paint-order: stroke fill;
+  position: relative;
+  text-shadow:
+    /* Depth layers - creates 3D extrusion effect */
+    calc(.015em * var(--dir, 1)) calc(.015em * var(--dir, 1)) 0 color-mix(in srgb, var(--accent) 35%, transparent),
+    calc(.03em * var(--dir, 1)) calc(.03em * var(--dir, 1)) 0 color-mix(in srgb, var(--accent) 25%, transparent),
+    calc(.045em * var(--dir, 1)) calc(.045em * var(--dir, 1)) 0 color-mix(in srgb, var(--accent) 15%, transparent),
+    /* Subtle glow for premium feel */
+    0 0 .8em color-mix(in srgb, var(--accent) 20%, transparent);
+}
+:root[data-theme="dark"] .outline {
+  text-shadow:
+    calc(.015em * var(--dir, 1)) calc(.015em * var(--dir, 1)) 0 color-mix(in srgb, var(--accent) 45%, transparent),
+    calc(.03em * var(--dir, 1)) calc(.03em * var(--dir, 1)) 0 color-mix(in srgb, var(--accent) 30%, transparent),
+    calc(.045em * var(--dir, 1)) calc(.045em * var(--dir, 1)) 0 color-mix(in srgb, var(--accent) 18%, transparent),
+    0 0 1.2em color-mix(in srgb, var(--accent) 28%, transparent);
 }
 @supports not (-webkit-text-stroke: 1px black) {
-  .outline { color: var(--accent); }
+  .outline {
+    color: var(--accent);
+    text-shadow:
+      calc(.015em * var(--dir, 1)) calc(.015em * var(--dir, 1)) 0 color-mix(in srgb, var(--accent) 35%, transparent),
+      calc(.03em * var(--dir, 1)) calc(.03em * var(--dir, 1)) 0 color-mix(in srgb, var(--accent) 25%, transparent);
+  }
 }
 
 /* Big watermark word (footer) — hollow, intentionally quiet */
-.footer-word {
-  -webkit-text-stroke: .022em color-mix(in srgb, var(--text) 32%, transparent);
-  letter-spacing: .02em;
-}
-:root[data-theme="light"] .footer-word { -webkit-text-stroke: .022em color-mix(in srgb, var(--text) 44%, transparent); }
-@supports not (-webkit-text-stroke: 1px black) {
-  .footer-word { color: color-mix(in srgb, var(--text) 16%, transparent); }
-}
+:root[data-theme="light"] @supports not (-webkit-text-stroke: 1px black) {
+  }
 
 /* ---------- 5. LAYOUT UTILITIES ---------- */
 .container {
