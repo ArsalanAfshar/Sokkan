@@ -30,6 +30,7 @@
   min-height: 100svh;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-block: calc(var(--header-h) + 3rem) 5rem;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
@@ -144,10 +145,11 @@
 
 .hero-device {
   position: absolute;
-  inset-inline-end: clamp(1.5rem, 4vw, 5rem);
+  inset-inline-end: clamp(2rem, 5vw, 6rem);
   top: 50%;
   transform: translateY(-50%);
-  width: clamp(240px, 28vw, 380px);
+  width: clamp(260px, 30vw, 400px);
+  max-width: 35%;
   z-index: 2;
   pointer-events: none;
   perspective: 1200px;
@@ -253,8 +255,8 @@
 /* ---- Desktop ---- */
 @media (min-width: 1024px) and (max-width: 1279px) {
   .hero-device {
-    inset-inline-end: 1.5rem;
-    width: 260px;
+    inset-inline-end: 2rem;
+    width: clamp(260px, 28vw, 320px);
   }
 }
 
@@ -262,17 +264,19 @@
 @media (max-width: 1023px) {
   .hero {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding-top: calc(var(--header-h) + 2rem);
     padding-bottom: 3rem;
+    gap: 0;
   }
   .hero-device {
     position: relative;
     inset-inline: auto;
     top: auto;
     transform: none;
-    width: min(85vw, 360px);
+    width: min(88vw, 380px);
+    max-width: 100%;
     margin: 2.5rem auto 0;
     perspective: 1000px;
   }
@@ -281,19 +285,24 @@
     transform: rotateY(-6deg) rotateX(3deg);
   }
   .hero-in {
-    align-items: center !important;
-    text-align: center !important;
-    max-width: 100% !important;
-    padding-inline: 0 !important;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    padding-inline: 0;
   }
   .hero-cta {
-    justify-content: center !important;
+    justify-content: center;
   }
   .hero-title {
     font-size: clamp(2rem, 7vw, 3rem);
   }
   .hero-sub {
-    max-width: 90%;
+    max-width: 92%;
+    margin-inline: auto;
+  }
+  .hero-stats {
+    max-width: 100%;
   }
 }
 
@@ -368,6 +377,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 
 /* When 3D device is present (desktop), adjust layout */
@@ -375,18 +385,29 @@
   .hero-in {
     align-items: flex-start;
     text-align: start;
-    max-width: 52%;
-    padding-inline-end: 2rem;
+    max-width: 54%;
+    margin-inline-start: 0;
+    margin-inline-end: auto;
+    padding-inline-end: 3rem;
   }
   .hero-cta {
     justify-content: flex-start;
   }
 }
 
-/* Medium desktop — tighter device */
+/* Medium desktop — ensure no overlap */
 @media (min-width: 1024px) and (max-width: 1279px) {
   .hero-in {
+    max-width: 52%;
+    padding-inline-end: 2rem;
+  }
+}
+
+/* Large desktop — more breathing room */
+@media (min-width: 1440px) {
+  .hero-in {
     max-width: 50%;
+    padding-inline-end: 4rem;
   }
 }
 
