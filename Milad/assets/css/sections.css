@@ -24,16 +24,26 @@
 .scroll-progress::-moz-progress-bar { background: linear-gradient(90deg, var(--accent-2), var(--accent)); }
 
 /* ================= HERO ================= */
+/* Layout strategy: CSS Grid.
+   Desktop: two columns [content | device] — guaranteed no overlap.
+   Mobile: single column, stacked and centered.
+   Decorative elements (bg, cube, data chips, emblem) stay absolute
+   and are excluded from the grid flow. */
+
 .hero {
   position: relative;
   min-height: 100vh;
   min-height: 100svh;
-  display: flex;
-  align-items: center;
-  padding-block: calc(var(--header-h) + 3rem) 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-items: center;
+  padding-block: calc(var(--header-h) + 2rem) 3rem;
+  padding-inline: clamp(1.15rem, 3vw, 2.5rem);
   overflow: hidden;
   border-bottom: 1px solid var(--line);
   background: var(--bg);
+  gap: 2.5rem;
 }
 
 /* Subtle dark vignette overlay for depth */
@@ -53,7 +63,6 @@
   position: absolute; inset: 0;
   width: 100%; height: 100%;
   opacity: .22;
-  /* soft field blur: the stream reads as atmosphere, not text */
   filter: blur(1.8px);
   transform: scale(1.04);
 }
@@ -70,7 +79,6 @@
   animation: auroraA 26s ease-in-out infinite alternate;
 }
 
-/* twin aurora washes — subtle atmosphere, not overpowering */
 .hero-aurora {
   position: absolute;
   border-radius: 50%;
@@ -104,7 +112,7 @@
   mask-image: radial-gradient(ellipse 70% 55% at 50% 45%, #000 30%, transparent 75%);
 }
 
-/* floating abstract 3D cube — pure CSS isometric wireframe */
+/* floating abstract 3D cube */
 .hero-cube {
   position: absolute;
   width: 74px; height: 74px;
@@ -138,29 +146,24 @@
 @media (max-width: 1023px) { .hero-cube { display: none; } }
 
 /* ================= 3D DEVICE SHOWCASE ================= */
-/* Reusable product showcase component.
-   Structure: .hero-device > .device-tilt (JS) > .device-float (CSS) > .device-frame
-   Tilt and float are separated so mouse interaction never breaks the animation. */
+/* Mobile (default): centered block below content.
+   Desktop: in-flow grid item — never overlaps content.
+   Tilt (JS) and float (CSS) are on separate layers. */
 
 .hero-device {
-  position: absolute;
-  inset-inline-end: clamp(1.5rem, 4vw, 5rem);
-  top: 50%;
-  transform: translateY(-50%);
-  width: clamp(240px, 28vw, 380px);
+  position: relative;
+  width: min(82vw, 340px);
+  margin: 0 auto;
   z-index: 2;
-  pointer-events: none;
-  perspective: 1200px;
+  perspective: 1000px;
 }
 
-/* Tilt layer – JS writes transform here (smooth, clamped) */
 .device-tilt {
   transform-style: preserve-3d;
   will-change: transform;
   transition: transform .45s cubic-bezier(.22, .9, .28, 1);
 }
 
-/* Float layer – CSS animation runs independently */
 .device-float {
   animation: deviceFloat 7s ease-in-out infinite;
   transform-style: preserve-3d;
@@ -203,7 +206,6 @@
   box-shadow: inset 0 2px 6px rgba(0,0,0,.4);
 }
 
-/* Screen content – simple image-based, cover-fit, easy to replace */
 .screen-content {
   position: absolute;
   inset: 0;
@@ -218,7 +220,6 @@
   display: block;
 }
 
-/* Screen reflection/glow overlay */
 .screen-glow {
   position: absolute;
   inset: 0;
@@ -233,7 +234,6 @@
   z-index: 3;
 }
 
-/* Device base/stand */
 .device-base {
   position: absolute;
   bottom: -16px;
@@ -250,50 +250,35 @@
   box-shadow: 0 6px 16px rgba(0,0,0,.35);
 }
 
-/* ---- Desktop ---- */
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .hero-device {
-    inset-inline-end: 1.5rem;
-    width: 260px;
-  }
-}
-
-/* ---- Mobile: device shown below text, centered ---- */
+/* Mobile: fixed gentle tilt */
 @media (max-width: 1023px) {
-  .hero {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: calc(var(--header-h) + 2rem);
-    padding-bottom: 3rem;
-  }
-  .hero-device {
-    position: relative;
-    inset-inline: auto;
-    top: auto;
-    transform: none;
-    width: min(85vw, 360px);
-    margin: 2.5rem auto 0;
-    perspective: 1000px;
-  }
-  /* On mobile, apply a fixed gentle tilt (no mouse interaction) */
   .device-tilt {
     transform: rotateY(-6deg) rotateX(3deg);
   }
-  .hero-in {
-    align-items: center !important;
-    text-align: center !important;
-    max-width: 100% !important;
-    padding-inline: 0 !important;
+}
+
+/* ---- Desktop: two-column grid ---- */
+@media (min-width: 1024px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) clamp(260px, 28vw, 400px);
+    align-items: center;
+    justify-items: stretch;
+    padding-block: calc(var(--header-h) + 3rem) 4rem;
+    gap: clamp(2rem, 4vw, 4.5rem);
   }
-  .hero-cta {
-    justify-content: center !important;
+
+  .hero-device {
+    width: 100%;
+    margin: 0;
+    perspective: 1200px;
   }
-  .hero-title {
-    font-size: clamp(2rem, 7vw, 3rem);
-  }
-  .hero-sub {
-    max-width: 90%;
+}
+
+/* ---- Large desktop ---- */
+@media (min-width: 1440px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr) clamp(300px, 26vw, 420px);
+    gap: clamp(3rem, 5vw, 5.5rem);
   }
 }
 
@@ -329,7 +314,7 @@
 .hero-data-3 { inset-inline-end: clamp(1rem, 8vw, 10rem); bottom: 22%; animation: floatY 9s ease-in-out infinite; }
 @media (max-width: 1023px) { .hero-data { display: none; } }
 
-/* Vintage rotating emblem — desktop only, bottom-left to avoid device */
+/* Vintage rotating emblem — desktop only */
 .hero-emblem {
   position: absolute;
   inset-inline-start: clamp(1rem, 4vw, 4rem);
@@ -357,10 +342,9 @@
   transform: rotate(-8deg);
 }
 @keyframes spin { to { transform: rotate(360deg); } }
-
-/* Outline text effect now handled in base.css with 3D layered shadows */
 @media (max-width: 1023px) { .hero-emblem { display: none; } }
 
+/* ================= HERO CONTENT ================= */
 .hero-in {
   position: relative;
   z-index: 2;
@@ -368,25 +352,19 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  max-width: var(--container);
+  width: 100%;
 }
 
-/* When 3D device is present (desktop), adjust layout */
+/* Desktop: left-aligned content in grid column 1 */
 @media (min-width: 1024px) {
   .hero-in {
     align-items: flex-start;
     text-align: start;
-    max-width: 52%;
-    padding-inline-end: 2rem;
+    max-width: none;
   }
   .hero-cta {
     justify-content: flex-start;
-  }
-}
-
-/* Medium desktop — tighter device */
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .hero-in {
-    max-width: 50%;
   }
 }
 
@@ -445,11 +423,12 @@
 
 .hero-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: .9rem; margin-bottom: 3.2rem; }
 
-/* Stats — «جدول آماری» vintage table row */
+/* Stats */
 .hero-stats {
   display: grid;
-  grid-template-columns: repeat(4, minmax(120px, 1fr));
-  width: min(760px, 100%);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  max-width: 760px;
   border: 1px solid var(--line-2);
   border-radius: var(--radius);
   background: color-mix(in srgb, var(--bg-2) 68%, transparent);
@@ -498,13 +477,17 @@
 }
 @keyframes wheel { 0% { transform: translateY(0); opacity: 1; } 70% { transform: translateY(9px); opacity: 0; } 100% { transform: translateY(0); opacity: 0; } }
 
+/* ---- Small screens: stats 2x2, hero title smaller ---- */
 @media (max-width: 700px) {
   .hero-stats { grid-template-columns: 1fr 1fr; }
   .stat { padding: 1rem .6rem .8rem; }
-  .stat:nth-child(2n) { border-inline-start: 1px dashed var(--line-2); }
+  .stat:nth-child(2) { border-inline-start: 1px dashed var(--line-2); }
   .stat:nth-child(odd) { border-inline-start: 0; }
   .stat:nth-child(n+3) { border-top: 1px dashed var(--line-2); }
+  .hero-title { font-size: clamp(2rem, 7vw, 3rem); }
+  .hero-sub { max-width: 90%; }
 }
+
 
 @media (prefers-reduced-motion: reduce) {
   .scroll-progress { opacity: 0; }
