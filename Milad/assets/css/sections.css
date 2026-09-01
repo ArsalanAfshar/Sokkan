@@ -278,15 +278,24 @@
 /* Vintage rotating emblem — desktop only, bottom-left to avoid device */
 .hero-emblem {
   position: absolute;
-  inset-inline-start: clamp(1rem, 4vw, 4rem);
-  bottom: clamp(4rem, 9vh, 7rem);
-  width: clamp(100px, 10vw, 140px);
+  inset-inline-end: clamp(3rem, 7vw, 8rem);
+  top: clamp(7rem, 14vh, 11rem);
+  width: clamp(90px, 9vw, 120px);
   aspect-ratio: 1;
   display: grid;
   place-items: center;
-  opacity: .7;
+  opacity: .6;
   z-index: 1;
   pointer-events: none;
+}
+
+/* Large desktop — more spacing */
+@media (min-width: 1440px) {
+  .hero-emblem {
+    inset-inline-end: clamp(5rem, 8vw, 10rem);
+    top: clamp(8rem, 15vh, 12rem);
+    width: clamp(100px, 8vw, 130px);
+  }
 }
 .emblem-ring { position: absolute; inset: 0; animation: spin 34s linear infinite; }
 .emblem-text {
@@ -306,6 +315,7 @@
 
 /* Outline text effect now handled in base.css with 3D layered shadows */
 @media (max-width: 1023px) { .hero-emblem { display: none; } }
+@media (max-width: 768px) { .hero-scroll { display: none; } }
 
 .hero-in {
   position: relative;
@@ -430,7 +440,18 @@
 .stat .stat-suffix { color: var(--accent); font-size: .8em; font-weight: 700; }
 .stat dd { font-size: .8rem; color: var(--text-3); margin-top: .3rem; }
 
-.hero-scroll { margin-top: 2.6rem; }
+.hero-scroll {
+  position: absolute;
+  bottom: clamp(2rem, 4vh, 3.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+[dir="rtl"] .hero-scroll {
+  left: auto;
+  right: 50%;
+  transform: translateX(50%);
+}
 .hero-scroll a {
   display: inline-flex;
   align-items: center;
