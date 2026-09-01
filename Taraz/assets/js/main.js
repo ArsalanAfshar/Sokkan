@@ -227,6 +227,36 @@
       footer_rights: '© ۱۴۰۴ تراز. تمامی حقوق محفوظ است.',
       footer_legal_1: 'شرایط استفاده', footer_legal_2: 'حریم خصوصی', footer_legal_3: 'امنیت',
       footer_made: 'ساخته شده با ❤️ در ایران',
+      sokkan_label: 'قالب تراز از مجموعه',
+      sokkan_name: 'سُکّان',
+
+      // Workflow
+      nav_workflow: 'نحوه کار',
+      workflow_badge: 'فرآیند کار',
+      workflow_title: 'چگونه تراز کار می‌کند؟',
+      workflow_subtitle: 'فرآیند ساده و هوشمند مدیریت مالی با تراز',
+      workflow_alt: 'نمایش فرآیند کار تراز',
+      workflow_step_1_title: 'ثبت اطلاعات',
+      workflow_step_1_desc: 'ثبت تراکنش‌ها و فاکتورها به سادگی و سرعت',
+      workflow_step_2_title: 'پردازش هوشمند',
+      workflow_step_2_desc: 'پردازش خودکار و دسته‌بندی اطلاعات مالی',
+      workflow_step_3_title: 'گزارش‌گیری',
+      workflow_step_3_desc: 'تولید گزارش‌های تحلیلی و نمودارهای تعاملی',
+      workflow_step_4_title: 'تصمیم‌گیری',
+      workflow_step_4_desc: 'اتخاذ تصمیمات بهتر بر اساس داده‌های دقیق',
+
+      // Security
+      security_badge: 'امنیت و اعتماد',
+      security_title: 'اطلاعات مالی شما در امن‌ترین حالت',
+      security_subtitle: 'تراز با استفاده از پیشرفته‌ترین تکنولوژی‌های امنیتی، اطلاعات مالی کسب‌وکار شما را محافظت می‌کند.',
+      security_1_title: 'رمزنگاری سطح بانکی',
+      security_1_desc: 'تمامی اطلاعات با رمزنگاری SSL ۲۵۶ بیتی محافظت می‌شوند. امنیت در سطح بانک‌های بین‌المللی.',
+      security_2_title: 'پشتیبان‌گیری خودکار',
+      security_2_desc: 'پشتیبان‌گیری روزانه از تمامی اطلاعات. بازیابی سریع در هر شرایطی.',
+      security_3_title: 'دیتاسنتر امن',
+      security_3_desc: 'سرورهای تراز در دیتاسنترهای معتبر ایران با استانداردهای بین‌المللی قرار دارند.',
+      security_4_title: 'احراز هویت دو مرحله‌ای',
+      security_4_desc: 'ورود امن با احراز هویت دو مرحله‌ای. محافظت کامل از حساب کاربری شما.',
 
       // Messages
       form_success: 'پیام شما با موفقیت ارسال شد!',
@@ -452,6 +482,36 @@
       footer_rights: '© 2025 Taraz. All rights reserved.',
       footer_legal_1: 'Terms of Service', footer_legal_2: 'Privacy Policy', footer_legal_3: 'Security',
       footer_made: 'Made with ❤️ for businesses',
+      sokkan_label: 'Taraz template by',
+      sokkan_name: 'Sokkan',
+
+      // Workflow
+      nav_workflow: 'Workflow',
+      workflow_badge: 'Workflow',
+      workflow_title: 'How Taraz Works?',
+      workflow_subtitle: 'Simple and smart financial management process with Taraz',
+      workflow_alt: 'Taraz workflow visualization',
+      workflow_step_1_title: 'Data Entry',
+      workflow_step_1_desc: 'Easily record your invoices, expenses, and income.',
+      workflow_step_2_title: 'Smart Processing',
+      workflow_step_2_desc: 'Taraz automatically handles calculations, categorization, and analysis.',
+      workflow_step_3_title: 'Analytical Reports',
+      workflow_step_3_desc: 'View detailed charts and statistics of your business financial status.',
+      workflow_step_4_title: 'Better Decisions',
+      workflow_step_4_desc: 'Make smarter decisions based on accurate data.',
+
+      // Security
+      security_badge: 'Security & Trust',
+      security_title: 'Your Financial Data in Maximum Security',
+      security_subtitle: 'Taraz uses the most advanced security technologies to protect your business financial information.',
+      security_1_title: 'Bank-Level Encryption',
+      security_1_desc: 'All data is protected with 256-bit SSL encryption. Security at the level of international banks.',
+      security_2_title: 'Automatic Backups',
+      security_2_desc: 'Daily backups of all your data. Fast recovery in any situation.',
+      security_3_title: 'Secure Data Center',
+      security_3_desc: 'Taraz servers are located in trusted Iranian data centers with international standards.',
+      security_4_title: 'Two-Factor Authentication',
+      security_4_desc: 'Secure login with two-factor authentication. Complete protection of your account.',
 
       // Messages
       form_success: 'Your message was sent successfully!',
