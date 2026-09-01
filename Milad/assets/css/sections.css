@@ -284,7 +284,7 @@
   aspect-ratio: 1;
   display: grid;
   place-items: center;
-  opacity: .6;
+  opacity: .85;
   z-index: 1;
   pointer-events: none;
 }
@@ -314,6 +314,17 @@
 @keyframes spin { to { transform: rotate(360deg); } }
 
 /* Outline text effect now handled in base.css with 3D layered shadows */
+:root[data-theme="dark"] .hero-emblem {
+  opacity: .9;
+}
+:root[data-theme="dark"] .emblem-text {
+  fill: var(--text);
+}
+:root[data-theme="dark"] .emblem-core {
+  color: var(--text);
+  text-shadow: 0 0 12px var(--accent);
+}
+
 @media (max-width: 1023px) { .hero-emblem { display: none; } }
 @media (max-width: 768px) { .hero-scroll { display: none; } }
 
