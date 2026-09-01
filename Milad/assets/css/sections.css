@@ -33,9 +33,17 @@
   padding-block: calc(var(--header-h) + 3rem) 5rem;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
-  background:
-    radial-gradient(ellipse 120% 90% at 50% 55%, transparent 55%, var(--bg) 115%),
-    linear-gradient(180deg, color-mix(in srgb, var(--btn-bg, var(--accent)) 95%, #000), color-mix(in srgb, var(--btn-bg, var(--accent)) 85%, #000));
+  background: var(--bg);
+}
+
+/* Subtle dark vignette overlay for depth */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 70% at 50% 50%, transparent 40%, var(--bg) 100%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* --- atmospheric stack (behind content, layered for depth) --- */
@@ -44,7 +52,7 @@
 #matrixCanvas {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
-  opacity: .34;
+  opacity: .22;
   /* soft field blur: the stream reads as atmosphere, not text */
   filter: blur(1.8px);
   transform: scale(1.04);
@@ -52,34 +60,36 @@
 
 .hero-glow {
   position: absolute;
-  width: min(680px, 90vw);
+  width: min(520px, 72vw);
   aspect-ratio: 1;
   left: 50%; top: 42%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background: radial-gradient(circle, var(--glow) 0%, transparent 62%);
+  opacity: .55;
   animation: auroraA 26s ease-in-out infinite alternate;
 }
 
-/* twin aurora washes — deep atmosphere, transform-only */
+/* twin aurora washes — subtle atmosphere, not overpowering */
 .hero-aurora {
   position: absolute;
   border-radius: 50%;
-  filter: blur(70px);
+  filter: blur(80px);
+  opacity: .4;
 }
 .hero-aurora-1 {
-  width: min(520px, 70vw);
+  width: min(420px, 58vw);
   aspect-ratio: 1;
-  top: -14%;
-  inset-inline-end: -8%;
+  top: -10%;
+  inset-inline-end: -6%;
   background: radial-gradient(circle, var(--glow-green) 0%, transparent 64%);
   animation: auroraA 30s ease-in-out infinite alternate;
 }
 .hero-aurora-2 {
-  width: min(560px, 76vw);
+  width: min(460px, 62vw);
   aspect-ratio: 1;
-  bottom: -22%;
-  inset-inline-start: -10%;
+  bottom: -18%;
+  inset-inline-start: -8%;
   background: radial-gradient(circle, var(--glow) 0%, transparent 62%);
   animation: auroraB 34s ease-in-out infinite alternate;
 }
@@ -134,10 +144,10 @@
 
 .hero-device {
   position: absolute;
-  inset-inline-end: clamp(2rem, 6vw, 6rem);
+  inset-inline-end: clamp(1.5rem, 4vw, 5rem);
   top: 50%;
   transform: translateY(-50%);
-  width: clamp(260px, 30vw, 400px);
+  width: clamp(240px, 28vw, 380px);
   z-index: 2;
   pointer-events: none;
   perspective: 1200px;
@@ -252,8 +262,9 @@
 @media (max-width: 1023px) {
   .hero {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: calc(var(--header-h) + 2rem);
     padding-bottom: 3rem;
   }
   .hero-device {
@@ -261,7 +272,7 @@
     inset-inline: auto;
     top: auto;
     transform: none;
-    width: min(85vw, 380px);
+    width: min(85vw, 360px);
     margin: 2.5rem auto 0;
     perspective: 1000px;
   }
@@ -273,9 +284,16 @@
     align-items: center !important;
     text-align: center !important;
     max-width: 100% !important;
+    padding-inline: 0 !important;
   }
   .hero-cta {
     justify-content: center !important;
+  }
+  .hero-title {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+  .hero-sub {
+    max-width: 90%;
   }
 }
 
@@ -311,16 +329,16 @@
 .hero-data-3 { inset-inline-end: clamp(1rem, 8vw, 10rem); bottom: 22%; animation: floatY 9s ease-in-out infinite; }
 @media (max-width: 1023px) { .hero-data { display: none; } }
 
-/* Vintage rotating emblem — desktop only */
+/* Vintage rotating emblem — desktop only, bottom-left to avoid device */
 .hero-emblem {
   position: absolute;
-  inset-inline-end: clamp(1rem, 4vw, 4rem);
+  inset-inline-start: clamp(1rem, 4vw, 4rem);
   bottom: clamp(4rem, 9vh, 7rem);
-  width: clamp(110px, 11vw, 150px);
+  width: clamp(100px, 10vw, 140px);
   aspect-ratio: 1;
   display: grid;
   place-items: center;
-  opacity: .85;
+  opacity: .7;
   z-index: 1;
   pointer-events: none;
 }
@@ -357,10 +375,18 @@
   .hero-in {
     align-items: flex-start;
     text-align: start;
-    max-width: 55%;
+    max-width: 52%;
+    padding-inline-end: 2rem;
   }
   .hero-cta {
     justify-content: flex-start;
+  }
+}
+
+/* Medium desktop — tighter device */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .hero-in {
+    max-width: 50%;
   }
 }
 
