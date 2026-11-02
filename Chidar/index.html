@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f1e7">
+  <meta name="description" content="چیدار؛ فروشگاه نمونهٔ دکور و دست‌سازه‌های ایرانی. تجربهٔ خریدی گرم، ساده و سازگار با فارسی و بازار ایران.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="چیدار | خانه‌ای با ردّ دست">
+  <meta property="og:description" content="دکور، پارچه و دست‌سازه‌های الهام‌گرفته از هنر ایرانی؛ قالب فروشگاهی RTL از مجموعهٔ سکّان.">
+  <title>چیدار | خانه‌ای با ردّ دست — قالب فروشگاهی سکّان</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/mark.svg">
+  <link rel="preload" as="image" href="assets/img/hero-still-life.jpg" fetchpriority="high">
+  <script>
+    (() => {
+      try {
+        const theme = localStorage.getItem('chidar-theme');
+        const lang = localStorage.getItem('chidar-lang');
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+        else if (matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.dataset.theme = 'dark';
+        if (lang === 'en') { document.documentElement.lang = 'en'; document.documentElement.dir = 'ltr'; }
+        document.documentElement.classList.add('js');
+      } catch (_) { document.documentElement.classList.add('js'); }
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "چیدار | قالب فروشگاهی سکّان",
+    "description": "پیش‌نمایش قابل شخصی‌سازی فروشگاه آنلاین دکور و دست‌سازه‌های ایرانی.",
+    "inLanguage": ["fa-IR", "en"]
+  }
+  </script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main" data-i18n="skipLink">رفتن به محتوای اصلی</a>
+  <p class="demo-note" role="note" data-i18n="demoNote">پیش‌نمایش قالب چیدار است؛ محصولات، قیمت‌ها، موجودی، ارسال، نظرها، راه‌های تماس و شرایط نمونه‌اند؛ پیش از انتشار آن‌ها را با اطلاعات واقعی فروشگاه جایگزین کنید.</p>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="چیدار — بازگشت به بالا" data-i18n-aria="brandAria">
+        <img class="brand-mark" src="assets/img/mark.svg" alt="" width="38" height="38">
+        <span><span class="brand-name" data-i18n="brandName">چیدار</span><small class="brand-caption" data-i18n="brandCaption">خانه‌ای با ردّ دست</small></span>
+      </a>
+
+      <nav class="main-nav" id="siteNav" aria-label="ناوبری اصلی" data-i18n-aria="navAria">
+        <a href="#collections" data-i18n="navCollections">دسته‌بندی‌ها</a>
+        <a href="#catalog" data-i18n="navShop">فروشگاه</a>
+        <a href="#story" data-i18n="navStory">داستان چیدار</a>
+        <a href="#shipping" data-i18n="navShipping">ارسال و خرید</a>
+        <a href="#faq" data-i18n="navFaq">پرسش‌ها</a>
+        <form class="search-box" id="searchForm" role="search">
+          <label class="visually-hidden" for="productSearch" data-i18n="searchLabel">جست‌وجو در محصولات</label>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.3 4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input id="productSearch" type="search" autocomplete="off" data-i18n-placeholder="searchPlaceholder" placeholder="نام محصول را جست‌وجو کنید">
+        </form>
+      </nav>
+
+      <div class="header-tools">
+        <button class="icon-button language-toggle" id="languageToggle" type="button" aria-label="Switch to English" data-i18n-aria="languageToggleAria"><span data-i18n="languageShort">EN</span></button>
+        <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="تغییر پوستهٔ روشن و تیره" data-i18n-aria="themeToggleAria">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.2 14.1A8.7 8.7 0 0 1 9.9 3.8 8.8 8.8 0 1 0 20.2 14.1Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="icon-button cart-trigger" id="cartTrigger" type="button" aria-label="بازکردن سبد خرید" aria-controls="cartDrawer" data-i18n-aria="cartTriggerAria">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1" fill="currentColor"/><circle cx="18" cy="20" r="1" fill="currentColor"/></svg>
+          <span class="cart-count" id="cartCount" aria-live="polite">۰</span>
+        </button>
+        <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="بازکردن منو" data-i18n-aria="menuToggleAria">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="hero-kicker"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 4 7v5c0 4.6 3 7.7 8 9 5-1.3 8-4.4 8-9V7l-8-4Z" stroke="currentColor" stroke-width="1.6"/><path d="m8.5 12 2.2 2.2 4.8-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="heroKicker">دکور و دست‌سازه‌های ایرانی</span></span>
+          <h1 id="heroTitle"><span data-i18n="heroTitleA">چیدمانِ خانه،</span> <em data-i18n="heroTitleB">با ردّ دست.</em></h1>
+          <p data-i18n="heroText">قطعه‌هایی برای زندگی روزمره؛ از سفال و پارچه تا جزئیات کوچکِ خانه، با الهام از نقش و رنگ ایران.</p>
+          <div class="hero-actions">
+            <a class="button" href="#catalog" data-i18n="heroShop">دیدن محصولات</a>
+            <a class="button button-secondary" href="#story" data-i18n="heroStory">آشنایی با چیدار</a>
+          </div>
+          <div class="hero-assurance" aria-label="ویژگی‌های فروشگاه" data-i18n-aria="assuranceAria">
+            <span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="assurance1">ساخته‌شده با دقت</span></span>
+            <span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="7.5" cy="18" r="1.5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="18" r="1.5" stroke="currentColor" stroke-width="1.5"/></svg><span data-i18n="assurance2">ارسال به سراسر ایران</span></span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo-frame">
+            <img class="hero-photo" src="assets/img/hero-still-life.jpg" width="1536" height="1024" alt="گلدان سفالی آبی و پارچهٔ دست‌باف در فضایی گرم و امروزی" data-i18n-alt="heroImageAlt" fetchpriority="high" decoding="async">
+          </div>
+          <div class="hero-sticker" aria-hidden="true" data-i18n="heroSticker">از کارگاه<br>تا خانه</div>
+          <div class="hero-float-card" aria-hidden="true"><span class="hero-float-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8m0-12.8L5.6 18.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><span><strong data-i18n="heroCardTitle">هنرِ ماندگار</strong><small data-i18n="heroCardText">برای روزهای معمولی</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container trust-strip" aria-label="مزیت‌های سفارش" data-i18n-aria="trustAria">
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 4 7v5c0 4.6 3 7.7 8 9 5-1.3 8-4.4 8-9V7l-8-4Z" stroke="currentColor" stroke-width="1.6"/><path d="m8.5 12 2.2 2.2 4.8-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong data-i18n="trust1Title">انتخاب با خیال راحت</strong><span data-i18n="trust1Text">جزئیات هر محصول روشن و کامل</span></span></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="7.5" cy="18" r="1.5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="18" r="1.5" stroke="currentColor" stroke-width="1.5"/></svg><span><strong data-i18n="trust2Title">ارسالِ سراسری</strong><span data-i18n="trust2Text">روش و زمان ارسال قابل تنظیم</span></span></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h16v12H4zM2.5 4h19v4h-19zM12 8v12M12 8c-4.8 0-5.5-5-2-5 2.5 0 2 5 2 5Zm0 0c4.8 0 5.5-5 2-5-2.5 0-2 5-2 5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span><strong data-i18n="trust3Title">هدیه‌ای از جنس هنر</strong><span data-i18n="trust3Text">بسته‌بندی هدیه را در تنظیمات فعال کنید</span></span></div>
+    </section>
+
+    <section class="section categories" id="collections" aria-labelledby="collectionsTitle">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="collectionsEyebrow">برای هر گوشهٔ خانه</span>
+          <h2 class="section-title" id="collectionsTitle" data-i18n="collectionsTitle">از یک جزئیات کوچک شروع کنید.</h2>
+          <p class="section-copy" data-i18n="collectionsText">دسته‌بندی دلخواهتان را انتخاب کنید؛ محصولات به‌صورت زنده فیلتر می‌شوند.</p>
+        </div>
+        <div class="category-grid" role="group" aria-label="فیلتر دسته‌بندی محصولات" data-i18n-aria="categoryFiltersAria">
+          <button class="category-tile is-active" type="button" data-filter="all" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m3 11 9-8 9 8v9H3zM9 20v-6h6v6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span><strong data-i18n="filterAll">همهٔ محصولات</strong><small data-i18n="filterAllSub">دیدن همهٔ مجموعه</small></span></button>
+          <button class="category-tile" type="button" data-filter="ceramic" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 3h6v3c0 2 3 4 3 9a6 6 0 0 1-12 0c0-5 3-7 3-9V3Z" stroke="currentColor" stroke-width="1.5"/><path d="M7 14h10" stroke="currentColor" stroke-width="1.5"/></svg><span><strong data-i18n="filterCeramic">سفال و سرامیک</strong><small data-i18n="filterCeramicSub">فرم‌های دست‌ساز</small></span></button>
+          <button class="category-tile" type="button" data-filter="textile" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h16v16H4zM8 4v16m8-16v16M4 9h16m-16 6h16" stroke="currentColor" stroke-width="1.5"/></svg><span><strong data-i18n="filterTextile">پارچه و بافت</strong><small data-i18n="filterTextileSub">نقش، نخ، رنگ</small></span></button>
+          <button class="category-tile" type="button" data-filter="light" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 19h8M9 22h6M12 2a7 7 0 0 0-4 12.7c.7.5 1 1.1 1 2.3h6c0-1.2.3-1.8 1-2.3A7 7 0 0 0 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong data-i18n="filterLight">نور و روشنایی</strong><small data-i18n="filterLightSub">گرمایی برای فضا</small></span></button>
+          <button class="category-tile" type="button" data-filter="decor" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h16l-1 12H5L4 8Zm2-4h12l2 4H4l2-4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 13h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span><strong data-i18n="filterDecor">پذیرایی و دکور</strong><small data-i18n="filterDecorSub">جزئیات میز و خانه</small></span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalog" id="catalog" aria-labelledby="catalogTitle">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow" data-i18n="catalogEyebrow">منتخبِ چیدار</span>
+          <h2 class="section-title" id="catalogTitle" data-i18n="catalogTitle">قطعه‌های دوست‌داشتنیِ خانه</h2>
+          <p class="section-copy" data-i18n="catalogText">قیمت‌ها و موجودی نمونه‌اند؛ در آرایهٔ محصولات فایل <code>main.js</code> و محتوای این صفحه را با فروشگاه خود هماهنگ کنید.</p>
+        </div>
+        <div class="catalog-toolbar">
+          <p class="catalog-count" id="resultsCount" aria-live="polite"><span data-i18n="showing">نمایش</span> <bdi id="visibleCount">۶</bdi> <span data-i18n="products">محصول</span></p>
+          <label class="sort-control"><span data-i18n="sortLabel">مرتب‌سازی:</span><select id="sortProducts"><option value="featured" data-i18n="sortFeatured">منتخب چیدار</option><option value="price-low" data-i18n="sortLow">ارزان‌ترین</option><option value="price-high" data-i18n="sortHigh">گران‌ترین</option></select></label>
+        </div>
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-product-card data-id="vase-blue" data-category="ceramic" data-price="1850000" data-name-fa="گلدان آبی نقش‌دار" data-name-en="Blue motif vase" data-description-fa="سفال لعاب‌دار با نقش الهام‌گرفته از کاشی ایرانی." data-description-en="Glazed pottery with a pattern inspired by Iranian tilework.">
+            <div class="product-media"><img src="assets/img/product-vase.svg" width="720" height="620" alt="گلدان سفالی آبی با نقش هندسی" data-i18n-alt="vaseAlt" loading="lazy" decoding="async"><span class="product-badge" data-i18n="badgeHandmade">ساخت دست</span></div>
+            <div class="product-info"><span class="product-type" data-i18n="typeCeramic">سفال و سرامیک</span><h3 class="product-name" data-i18n="vaseName">گلدان آبی نقش‌دار</h3><p class="product-desc" data-i18n="vaseDesc">لعاب آبیِ عمیق؛ هر نقش، کمی متفاوت.</p><div class="product-bottom"><span class="product-price"><bdi data-format-price="1850000">۱٬۸۵۰٬۰۰۰</bdi><small data-i18n="currency">تومان</small></span><button class="button add-to-cart" type="button" data-add-to-cart="vase-blue"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span data-i18n="addToCart">افزودن</span></button></div></div>
+          </article>
+          <article class="product-card" data-product-card data-id="woven-kilim" data-category="textile" data-price="4900000" data-name-fa="گلیمچهٔ آفتاب" data-name-en="Aftab mini kilim" data-description-fa="بافت هندسی گرم برای ورودی، کنار تخت یا دیوار." data-description-en="A warm geometric weave for an entry, bedside or wall.">
+            <div class="product-media"><img src="assets/img/product-kilim.svg" width="720" height="620" alt="گلیمچهٔ دست‌باف با نقش‌های هندسی" data-i18n-alt="kilimAlt" loading="lazy" decoding="async"><span class="product-badge" data-i18n="badgeLimited">تولید محدود</span></div>
+            <div class="product-info"><span class="product-type" data-i18n="typeTextile">پارچه و بافت</span><h3 class="product-name" data-i18n="kilimName">گلیمچهٔ آفتاب</h3><p class="product-desc" data-i18n="kilimDesc">بافتی گرم برای ورودی، کنار تخت یا دیوار.</p><div class="product-bottom"><span class="product-price"><bdi data-format-price="4900000">۴٬۹۰۰٬۰۰۰</bdi><small data-i18n="currency">تومان</small></span><button class="button add-to-cart" type="button" data-add-to-cart="woven-kilim"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span data-i18n="addToCart">افزودن</span></button></div></div>
+          </article>
+          <article class="product-card" data-product-card data-id="linen-lamp" data-category="light" data-price="2450000" data-name-fa="چراغ رومیزی لینا" data-name-en="Lina table lamp" data-description-fa="نور نرم کنار تخت یا گوشهٔ دنج خانه." data-description-en="A soft glow for the bedside or a quiet corner.">
+            <div class="product-media"><img src="assets/img/product-lamp.svg" width="720" height="620" alt="چراغ رومیزی با پایهٔ سفالی و کلاهک پارچه‌ای" data-i18n-alt="lampAlt" loading="lazy" decoding="async"><span class="product-badge" data-i18n="badgeNew">تازه‌رسیده</span></div>
+            <div class="product-info"><span class="product-type" data-i18n="typeLight">نور و روشنایی</span><h3 class="product-name" data-i18n="lampName">چراغ رومیزی لینا</h3><p class="product-desc" data-i18n="lampDesc">نور نرم برای کنار تخت و گوشهٔ دنج خانه.</p><div class="product-bottom"><span class="product-price"><bdi data-format-price="2450000">۲٬۴۵۰٬۰۰۰</bdi><small data-i18n="currency">تومان</small></span><button class="button add-to-cart" type="button" data-add-to-cart="linen-lamp"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span data-i18n="addToCart">افزودن</span></button></div></div>
+          </article>
+          <article class="product-card" data-product-card data-id="embroidered-cushion" data-category="textile" data-price="1280000" data-name-fa="کوسن سوزن‌دوزی سبز" data-name-en="Green embroidered cushion" data-description-fa="پارچهٔ کرم با دوخت الهام‌گرفته از نقش‌های بومی." data-description-en="Cream fabric with stitching inspired by regional motifs.">
+            <div class="product-media"><img src="assets/img/product-cushion.svg" width="720" height="620" alt="کوسن کرم با نقش سوزن‌دوزی سبز" data-i18n-alt="cushionAlt" loading="lazy" decoding="async"><span class="product-badge" data-i18n="badgeHandmade">ساخت دست</span></div>
+            <div class="product-info"><span class="product-type" data-i18n="typeTextile">پارچه و بافت</span><h3 class="product-name" data-i18n="cushionName">کوسن سوزن‌دوزی سبز</h3><p class="product-desc" data-i18n="cushionDesc">دوخت آرام و رنگ‌های خاکی برای مبل یا تخت.</p><div class="product-bottom"><span class="product-price"><bdi data-format-price="1280000">۱٬۲۸۰٬۰۰۰</bdi><small data-i18n="currency">تومان</small></span><button class="button add-to-cart" type="button" data-add-to-cart="embroidered-cushion"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span data-i18n="addToCart">افزودن</span></button></div></div>
+          </article>
+          <article class="product-card" data-product-card data-id="brass-tray" data-category="decor" data-price="2150000" data-name-fa="سینی برنجی نقش‌کوب" data-name-en="Etched brass tray" data-description-fa="سینی دست‌کوب با نقش‌های ظریف برای پذیرایی روزمره." data-description-en="A hand-etched serving tray for everyday rituals.">
+            <div class="product-media"><img src="assets/img/product-tray.svg" width="720" height="620" alt="سینی بیضی برنجی دست‌کوب با فنجان سفالی" data-i18n-alt="trayAlt" loading="lazy" decoding="async"><span class="product-badge" data-i18n="badgePopular">محبوب</span></div>
+            <div class="product-info"><span class="product-type" data-i18n="typeDecor">اکسسوری خانه</span><h3 class="product-name" data-i18n="trayName">سینی برنجی نقش‌کوب</h3><p class="product-desc" data-i18n="trayDesc">نقش ظریف برای پذیرایی و لحظه‌های روزمره.</p><div class="product-bottom"><span class="product-price"><bdi data-format-price="2150000">۲٬۱۵۰٬۰۰۰</bdi><small data-i18n="currency">تومان</small></span><button class="button add-to-cart" type="button" data-add-to-cart="brass-tray"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span data-i18n="addToCart">افزودن</span></button></div></div>
+          </article>
+          <article class="product-card" data-product-card data-id="blue-bowl" data-category="ceramic" data-price="980000" data-name-fa="کاسهٔ لعابی نیل" data-name-en="Nil glazed bowl" data-description-fa="کاسهٔ سرامیکی لعاب‌دار؛ مناسب میز صبحانه و عصرانه." data-description-en="A glazed ceramic bowl for breakfast or afternoon tea.">
+            <div class="product-media"><img src="assets/img/product-bowl.svg" width="720" height="620" alt="کاسهٔ سرامیکی آبی با حاشیهٔ کرم" data-i18n-alt="bowlAlt" loading="lazy" decoding="async"><span class="product-badge" data-i18n="badgeHandmade">ساخت دست</span></div>
+            <div class="product-info"><span class="product-type" data-i18n="typeCeramic">سفال و سرامیک</span><h3 class="product-name" data-i18n="bowlName">کاسهٔ لعابی نیل</h3><p class="product-desc" data-i18n="bowlDesc">فرمی ساده برای میز صبحانه و عصرانه.</p><div class="product-bottom"><span class="product-price"><bdi data-format-price="980000">۹۸۰٬۰۰۰</bdi><small data-i18n="currency">تومان</small></span><button class="button add-to-cart" type="button" data-add-to-cart="blue-bowl"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span data-i18n="addToCart">افزودن</span></button></div></div>
+          </article>
+          <p class="catalog-empty" id="catalogEmpty" hidden data-i18n="noProducts">محصولی با این جست‌وجو پیدا نشد؛ عبارت دیگری را امتحان کنید.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story" id="story" aria-labelledby="storyTitle">
+      <div class="container story-grid">
+        <div class="story-visual" aria-hidden="true"><span class="story-seal" data-i18n="storySeal">از خاک<br>تا خانه</span></div>
+        <div class="story-copy">
+          <span class="eyebrow" data-i18n="storyEyebrow">دربارهٔ این برند نمونه</span>
+          <h2 id="storyTitle" data-i18n="storyTitle">زیباییِ خانه، در جزئیاتِ ساخته‌شده.</h2>
+          <p data-i18n="storyText">چیدار برای ترکیب آرامِ فرم‌های امروز با نقش‌های آشنای ایران ساخته شده است. این بخش را با داستان واقعی برند، هنرمندان همکار، شیوهٔ تولید و مبدأ هر محصول کامل کنید.</p>
+          <ul class="story-values">
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="storyValue1">ترکیب رنگ و نقشِ بومی</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="storyValue2">ساخت و پرداخت با دقت</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="storyValue3">جزئیات روشن پیش از سفارش</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="storyValue4">قابل‌استفاده، نه فقط تزئینی</span></li>
+          </ul>
+          <a class="button" href="#shipping" data-i18n="storyCta">راهنمای سفارش</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="shipping" aria-labelledby="shippingTitle">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="eyebrow" data-i18n="shippingEyebrow">پیش از ثبت سفارش</span>
+          <h2 class="section-title" id="shippingTitle" data-i18n="shippingTitle">خرید روشن، تجربهٔ بهتر.</h2>
+          <p class="section-copy" data-i18n="shippingText">زمان تحویل، هزینهٔ ارسال و شرایط مرجوعی این نمونه را بر اساس شیوهٔ واقعی کسب‌وکارتان به‌روزرسانی کنید.</p>
+        </div>
+        <div class="shipping-panel">
+          <article class="shipping-card"><strong data-i18n="shipping1Title">بسته‌بندی امن</strong><p data-i18n="shipping1Text">جزئیات بسته‌بندی محصول را اینجا وارد کنید.</p></article>
+          <article class="shipping-card"><strong data-i18n="shipping2Title">زمان‌بندی شفاف</strong><p data-i18n="shipping2Text">زمان آماده‌سازی و ارسال را پیش از خرید بنویسید.</p></article>
+          <article class="shipping-card"><strong data-i18n="shipping3Title">پشتیبانی سفارش</strong><p data-i18n="shipping3Text">راه ارتباطیِ پشتیبانی را در تنظیمات فروشگاه درج کنید.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" aria-labelledby="reviewsTitle">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="eyebrow" data-i18n="reviewsEyebrow">از زبان خریداران</span>
+          <h2 class="section-title" id="reviewsTitle" data-i18n="reviewsTitle">خانه با انتخاب‌های شما کامل می‌شود.</h2>
+          <p class="section-copy" data-i18n="reviewsSampleNote">نظرها و نام‌های زیر نمونه‌اند؛ فقط بازخورد واقعی و دارای اجازهٔ انتشار را جایگزین کنید.</p>
+        </div>
+        <div class="review-grid">
+          <figure class="review-card"><div class="review-stars" aria-label="۵ از ۵" data-i18n-aria="reviewRating">★★★★★</div><blockquote data-i18n="review1">«رنگ‌ها در خانه همان‌قدر گرم و دلنشین‌اند که در عکس‌ها به نظر می‌رسیدند.»</blockquote><figcaption class="review-author"><span class="review-avatar" aria-hidden="true">م</span><span><strong data-i18n="reviewer1">مشتری نمونه</strong><small data-i18n="reviewProduct1">سفارش گلدان سفالی</small></span></figcaption></figure>
+          <figure class="review-card"><div class="review-stars" aria-label="۵ از ۵" data-i18n-aria="reviewRating">★★★★★</div><blockquote data-i18n="review2">«بسته‌بندی مرتب بود و توضیحات محصول قبل از خرید کمکم کرد انتخاب درستی داشته باشم.»</blockquote><figcaption class="review-author"><span class="review-avatar" aria-hidden="true">ن</span><span><strong data-i18n="reviewer2">مشتری نمونه</strong><small data-i18n="reviewProduct2">سفارش گلیمچه</small></span></figcaption></figure>
+          <figure class="review-card"><div class="review-stars" aria-label="۵ از ۵" data-i18n-aria="reviewRating">★★★★★</div><blockquote data-i18n="review3">«یک تکهٔ دست‌ساز کوچک، حال‌وهوای میز و صبحانه‌های خانه‌مان را عوض کرد.»</blockquote><figcaption class="review-author"><span class="review-avatar" aria-hidden="true">ر</span><span><strong data-i18n="reviewer3">مشتری نمونه</strong><small data-i18n="reviewProduct3">سفارش سینی برنجی</small></span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faqTitle">
+      <div class="container">
+        <div class="section-heading center">
+          <span class="eyebrow" data-i18n="faqEyebrow">پرسش‌های پرتکرار</span>
+          <h2 class="section-title" id="faqTitle" data-i18n="faqTitle">چند نکته پیش از خرید</h2>
+          <p class="section-copy" data-i18n="faqIntro">پاسخ‌ها نمونه هستند؛ آن‌ها را با قوانین ارسال، پرداخت و بازگشت کالای فروشگاه خودتان تطبیق دهید.</p>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faqAnswer1" id="faqQuestion1"><span data-i18n="faq1q">به شهرهای دیگر هم ارسال دارید؟</span><span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faqAnswer1" role="region" aria-labelledby="faqQuestion1" aria-hidden="true"><p data-i18n="faq1a">روش ارسال، مناطق تحت پوشش و زمان تحویل را اینجا بر اساس سرویس واقعی خود بنویسید.</p></div></article>
+          <article class="faq-item"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faqAnswer2" id="faqQuestion2"><span data-i18n="faq2q">اگر محصول با عکس تفاوتی داشت چه کنم؟</span><span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faqAnswer2" role="region" aria-labelledby="faqQuestion2" aria-hidden="true"><p data-i18n="faq2a">برای محصولات دست‌ساز، تفاوت جزئی در رنگ و نقش ممکن است. حدود قابل‌قبول و مسیر پیگیری را با سیاست واقعی خود جایگزین کنید.</p></div></article>
+          <article class="faq-item"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faqAnswer3" id="faqQuestion3"><span data-i18n="faq3q">شرایط تعویض یا مرجوعی چیست؟</span><span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faqAnswer3" role="region" aria-labelledby="faqQuestion3" aria-hidden="true"><p data-i18n="faq3a">مدت‌زمان، وضعیت کالا، هزینهٔ بازگشت و استثناها باید مطابق سیاست واقعی فروشگاه و الزامات قانونی شما در این بخش درج شوند.</p></div></article>
+          <article class="faq-item"><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faqAnswer4" id="faqQuestion4"><span data-i18n="faq4q">سبد خرید و پرداخت آنلاین آماده‌اند؟</span><span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faqAnswer4" role="region" aria-labelledby="faqQuestion4" aria-hidden="true"><p data-i18n="faq4a">سبد خرید در مرورگر کار می‌کند؛ برای ثبت سفارش واقعی باید endpoint امن سمت سرور و درگاه پرداخت مجاز خود را در تنظیمات متصل کنید.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="contact" aria-labelledby="newsletterTitle">
+      <div class="container newsletter-panel">
+        <div><span class="eyebrow" data-i18n="newsletterEyebrow">نامه‌ای از چیدار</span><h2 id="newsletterTitle" data-i18n="newsletterTitle">برای دیدنِ مجموعه‌های تازه</h2><p data-i18n="newsletterText">خبرهای تازه را فقط با رضایت مخاطب و از مسیر سامانهٔ قانونی ارسال کنید.</p></div>
+        <form class="newsletter-form" id="newsletterForm" method="post" novalidate>
+          <label class="visually-hidden" for="newsletterEmail" data-i18n="emailLabel">نشانی ایمیل</label>
+          <input class="form-control" id="newsletterEmail" name="email" type="email" autocomplete="email" required data-i18n-placeholder="emailPlaceholder" placeholder="ایمیل شما">
+          <button class="button" type="submit" data-i18n="newsletterSubmit" disabled>عضویت</button>
+          <p class="newsletter-note" id="newsletterNote" data-i18n="newsletterNote">این فرم نمایشی است؛ برای ثبت واقعی ایمیل، سرویس خبرنامه را پیکربندی کنید.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about"><a class="brand" href="#top"><img class="brand-mark" src="assets/img/mark.svg" alt="" width="38" height="38"><span class="brand-name" data-i18n="brandName">چیدار</span></a><p data-i18n="footerAbout">چیدار، هویت نمونه‌ای برای فروشگاه دکور و دست‌سازه؛ نام، داستان و راه‌های تماس را با اطلاعات خودتان جایگزین کنید.</p></div>
+        <nav class="footer-column" aria-label="فروشگاه" data-i18n-aria="footerShopAria"><h2 data-i18n="footerShop">فروشگاه</h2><ul><li><a href="#collections" data-i18n="navCollections">دسته‌بندی‌ها</a></li><li><a href="#catalog" data-i18n="navShop">فروشگاه</a></li><li><a href="#story" data-i18n="navStory">داستان چیدار</a></li><li><a href="#shipping" data-i18n="navShipping">ارسال و خرید</a></li></ul></nav>
+        <nav class="footer-column" aria-label="راهنما" data-i18n-aria="footerHelpAria"><h2 data-i18n="footerHelp">راهنمای خرید</h2><ul><li><a href="#faq" data-i18n="navFaq">پرسش‌ها</a></li><li><a href="legal.html#terms" data-i18n="termsLink">شرایط استفاده</a></li><li><a href="legal.html#privacy" data-i18n="privacyLink">حریم خصوصی</a></li><li><a href="#contact" data-i18n="contactLink">تماس با ما</a></li></ul></nav>
+        <div class="footer-column"><h2 data-i18n="footerContact">ارتباط با چیدار</h2><ul><li><a class="footer-contact-link" href="mailto:hello@yourstore.ir">hello@yourstore.ir</a></li><li data-i18n="footerRegion">تهران • ارسال به سراسر ایران</li><li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" data-i18n="instagramLink">اینستاگرام (پیوند نمونه)</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p data-i18n="footerRights">© ۱۴۰۵ چیدار — متن و اطلاعات نمونه</p><nav class="footer-legal" aria-label="پیوندهای حقوقی"><a href="legal.html#terms" data-i18n="termsLink">شرایط استفاده</a><a href="legal.html#privacy" data-i18n="privacyLink">حریم خصوصی</a></nav><p data-i18n="footerMade">با الهام از نقش و رنگ ایران</p></div>
+    </div>
+  </footer>
+
+  <button class="cart-scrim" id="cartScrim" type="button" aria-label="بستن سبد خرید" data-i18n-aria="closeCartAria" hidden tabindex="-1"></button>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-describedby="cartHelp" tabindex="-1" hidden>
+    <header class="cart-head"><div><h2 id="cartTitle" data-i18n="cartTitle">سبد خرید</h2><p id="cartHelp" data-i18n="cartHelp">اقلام انتخاب‌شده را مرور کنید.</p></div><button class="icon-button" id="cartClose" type="button" aria-label="بستن سبد خرید" data-i18n-aria="closeCartAria"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></header>
+    <div class="cart-lines" id="cartLines"><div class="cart-empty" id="cartEmpty"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1" fill="currentColor"/><circle cx="18" cy="20" r="1" fill="currentColor"/></svg><strong data-i18n="cartEmpty">سبد خریدتان هنوز خالی است.</strong><span data-i18n="cartEmptyText">از میان دست‌سازه‌ها چیزی برای خانه انتخاب کنید.</span></div></div>
+    <div class="shipping-progress"><p id="shippingMessage" data-i18n="shippingThresholdStart">برای بررسیِ هزینهٔ ارسال، محصولی به سبد اضافه کنید.</p><div class="shipping-meter" aria-hidden="true"><span id="shippingMeter"></span></div></div>
+    <div class="cart-summary"><div class="summary-row"><span data-i18n="subtotal">جمع جزء</span><bdi id="cartSubtotal">۰ تومان</bdi></div><div class="summary-row"><span data-i18n="shippingFee">هزینهٔ ارسال نمونه</span><bdi id="cartShipping">۰ تومان</bdi></div><div class="summary-row total"><span data-i18n="cartTotal">جمع کلِ برآوردی</span><bdi id="cartTotal">۰ تومان</bdi></div><button class="button button-block" id="checkoutButton" type="button" data-i18n="checkout">ادامه برای ثبت سفارش</button><p class="cart-disclaimer" data-i18n="checkoutNote">نسخهٔ نمایشی درگاه پرداخت ندارد؛ مبلغ نهایی باید در سرور و درگاه شما محاسبه شود.</p></div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

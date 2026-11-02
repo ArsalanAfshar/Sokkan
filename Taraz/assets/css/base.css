@@ -354,3 +354,23 @@ h1, h2, h3, h4, h5, h6 {
     font-size: var(--text-base);
   }
 }
+
+/* Accessibility and layout polish */
+html { scroll-padding-top: calc(var(--header-h) + 1rem); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.visually-hidden {
+  position: absolute !important; width: 1px !important; height: 1px !important;
+  padding: 0 !important; margin: -1px !important; overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;
+}
+.skip-link {
+  position: fixed; z-index: 1200; top: .75rem; inset-inline-start: .75rem;
+  padding: .65rem 1rem; transform: translateY(-180%); border-radius: var(--radius);
+  background: var(--accent); color: var(--text-inverse); font-weight: 700;
+}
+.skip-link:focus { transform: none; }
+button:disabled { cursor: wait; opacity: .7; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

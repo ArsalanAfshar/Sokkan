@@ -722,3 +722,24 @@
     display: none;
   }
 }
+
+.demo-notice {
+  position: relative; z-index: 1; width: max-content; max-width: 100%;
+  margin-bottom: var(--space-4); padding: .55rem .9rem;
+  border: 1px solid rgba(255,255,255,.25); border-radius: var(--radius-pill);
+  background: rgba(15,23,42,.45); color: #fff; font-size: var(--text-xs); line-height: 1.7;
+}
+.pricing-note { max-width: 70ch; margin: var(--space-4) auto 0; color: var(--text-muted); font-size: var(--text-sm); text-align: center; }
+.testimonial-note { margin-top: var(--space-2); color: var(--text-muted); font-size: var(--text-sm); }
+#cta { scroll-margin-top: calc(var(--header-h) + 1rem); }
+.faq-question { text-align: start; cursor: pointer; }
+.faq-question:focus-visible { outline-offset: -3px; }
+@media (max-width: 768px) {
+  .demo-notice { width: 100%; margin-bottom: var(--space-3); border-radius: var(--radius); }
+  .hero-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .hero-stat { min-width: 0; }
+  .hero-stat-value { font-size: clamp(1.15rem, 5vw, 1.7rem); }
+  .cta-form { align-items: stretch; }
+  .cta-form .form-input, .cta-form .btn { width: 100%; }
+}
+.cta-form { flex-wrap: wrap; }

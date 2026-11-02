@@ -402,3 +402,16 @@
     text-align: center;
   }
 }
+
+/* Keyboard, translated navigation and status feedback */
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.theme-toggle { cursor: pointer; }
+.theme-icon-sun { display: none; }
+:root[data-theme="dark"] .theme-icon-sun { display: inline-block; }
+:root[data-theme="dark"] .theme-icon-moon { display: none; }
+.mobile-nav { max-height: calc(100svh - var(--header-h)); overflow-y: auto; overscroll-behavior: contain; }
+body.menu-open { overflow: hidden; }
+.form-note { flex: 0 0 100%; margin: 0; color: rgba(255,255,255,.74); text-align: center; font-size: var(--text-xs); }
+.footer-bottom { flex-wrap: wrap; gap: var(--space-2); }
+.footer-legal { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+.toast[hidden] { display: none; }

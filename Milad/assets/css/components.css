@@ -601,3 +601,10 @@ body.nav-open .nav-scrim { opacity: 1; visibility: visible; }
 .footer-legal { display: flex; gap: 1.3rem; }
 .footer-legal a:hover { color: var(--accent); }
 .footer-made { color: var(--text-3); }
+
+/* Explicit hidden-state and invalid form controls (browser-independent). */
+.toast[hidden],
+.to-top[hidden] { display: none !important; }
+.field input[aria-invalid="true"] { border-color: #d33b2f; box-shadow: 0 0 0 3px rgba(211, 59, 47, .14); }
+.field input:disabled,
+.final-form button:disabled { opacity: .65; cursor: wait; }

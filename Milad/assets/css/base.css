@@ -441,3 +441,42 @@ h1, h2, h3, h4 { line-height: 1.55; font-weight: 800; }
   * { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
   .parallax { transform: none !important; }
 }
+
+/* ---------- PREVIEW, SKIP LINK & ACCESSIBILITY HELPERS ---------- */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+.skip-link {
+  position: fixed;
+  z-index: 1400;
+  inset-block-start: .75rem;
+  inset-inline-start: .75rem;
+  padding: .65rem 1rem;
+  color: var(--accent-ink);
+  background: var(--accent);
+  border-radius: var(--radius-sm);
+  transform: translateY(-180%);
+  transition: transform var(--t-fast) ease;
+}
+.skip-link:focus { transform: translateY(0); }
+.template-note {
+  max-width: 900px;
+  margin: 0 auto 1.2rem;
+  padding: .65rem 1rem;
+  color: var(--text);
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg-2));
+  border: 1px solid color-mix(in srgb, var(--accent) 48%, transparent);
+  border-radius: var(--radius-sm);
+  font-size: .85rem;
+  line-height: 1.75;
+  text-align: center;
+}
+[hidden] { display: none !important; }

@@ -18,13 +18,13 @@
       nav_contact: 'تماس با ما',
       
       // Hero
-      hero_badge: '🚀 نسخه جدید ۱۴۰۴ منتشر شد',
+      hero_badge: "پیش‌نمایش محصول — محتوای نمونه",
       hero_title_1: 'مدیریت مالی هوشمند',
       hero_title_2: 'با تراز',
       hero_subtitle: 'نرم‌افزار حسابداری ابری تراز، راهکاری جامع برای مدیریت مالی کسب‌وکار شما. از صدور فاکتور تا گزارش‌های تحلیلی، همه چیز در یک پلتفرم.',
-      hero_cta_primary: 'شروع رایگان',
-      hero_cta_secondary: 'مشاهده دمو',
-      hero_stat_1_value: '۱۰,۰۰۰+',
+      hero_cta_primary: "درخواست دمو",
+      hero_cta_secondary: "مشاهدهٔ پیش‌نمایش",
+      hero_stat_1_value: "۱٬۲۰۰+",
       hero_stat_1_label: 'کسب‌وکار فعال',
       hero_stat_2_value: '۹۹.۹٪',
       hero_stat_2_label: 'آپتایم سرور',
@@ -32,10 +32,10 @@
       hero_stat_3_label: 'پشتیبانی',
       
       // Trust Bar
-      trust_1: 'تاییدیه امنیت',
-      trust_2: 'رمزنگاری SSL',
-      trust_3: 'پشتیبان‌گیری روزانه',
-      trust_4: 'سرورهای ایران',
+      trust_1: "امکانات امنیتی قابل پیکربندی",
+      trust_2: "قابلیت فعال‌سازی HTTPS",
+      trust_3: "امکان پشتیبان‌گیری",
+      trust_4: "قابل استقرار روی زیرساخت منتخب",
       
       // Features Section
       features_badge: 'ویژگی‌ها',
@@ -49,8 +49,8 @@
       feature_3_desc: 'داشبورد هوشمند با نمودارهای تعاملی. تحلیل روند درآمد و هزینه در زمان واقعی.',
       feature_4_title: 'مدیریت موجودی',
       feature_4_desc: 'پیگیری موجودی کالا و انبار. هشدار خودکار برای کالاهای رو به اتمام.',
-      feature_5_title: 'محاسبه مالیات',
-      feature_5_desc: 'محاسبه خودکار مالیات بر ارزش افزوده. تهیه گزارش‌های مالیاتی مطابق استانداردها.',
+      feature_5_title: "گزارش‌های مالیِ قابل تنظیم",
+      feature_5_desc: "گزارش‌ها را بر پایهٔ نیاز کسب‌وکار و رویه‌های مالیِ تأییدشده تنظیم کنید.",
       feature_6_title: 'اپلیکیشن موبایل',
       feature_6_desc: 'دسترسی به تمامی امکانات از طریق اپلیکیشن موبایل. مدیریت مالی در هر زمان و مکان.',
       
@@ -66,44 +66,44 @@
       // Benefits
       benefits_badge: 'چرا تراز؟',
       benefits_title: 'مزایای استفاده از تراز',
-      benefits_subtitle: 'تراز انتخاب اول هزاران کسب‌وکار موفق در ایران است.',
+      benefits_subtitle: 'این بخش نمونه است؛ نتیجه‌ها و مقایسه‌ها را فقط با دادهٔ قابل‌استناد و به‌روز منتشر کنید.',
       benefit_1_title: 'صرفه‌جویی در زمان',
-      benefit_1_desc: 'اتوماسیون فرآیندهای تکراری. کاهش ۷۰٪ زمان صرف شده برای امور مالی.',
+      benefit_1_desc: "اتوماسیون کارهای تکراری برای کاهش ورود دستی اطلاعات و آزادشدن وقت تیم.",
       benefit_2_title: 'کاهش خطا',
-      benefit_2_desc: 'محاسبات خودکار و دقیق. حذف خطاهای انسانی در ثبت اطلاعات.',
+      benefit_2_desc: "قواعد روشن و کنترل داده به بررسی دقیق‌تر ثبت‌های مالی کمک می‌کنند.",
       benefit_3_title: 'دسترسی از هر جا',
       benefit_3_desc: 'پلتفرم ابری با دسترسی از هر دستگاه. همکاری تیمی بدون محدودیت.',
-      benefit_4_title: 'امنیت بانکی',
-      benefit_4_desc: 'رمزنگاری سطح بانکی. پشتیبان‌گیری خودکار روزانه. سرورهای امن در ایران.',
-      benefit_5_title: 'پشتیبانی ۲۴/۷',
-      benefit_5_desc: 'تیم پشتیبانی متخصص در تمامی ساعات. پاسخگویی از طریق چت، تلفن و ایمیل.',
+      benefit_4_title: "کنترل دسترسی",
+      benefit_4_desc: "سطح دسترسی کاربران و روش حفاظت از داده را متناسب با پیاده‌سازی واقعی محصول معرفی کنید.",
+      benefit_5_title: "پشتیبانی متناسب با پلن",
+      benefit_5_desc: "ساعت‌ها و مسیرهای پشتیبانی را مطابق تیم واقعی و قرارداد هر پلن درج کنید.",
       benefit_6_title: 'به‌روزرسانی مداوم',
-      benefit_6_desc: 'اضافه شدن ویژگی‌های جدید هر ماه. سازگاری با آخرین تغییرات قوانین مالیاتی.',
+      benefit_6_desc: "قابلیت‌های جدید و تغییرات قانونی را تنها پس از پیاده‌سازی و راستی‌آزمایی اعلام کنید.",
       
       // Pricing
       pricing_badge: 'تعرفه‌ها',
       pricing_title: 'پلن مناسب کسب‌وکار خود را انتخاب کنید',
-      pricing_subtitle: 'شروع رایگان. ارتقا در هر زمان. بدون قرارداد طولانی‌مدت.',
+      pricing_subtitle: "پلن‌ها و قیمت‌های فعلی فقط نمونه‌اند؛ رقم نهایی و شرایط تمدید را با تعرفهٔ واقعی جایگزین کنید.",
       pricing_starter: 'استارتر',
       pricing_starter_desc: 'برای کسب‌وکارهای کوچک',
-      pricing_starter_price: '۲۹۰,۰۰۰',
+      pricing_starter_price: "۲۹۰٬۰۰۰",
       pricing_starter_period: 'تومان / ماهانه',
       pricing_starter_feature_1: 'تا ۱۰۰ فاکتور در ماه',
       pricing_starter_feature_2: '۱ کاربر',
       pricing_starter_feature_3: 'گزارش‌های پایه',
       pricing_starter_feature_4: 'پشتیبانی ایمیلی',
-      pricing_starter_cta: 'شروع رایگان',
+      pricing_starter_cta: 'درخواست دمو',
       
       pricing_professional: 'حرفه‌ای',
       pricing_professional_desc: 'برای کسب‌وکارهای در حال رشد',
-      pricing_professional_price: '۵۹۰,۰۰۰',
+      pricing_professional_price: "۵۹۰٬۰۰۰",
       pricing_professional_period: 'تومان / ماهانه',
       pricing_professional_feature_1: 'فاکتور نامحدود',
       pricing_professional_feature_2: 'تا ۵ کاربر',
       pricing_professional_feature_3: 'گزارش‌های پیشرفته',
       pricing_professional_feature_4: 'پشتیبانی تلفنی',
       pricing_professional_feature_5: 'اپلیکیشن موبایل',
-      pricing_professional_cta: 'شروع رایگان',
+      pricing_professional_cta: 'درخواست دمو',
       pricing_professional_badge: 'محبوب‌ترین',
       
       pricing_enterprise: 'سازمانی',
@@ -120,71 +120,90 @@
       // Testimonials
       testimonials_badge: 'نظرات مشتریان',
       testimonials_title: 'مشتریان ما چه می‌گویند',
-      testimonials_subtitle: 'بیش از ۱۰,۰۰۰ کسب‌وکار به تراز اعتماد کرده‌اند.',
-      testimonial_1_text: 'تراز کار ما را متحول کرد. قبلاً ساعت‌ها وقت صرف امور مالی می‌کردیم، الان همه چیز خودکار است.',
-      testimonial_1_name: 'علی محمدی',
-      testimonial_1_role: 'مدیرعامل، شرکت فناوری نوین',
-      testimonial_2_text: 'رابط کاربری فوق‌العاده و پشتیبانی عالی. تیم تراز همیشه در دسترس هستند و سریع پاسخ می‌دهند.',
-      testimonial_2_name: 'سارا احمدی',
-      testimonial_2_role: 'حسابدار، فروشگاه آنلاین پارسیان',
-      testimonial_3_text: 'گزارش‌های تحلیلی تراز به ما کمک کرد تصمیمات بهتری بگیریم. واقعاً ارزش هر ریالش را دارد.',
-      testimonial_3_name: 'رضا کریمی',
-      testimonial_3_role: 'مدیر مالی، گروه صنعتی البرز',
+      testimonials_subtitle: 'نام‌ها و نقل‌قول‌های این بخش نمونه‌اند؛ فقط بازخورد واقعی و دارای اجازهٔ انتشار را درج کنید.',
+      testimonial_1_text: 'متن بازخورد واقعی مشتری را با اجازهٔ انتشار در این بخش قرار دهید.',
+      testimonial_1_name: 'مشتری نمونه ۱',
+      testimonial_1_role: 'سمت یا کسب‌وکار واقعی',
+      testimonial_2_text: 'فقط تجربهٔ واقعی مشتری از محصول یا پشتیبانی را با اجازه نقل کنید.',
+      testimonial_2_name: 'مشتری نمونه ۲',
+      testimonial_2_role: 'سمت یا کسب‌وکار واقعی',
+      testimonial_3_text: 'این متن نمونه است؛ پیش از انتشار آن را با نظر واقعی و مجاز جایگزین کنید.',
+      testimonial_3_name: 'مشتری نمونه ۳',
+      testimonial_3_role: 'سمت یا کسب‌وکار واقعی',
       
       // FAQ
       faq_badge: 'سوالات متداول',
       faq_title: 'پاسخ به سوالات شما',
       faq_subtitle: 'اگر سوال دیگری دارید، با ما تماس بگیرید.',
       faq_1_q: 'آیا می‌توانم تراز را رایگان امتحان کنم؟',
-      faq_1_a: 'بله، تمامی پلن‌ها شامل ۱۴ روز استفاده رایگان هستند. نیازی به وارد کردن اطلاعات کارت بانکی نیست.',
+      faq_1_a: "مدت آزمایشی و شرایط دسترسی را مطابق سرویس واقعی خود در این پاسخ بنویسید؛ این متن نمونه است.",
       faq_2_q: 'آیا اطلاعات من امن است؟',
-      faq_2_a: 'بله، ما از رمزنگاری سطح بانکی (SSL 256-bit) استفاده می‌کنیم. سرورهای ما در دیتاسنترهای امن در ایران قرار دارند و روزانه پشتیبان‌گیری خودکار انجام می‌شود.',
+      faq_2_a: "این پاسخ نمونه است. نوع رمزنگاری، محل نگهداری داده و سیاست پشتیبان‌گیری را فقط در صورت پیاده‌سازی و تأیید واقعی اعلام کنید.",
       faq_3_q: 'آیا می‌توانم اطلاعات را از نرم‌افزار قبلی منتقل کنم؟',
-      faq_3_a: 'بله، تیم پشتیبانی ما در فرآیند انتقال اطلاعات به شما کمک می‌کند. این سرویس برای تمامی پلن‌ها رایگان است.',
+      faq_3_a: "اگر انتقال اطلاعات در محصول شما پشتیبانی می‌شود، فرمت‌های پذیرفته‌شده، مسئولیت‌ها و هزینهٔ خدمت را اینجا مشخص کنید.",
       faq_4_q: 'آیا تراز با قوانین مالیاتی ایران سازگار است؟',
-      faq_4_a: 'بله، تراز کاملاً با آخرین تغییرات قوانین مالیاتی ایران سازگار است. محاسبه مالیات بر ارزش افزوده و تهیه گزارش‌های مالیاتی به صورت خودکار انجام می‌شود.',
+      faq_4_a: "سازگاری مالیاتی به قابلیت‌های پیاده‌سازی‌شده و به‌روزرسانی‌های محصول وابسته است؛ پیش از انتشار این ادعا را تخصصی بررسی کنید.",
       faq_5_q: 'آیا اپلیکیشن موبایل دارید؟',
-      faq_5_a: 'بله، اپلیکیشن تراز برای iOS و Android در دسترس است. تمامی امکانات نسخه وب در اپلیکیشن موبایل نیز موجود است.',
+      faq_5_a: "در صورت ارائهٔ اپلیکیشن، پیوند فروشگاه‌ها و قابلیت‌های واقعی آن را درج کنید؛ متن فعلی صرفاً نمونه است.",
       faq_6_q: 'نحوه پشتیبانی چگونه است؟',
-      faq_6_a: 'پشتیبانی از طریق چت آنلاین، تلفن و ایمیل ارائه می‌شود. پلن‌های حرفه‌ای و سازمانی شامل پشتیبانی اختصاصی ۲۴/۷ هستند.',
+      faq_6_a: "کانال‌ها، ساعات پاسخ‌گویی و سطح پشتیبانی هر پلن را مطابق قرارداد واقعی درج کنید.",
       
       // CTA
-      cta_title: 'آماده شروع هستید؟',
-      cta_subtitle: 'همین امروز ثبت‌نام کنید و ۱۴ روز رایگان از تمامی امکانات تراز استفاده کنید.',
+      cta_title: "برای آشنایی با محصول آماده‌اید؟",
+      cta_subtitle: "این بخش فقط نمونه است؛ مدت دورهٔ آزمایشی، شرایط دسترسی و پیشنهاد را با اطلاعات واقعی محصول جایگزین کنید.",
       cta_placeholder: 'ایمیل خود را وارد کنید',
-      cta_button: 'شروع رایگان',
+      cta_button: "درخواست دمو",
       
       // Footer
-      footer_desc: 'تراز، نرم‌افزار حسابداری ابری برای کسب‌وکارهای ایرانی. ساده، هوشمند، امن.',
+      footer_desc: "پیش‌نمایش قابل‌ویرایش یک نرم‌افزار حسابداری ابری؛ نام، قابلیت‌ها و اطلاعات تماس را با داده‌های تأییدشدهٔ محصول خود جایگزین کنید.",
       footer_product: 'محصول',
       footer_product_1: 'ویژگی‌ها',
       footer_product_2: 'تعرفه‌ها',
-      footer_product_3: 'به‌روزرسانی‌ها',
-      footer_product_4: 'نقشه راه',
+      footer_product_3: "پیش‌نمایش داشبورد",
+      footer_product_4: "پرسش‌های متداول",
       footer_company: 'شرکت',
-      footer_company_1: 'درباره ما',
-      footer_company_2: 'وبلاگ',
-      footer_company_3: 'فرصت‌های شغلی',
-      footer_company_4: 'تماس با ما',
+      footer_company_1: "معرفی محصول",
+      footer_company_2: "مزایا",
+      footer_company_3: "پشتیبانی",
+      footer_company_4: "درخواست دمو",
       footer_resources: 'منابع',
-      footer_resources_1: 'مستندات',
-      footer_resources_2: 'راهنمای استفاده',
-      footer_resources_3: 'ویدیوهای آموزشی',
-      footer_resources_4: 'مرکز پشتیبانی',
+      footer_resources_1: "پرسش‌های متداول",
+      footer_resources_2: "شرایط استفاده",
+      footer_resources_3: "حریم خصوصی",
+      footer_resources_4: "تماس با ما",
       footer_legal: 'قوانین',
       footer_legal_1: 'شرایط استفاده',
       footer_legal_2: 'حریم خصوصی',
       footer_legal_3: 'امنیت',
-      footer_rights: '© ۱۴۰۴ تراز. تمامی حقوق محفوظ است.',
+      footer_rights: "© ۱۴۰۵ تراز — محتوای نمونه",
       
       // Forms
-      form_success: 'پیام شما با موفقیت ارسال شد!',
-      form_error: 'لطفاً تمامی فیلدها را پر کنید.',
+      form_success: "درخواست شما با موفقیت ثبت شد.",
+      form_error: "لطفاً یک ایمیل معتبر وارد کنید.",
       
       // Misc
-      theme_toggle: 'تغییر تم',
-      mobile_menu: 'منوی موبایل'
+      theme_toggle: "تغییر حالت روشن و تیره",
+      mobile_menu: "بازکردن منو",
     },
+      skip_link: "رفتن به محتوای اصلی",
+      demo_notice: "پیش‌نمایش قالب است؛ نام‌ها، قابلیت‌ها، آمار، تعرفه‌ها، دورهٔ آزمایشی، خدمات، نقل‌قول‌ها و ادعاهای امنیتی یا مالیاتی نمونه‌اند و باید پیش از انتشار با اطلاعات واقعی و تأییدشده جایگزین شوند.",
+      brand_aria: "تراز — بازگشت به بالا",
+      nav_label: "ناوبری اصلی",
+      language_toggle_aria: "تغییر زبان به انگلیسی",
+      language_short: "EN",
+      dashboard_title: "داشبورد نمونهٔ تراز",
+      dashboard_revenue: "درآمد ماهانه",
+      dashboard_revenue_value: "۴۵٬۲۰۰٬۰۰۰",
+      dashboard_invoices: "فاکتورهای صادرشده",
+      dashboard_invoices_value: "۱۲۸",
+      dashboard_receivables: "مطالبات",
+      dashboard_receivables_value: "۱۲٬۵۰۰٬۰۰۰",
+      showcase_image_alt: "تصویر نمایشی از داشبورد حسابداری تراز",
+      cta_email_label: "نشانی ایمیل",
+      form_demo_note: "این فرم نمایشی است؛ تا زمان اتصال endpoint، ایمیلی ارسال یا ذخیره نمی‌شود.",
+      pricing_sample_note: "قیمت‌ها و امکاناتِ پلن‌ها صرفاً دادهٔ نمونه‌اند؛ پیش از انتشار آن‌ها را با تعرفهٔ واقعی محصول به‌روزرسانی کنید.",
+      page_title: "تراز | نرم‌افزار حسابداری ابری — پیش‌نمایش قالب سکّان",
+      page_description: "تراز؛ پیش‌نمایش قابل‌ویرایش یک نرم‌افزار حسابداری ابری برای کسب‌وکارهای ایرانی. همهٔ آمار، قیمت‌ها و ادعاهای محصول نمونه‌اند.",
     en: {
       nav_features: 'Features',
       nav_benefits: 'Benefits',
@@ -193,23 +212,23 @@
       nav_faq: 'FAQ',
       nav_contact: 'Contact',
       
-      hero_badge: '🚀 New version 2025 released',
+      hero_badge: "Product preview — sample content",
       hero_title_1: 'Smart Financial',
       hero_title_2: 'Management with Taraz',
       hero_subtitle: 'Taraz cloud accounting software is a comprehensive solution for your business financial management. From invoicing to analytical reports, all in one platform.',
-      hero_cta_primary: 'Start Free',
-      hero_cta_secondary: 'View Demo',
-      hero_stat_1_value: '10,000+',
+      hero_cta_primary: "Request a demo",
+      hero_cta_secondary: "View the preview",
+      hero_stat_1_value: "1,200+",
       hero_stat_1_label: 'Active Businesses',
       hero_stat_2_value: '99.9%',
       hero_stat_2_label: 'Server Uptime',
       hero_stat_3_value: '24/7',
       hero_stat_3_label: 'Support',
       
-      trust_1: 'Security Certified',
-      trust_2: 'SSL Encryption',
-      trust_3: 'Daily Backups',
-      trust_4: 'Iran Servers',
+      trust_1: "Configurable security features",
+      trust_2: "HTTPS can be enabled",
+      trust_3: "Backup capability",
+      trust_4: "Deploy on your chosen infrastructure",
       
       features_badge: 'Features',
       features_title: 'Everything You Need for Financial Management',
@@ -222,8 +241,8 @@
       feature_3_desc: 'Smart dashboard with interactive charts. Real-time income and expense trend analysis.',
       feature_4_title: 'Inventory Management',
       feature_4_desc: 'Track inventory and warehouse. Auto-alerts for low stock items.',
-      feature_5_title: 'Tax Calculation',
-      feature_5_desc: 'Automatic VAT calculation. Prepare tax reports according to standards.',
+      feature_5_title: "Configurable financial reports",
+      feature_5_desc: "Configure reports for your business needs and verified accounting workflows.",
       feature_6_title: 'Mobile App',
       feature_6_desc: 'Access all features via mobile app. Financial management anytime, anywhere.',
       
@@ -237,43 +256,43 @@
       
       benefits_badge: 'Why Taraz?',
       benefits_title: 'Benefits of Using Taraz',
-      benefits_subtitle: 'Taraz is the first choice of thousands of successful businesses in Iran.',
+      benefits_subtitle: 'This section is sample copy; publish comparisons and outcomes only when supported by current evidence.',
       benefit_1_title: 'Save Time',
-      benefit_1_desc: 'Automate repetitive processes. Reduce 70% of time spent on financial tasks.',
+      benefit_1_desc: "Automate repetitive tasks to reduce manual entry and give your team time back.",
       benefit_2_title: 'Reduce Errors',
-      benefit_2_desc: 'Automatic and accurate calculations. Eliminate human errors in data entry.',
+      benefit_2_desc: "Clear workflows and data checks can help teams review financial entries more consistently.",
       benefit_3_title: 'Access Anywhere',
       benefit_3_desc: 'Cloud platform with access from any device. Team collaboration without limits.',
-      benefit_4_title: 'Bank-Level Security',
-      benefit_4_desc: 'Bank-level encryption. Automatic daily backups. Secure servers in Iran.',
-      benefit_5_title: '24/7 Support',
-      benefit_5_desc: 'Expert support team available at all hours. Response via chat, phone, and email.',
+      benefit_4_title: "Access controls",
+      benefit_4_desc: "Describe user permissions and data safeguards according to the product you actually operate.",
+      benefit_5_title: "Support by plan",
+      benefit_5_desc: "Publish the support hours and channels that your team can actually provide.",
       benefit_6_title: 'Continuous Updates',
-      benefit_6_desc: 'New features added every month. Compatible with latest tax law changes.',
+      benefit_6_desc: "Announce product updates and regulatory changes only after implementation and verification.",
       
       pricing_badge: 'Pricing',
       pricing_title: 'Choose the Plan That Fits Your Business',
-      pricing_subtitle: 'Start free. Upgrade anytime. No long-term contracts.',
+      pricing_subtitle: "Plans and prices are examples. Replace them with current pricing and renewal terms.",
       pricing_starter: 'Starter',
       pricing_starter_desc: 'For small businesses',
-      pricing_starter_price: '290,000',
+      pricing_starter_price: "290,000",
       pricing_starter_period: 'Toman / monthly',
       pricing_starter_feature_1: 'Up to 100 invoices per month',
       pricing_starter_feature_2: '1 user',
       pricing_starter_feature_3: 'Basic reports',
       pricing_starter_feature_4: 'Email support',
-      pricing_starter_cta: 'Start Free',
+      pricing_starter_cta: 'Request a demo',
       
       pricing_professional: 'Professional',
       pricing_professional_desc: 'For growing businesses',
-      pricing_professional_price: '590,000',
+      pricing_professional_price: "590,000",
       pricing_professional_period: 'Toman / monthly',
       pricing_professional_feature_1: 'Unlimited invoices',
       pricing_professional_feature_2: 'Up to 5 users',
       pricing_professional_feature_3: 'Advanced reports',
       pricing_professional_feature_4: 'Phone support',
       pricing_professional_feature_5: 'Mobile app',
-      pricing_professional_cta: 'Start Free',
+      pricing_professional_cta: 'Request a demo',
       pricing_professional_badge: 'Most Popular',
       
       pricing_enterprise: 'Enterprise',
@@ -289,293 +308,294 @@
       
       testimonials_badge: 'Testimonials',
       testimonials_title: 'What Our Customers Say',
-      testimonials_subtitle: 'Over 10,000 businesses trust Taraz.',
-      testimonial_1_text: 'Taraz transformed our work. We used to spend hours on financial tasks, now everything is automated.',
-      testimonial_1_name: 'Ali Mohammadi',
-      testimonial_1_role: 'CEO, Novin Technology Co.',
-      testimonial_2_text: 'Amazing user interface and excellent support. The Taraz team is always available and responds quickly.',
-      testimonial_2_name: 'Sara Ahmadi',
-      testimonial_2_role: 'Accountant, Parsian Online Store',
-      testimonial_3_text: 'Taraz analytical reports helped us make better decisions. Really worth every rial.',
-      testimonial_3_name: 'Reza Karimi',
-      testimonial_3_role: 'Financial Manager, Alborz Industrial Group',
+      testimonials_subtitle: 'Names and quotes are placeholders. Publish verified customer feedback only with permission.',
+      testimonial_1_text: 'Add a real customer review here only after receiving permission to publish it.',
+      testimonial_1_name: 'Sample customer 1',
+      testimonial_1_role: 'Actual role or business',
+      testimonial_2_text: 'Describe a genuine customer experience with the product or support, with permission.',
+      testimonial_2_name: 'Sample customer 2',
+      testimonial_2_role: 'Actual role or business',
+      testimonial_3_text: 'This is sample copy. Replace it with a genuine review that you may publish.',
+      testimonial_3_name: 'Sample customer 3',
+      testimonial_3_role: 'Actual role or business',
       
       faq_badge: 'FAQ',
       faq_title: 'Answers to Your Questions',
       faq_subtitle: 'If you have other questions, contact us.',
       faq_1_q: 'Can I try Taraz for free?',
-      faq_1_a: 'Yes, all plans include a 14-day free trial. No credit card required.',
+      faq_1_a: "Add the actual trial period and access terms for your service here. This copy is an example.",
       faq_2_q: 'Is my data secure?',
-      faq_2_a: 'Yes, we use bank-level encryption (SSL 256-bit). Our servers are in secure data centers in Iran with automatic daily backups.',
+      faq_2_a: "This answer is sample copy. State encryption, data location and backup policies only after verifying the live implementation.",
       faq_3_q: 'Can I migrate data from my previous software?',
-      faq_3_a: 'Yes, our support team will help you with the migration process. This service is free for all plans.',
+      faq_3_a: "If migration is supported, list accepted formats, responsibilities and any service charges here.",
       faq_4_q: 'Is Taraz compatible with Iranian tax laws?',
-      faq_4_a: 'Yes, Taraz is fully compatible with the latest Iranian tax law changes. VAT calculation and tax report preparation are done automatically.',
+      faq_4_a: "Tax compatibility depends on implemented product features and updates. Have this claim reviewed before publishing.",
       faq_5_q: 'Do you have a mobile app?',
-      faq_5_a: 'Yes, Taraz app is available for iOS and Android. All web version features are also available in the mobile app.',
+      faq_5_a: "If you provide mobile apps, link to the real stores and describe their actual features. This copy is illustrative.",
       faq_6_q: 'How does support work?',
-      faq_6_a: 'Support is provided via online chat, phone, and email. Professional and Enterprise plans include dedicated 24/7 support.',
+      faq_6_a: "List the support channels, response hours and service levels covered by your actual plans.",
       
-      cta_title: 'Ready to Start?',
-      cta_subtitle: 'Sign up today and use all Taraz features free for 14 days.',
+      cta_title: "Ready to learn about the product?",
+      cta_subtitle: "This section is illustrative. Replace any trial period, access terms and offer with what the product actually provides.",
       cta_placeholder: 'Enter your email',
-      cta_button: 'Start Free',
+      cta_button: "Request a demo",
       
-      footer_desc: 'Taraz, cloud accounting software for Iranian businesses. Simple, smart, secure.',
+      footer_desc: "An editable preview for a cloud accounting product. Replace the name, features and contact details with verified product information.",
       footer_product: 'Product',
       footer_product_1: 'Features',
       footer_product_2: 'Pricing',
-      footer_product_3: 'Updates',
-      footer_product_4: 'Roadmap',
+      footer_product_3: "Dashboard preview",
+      footer_product_4: "Frequently asked questions",
       footer_company: 'Company',
-      footer_company_1: 'About Us',
-      footer_company_2: 'Blog',
-      footer_company_3: 'Careers',
-      footer_company_4: 'Contact',
+      footer_company_1: "About the product",
+      footer_company_2: "Benefits",
+      footer_company_3: "Support",
+      footer_company_4: "Request a demo",
       footer_resources: 'Resources',
-      footer_resources_1: 'Documentation',
-      footer_resources_2: 'User Guide',
-      footer_resources_3: 'Tutorial Videos',
-      footer_resources_4: 'Support Center',
+      footer_resources_1: "Frequently asked questions",
+      footer_resources_2: "Terms of use",
+      footer_resources_3: "Privacy",
+      footer_resources_4: "Contact",
       footer_legal: 'Legal',
       footer_legal_1: 'Terms of Service',
       footer_legal_2: 'Privacy Policy',
       footer_legal_3: 'Security',
-      footer_rights: '© 2025 Taraz. All rights reserved.',
+      footer_rights: "© 2026 Taraz — sample content",
       
-      form_success: 'Your message was sent successfully!',
-      form_error: 'Please fill in all fields.',
+      form_success: "Your request was received.",
+      form_error: "Please enter a valid email address.",
       
-      theme_toggle: 'Toggle theme',
-      mobile_menu: 'Mobile menu'
+      theme_toggle: "Toggle light and dark theme",
+      mobile_menu: "Open menu",
+      skip_link: "Skip to main content",
+      demo_notice: "Template preview: names, features, metrics, prices, trial offers, support, testimonials and security or tax claims are examples. Replace them with verified product information before publishing.",
+      brand_aria: "Taraz — back to top",
+      nav_label: "Main navigation",
+      language_toggle_aria: "Switch language to Persian",
+      language_short: "فا",
+      dashboard_title: "Sample Taraz dashboard",
+      dashboard_revenue: "Monthly revenue",
+      dashboard_revenue_value: "45,200,000",
+      dashboard_invoices: "Issued invoices",
+      dashboard_invoices_value: "128",
+      dashboard_receivables: "Receivables",
+      dashboard_receivables_value: "12,500,000",
+      showcase_image_alt: "Illustrative preview of the Taraz accounting dashboard",
+      cta_email_label: "Email address",
+      form_demo_note: "Demo form only. No email is sent or stored until you connect an endpoint.",
+      pricing_sample_note: "Plan prices and features are examples. Replace them with your product’s verified pricing before publishing.",
+      page_title: "Taraz | Cloud accounting software — Sokkan template preview",
+      page_description: "Taraz is an editable preview for cloud accounting software. Metrics, prices and product claims are sample content.",
+
     }
   };
 
-  let currentLang = localStorage.getItem('taraz_lang') || 'fa';
-  
-  function t(key) {
-    return translations[currentLang][key] || key;
+  const $ = (selector, root = document) => root.querySelector(selector);
+  const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
+  const storage = {
+    get(key) { try { return localStorage.getItem(key); } catch (_) { return null; } },
+    set(key, value) { try { localStorage.setItem(key, value); } catch (_) {} }
+  };
+  const t = key => translations[currentLang]?.[key] ?? translations.fa[key] ?? key;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let currentLang = storage.get('taraz_lang') === 'en' ? 'en' : 'fa';
+  let currentTheme = storage.get('taraz_theme');
+  if (currentTheme !== 'light' && currentTheme !== 'dark') {
+    currentTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
 
-  function updateLanguage() {
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      el.textContent = t(key);
+  function updateLanguage(persist = true) {
+    const root = document.documentElement;
+    root.lang = currentLang;
+    root.dir = currentLang === 'fa' ? 'rtl' : 'ltr';
+    $$('[data-i18n]').forEach(element => {
+      const value = translations[currentLang]?.[element.dataset.i18n] ?? translations.fa[element.dataset.i18n];
+      if (value !== undefined) element.textContent = value;
     });
-    
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-      const key = el.getAttribute('data-i18n-placeholder');
-      el.setAttribute('placeholder', t(key));
+    $$('[data-i18n-placeholder]').forEach(element => {
+      const value = translations[currentLang]?.[element.dataset.i18nPlaceholder] ?? translations.fa[element.dataset.i18nPlaceholder];
+      if (value !== undefined) element.setAttribute('placeholder', value);
     });
-
-    document.documentElement.lang = currentLang;
-    document.documentElement.dir = currentLang === 'fa' ? 'rtl' : 'ltr';
+    $$('[data-i18n-aria]').forEach(element => {
+      const value = translations[currentLang]?.[element.dataset.i18nAria] ?? translations.fa[element.dataset.i18nAria];
+      if (value !== undefined) element.setAttribute('aria-label', value);
+    });
+    $$('[data-i18n-alt]').forEach(element => {
+      const value = translations[currentLang]?.[element.dataset.i18nAlt] ?? translations.fa[element.dataset.i18nAlt];
+      if (value !== undefined) element.setAttribute('alt', value);
+    });
+    document.title = t('page_title');
+    const description = $('meta[name="description"]');
+    const ogTitle = $('meta[property="og:title"]');
+    const ogDescription = $('meta[property="og:description"]');
+    if (description) description.content = t('page_description');
+    if (ogTitle) ogTitle.content = t('page_title');
+    if (ogDescription) ogDescription.content = t('page_description');
+    const toggle = $('.mobile-menu-toggle');
+    if (toggle?.getAttribute('aria-expanded') === 'true') {
+      toggle.setAttribute('aria-label', currentLang === 'fa' ? 'بستن منو' : 'Close menu');
+    }
+    $$('[data-count][data-count-done="true"]').forEach(renderCounterValue);
+    if (persist) storage.set('taraz_lang', currentLang);
   }
 
-  function toggleLanguage() {
+  function setTheme(theme, persist = true) {
+    currentTheme = theme === 'dark' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = currentTheme;
+    const themeColor = $('meta[name="theme-color"]');
+    if (themeColor) themeColor.content = currentTheme === 'dark' ? '#0f172a' : '#ffffff';
+    if (persist) storage.set('taraz_theme', currentTheme);
+  }
+
+  const langToggle = $('.lang-toggle');
+  const themeToggle = $('.theme-toggle');
+  langToggle?.addEventListener('click', () => {
     currentLang = currentLang === 'fa' ? 'en' : 'fa';
-    localStorage.setItem('taraz_lang', currentLang);
     updateLanguage();
+  });
+  themeToggle?.addEventListener('click', () => setTheme(currentTheme === 'light' ? 'dark' : 'light'));
+
+  // Mobile drawer: keep visibility, body scroll and ARIA state in sync.
+  const menuToggle = $('.mobile-menu-toggle');
+  const mobileNav = $('#mobileNav');
+  function setMobileMenu(open, returnFocus = false) {
+    if (!menuToggle || !mobileNav) return;
+    menuToggle.classList.toggle('active', open);
+    mobileNav.classList.toggle('active', open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.setAttribute('aria-label', open
+      ? (currentLang === 'fa' ? 'بستن منو' : 'Close menu')
+      : t('mobile_menu'));
+    mobileNav.setAttribute('aria-hidden', String(!open));
+    document.body.classList.toggle('menu-open', open);
+    if (open) $('.mobile-nav-link', mobileNav)?.focus();
+    else if (returnFocus) menuToggle.focus();
   }
-
-  // ==================== Theme ====================
-  let currentTheme = localStorage.getItem('taraz_theme') || 'light';
-
-  function updateTheme() {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    const icon = document.querySelector('.theme-toggle svg');
-    if (icon) {
-      icon.innerHTML = currentTheme === 'light' 
-        ? '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>'
-        : '<circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>';
-    }
-  }
-
-  function toggleTheme() {
-    currentTheme = currentTheme === 'light' ? 'dark' : 'light';
-    localStorage.setItem('taraz_theme', currentTheme);
-    updateTheme();
-  }
-
-  // ==================== Mobile Menu ====================
-  function initMobileMenu() {
-    const toggle = document.querySelector('.mobile-menu-toggle');
-    const mobileNav = document.querySelector('.mobile-nav');
-    
-    if (toggle && mobileNav) {
-      toggle.addEventListener('click', () => {
-        toggle.classList.toggle('active');
-        mobileNav.classList.toggle('active');
-        document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
-      });
-
-      document.querySelectorAll('.mobile-nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-          toggle.classList.remove('active');
-          mobileNav.classList.remove('active');
-          document.body.style.overflow = '';
-        });
-      });
-    }
-  }
-
-  // ==================== Header Scroll ====================
-  function initHeaderScroll() {
-    const header = document.querySelector('.header');
-    if (header) {
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
-        }
-      });
-    }
-  }
-
-  // ==================== Smooth Scroll ====================
-  function initSmoothScroll() {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          const headerHeight = document.querySelector('.header').offsetHeight;
-          const targetPosition = target.offsetTop - headerHeight - 20;
-          window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-  }
-
-  // ==================== FAQ Accordion ====================
-  function initFAQ() {
-    document.querySelectorAll('.faq-question').forEach(question => {
-      question.addEventListener('click', () => {
-        const item = question.parentElement;
-        const isActive = item.classList.contains('active');
-        
-        document.querySelectorAll('.faq-item').forEach(faq => {
-          faq.classList.remove('active');
-        });
-        
-        if (!isActive) {
-          item.classList.add('active');
-        }
-      });
-    });
-  }
-
-  // ==================== Forms ====================
-  function initForms() {
-    document.querySelectorAll('form').forEach(form => {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const inputs = form.querySelectorAll('input[required], textarea[required]');
-        let isValid = true;
-        
-        inputs.forEach(input => {
-          if (!input.value.trim()) {
-            isValid = false;
-            input.style.borderColor = 'var(--danger)';
-          } else {
-            input.style.borderColor = '';
-          }
-        });
-        
-        if (isValid) {
-          showToast(t('form_success'), 'success');
-          form.reset();
-        } else {
-          showToast(t('form_error'), 'error');
-        }
-      });
-    });
-  }
-
-  // ==================== Toast ====================
-  function showToast(message, type = 'success') {
-    const toast = document.createElement('div');
-    toast.className = `toast toast-${type}`;
-    toast.innerHTML = `
-      <div class="toast-icon">${type === 'success' ? '✓' : '✕'}</div>
-      <div class="toast-message">${message}</div>
-    `;
-    document.body.appendChild(toast);
-    
-    setTimeout(() => toast.classList.add('show'), 100);
-    
-    setTimeout(() => {
-      toast.classList.remove('show');
-      setTimeout(() => toast.remove(), 300);
-    }, 3000);
-  }
-
-  // ==================== Animations ====================
-  function initAnimations() {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in-up');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.card, .benefit-card, .pricing-card, .testimonial-card').forEach(el => {
-      observer.observe(el);
-    });
-  }
-
-  // ==================== Counter Animation ====================
-  function initCounters() {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const counter = entry.target;
-          const target = parseInt(counter.getAttribute('data-count'));
-          const duration = 2000;
-          const step = target / (duration / 16);
-          let current = 0;
-          
-          const timer = setInterval(() => {
-            current += step;
-            if (current >= target) {
-              counter.textContent = target.toLocaleString('fa-IR');
-              clearInterval(timer);
-            } else {
-              counter.textContent = Math.floor(current).toLocaleString('fa-IR');
-            }
-          }, 16);
-          
-          observer.unobserve(counter);
-        }
-      });
-    }, { threshold: 0.5 });
-
-    document.querySelectorAll('[data-count]').forEach(counter => {
-      observer.observe(counter);
-    });
-  }
-
-  // ==================== Init ====================
-  document.addEventListener('DOMContentLoaded', () => {
-    updateTheme();
-    updateLanguage();
-    initMobileMenu();
-    initHeaderScroll();
-    initSmoothScroll();
-    initFAQ();
-    initForms();
-    initAnimations();
-    initCounters();
-
-    document.querySelector('.theme-toggle')?.addEventListener('click', toggleTheme);
-    document.querySelector('.lang-toggle')?.addEventListener('click', toggleLanguage);
+  menuToggle?.addEventListener('click', () => setMobileMenu(menuToggle.getAttribute('aria-expanded') !== 'true'));
+  mobileNav?.addEventListener('click', event => {
+    if (event.target.closest('a')) setMobileMenu(false);
+  });
+  document.addEventListener('click', event => {
+    if (menuToggle?.getAttribute('aria-expanded') === 'true' && !event.target.closest('.header')) setMobileMenu(false);
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1024) setMobileMenu(false);
+  }, { passive: true });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menuToggle?.getAttribute('aria-expanded') === 'true') setMobileMenu(false, true);
   });
 
+  // Header elevation.
+  const header = $('.header');
+  const updateHeader = () => header?.classList.toggle('scrolled', window.scrollY > 50);
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  updateHeader();
+
+  // Accessible single-open FAQ accordion.
+  $$('.faq-item').forEach(item => {
+    const question = $('.faq-question', item);
+    const answer = $('.faq-answer', item);
+    question?.addEventListener('click', () => {
+      const shouldOpen = question.getAttribute('aria-expanded') !== 'true';
+      $$('.faq-item').forEach(other => {
+        other.classList.remove('active');
+        $('.faq-question', other)?.setAttribute('aria-expanded', 'false');
+        $('.faq-answer', other)?.setAttribute('aria-hidden', 'true');
+      });
+      if (shouldOpen) {
+        item.classList.add('active');
+        question.setAttribute('aria-expanded', 'true');
+        answer?.setAttribute('aria-hidden', 'false');
+      }
+    });
+  });
+
+  // A truthful demo form: report success only after a configured service responds.
+  const toast = $('#toast');
+  let toastTimer;
+  function showToast(message, kind = 'info') {
+    if (!toast) return;
+    window.clearTimeout(toastTimer);
+    toast.textContent = message;
+    toast.dataset.kind = kind;
+    toast.hidden = false;
+    requestAnimationFrame(() => toast.classList.add('show'));
+    toastTimer = window.setTimeout(() => {
+      toast.classList.remove('show');
+      window.setTimeout(() => { toast.hidden = true; }, 250);
+    }, 3600);
+  }
+  const signupForm = $('#signupForm');
+  signupForm?.addEventListener('submit', async event => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    if (!form.reportValidity()) return;
+    const endpoint = String(form.dataset.endpoint || '').trim();
+    if (!endpoint) { showToast(t('form_demo_note')); return; }
+    const submit = $('button[type="submit"]', form);
+    submit.disabled = true;
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: $('#signupEmail').value.trim() })
+      });
+      if (!response.ok) throw new Error('Form request failed');
+      form.reset();
+      showToast(t('form_success'), 'success');
+    } catch (_) {
+      showToast(t('form_error'), 'error');
+    } finally { submit.disabled = false; }
+  });
+  // The submit button starts disabled in static HTML so JavaScript-off pages
+  // cannot post an email accidentally; enable it after the safe handler exists.
+  const signupSubmit = signupForm && $('button[type="submit"]', signupForm);
+  if (signupSubmit) signupSubmit.disabled = false;
+
+  // Reveal cards only when IntersectionObserver is available; otherwise leave content visible.
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('fade-in-up');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+    $$('.card, .benefit-card, .pricing-card, .testimonial-card').forEach(element => revealObserver.observe(element));
+  }
+
+  // Locale-aware count-up; reduced-motion users get the final value immediately.
+  function renderCounterValue(element, value = Number(element.dataset.count)) {
+    const formatted = new Intl.NumberFormat(currentLang === 'fa' ? 'fa-IR' : 'en-US', { maximumFractionDigits: 0 }).format(value);
+    element.textContent = formatted + (element.dataset.countSuffix || '');
+  }
+  if ('IntersectionObserver' in window) {
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const counter = entry.target;
+        const target = Number(counter.dataset.count) || 0;
+        observer.unobserve(counter);
+        counter.dataset.countDone = 'true';
+        if (reduceMotion) { renderCounterValue(counter, target); return; }
+        const start = performance.now();
+        const duration = 1300;
+        function tick(now) {
+          const progress = Math.min(1, (now - start) / duration);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          renderCounterValue(counter, Math.round(target * eased));
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      });
+    }, { threshold: 0.55 });
+    $$('[data-count]').forEach(counter => counterObserver.observe(counter));
+  }
+
+  window.addEventListener('storage', event => {
+    if (event.key === 'taraz_theme' && ['light', 'dark'].includes(event.newValue)) setTheme(event.newValue, false);
+    if (event.key === 'taraz_lang' && ['fa', 'en'].includes(event.newValue)) { currentLang = event.newValue; updateLanguage(false); }
+  });
+
+  setTheme(currentTheme, false);
+  updateLanguage(false);
 })();

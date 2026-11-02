@@ -1482,3 +1482,43 @@
   border-color: rgba(45, 212, 160, .4);
   box-shadow: var(--shadow-md), 0 0 0 1px rgba(0,0,0,.5), 0 0 50px rgba(45, 212, 160, .12);
 }
+
+/* Sample content is intentionally signposted in the preview. */
+.testimonials .sec-sub,
+.pricing-note { max-width: 68ch; }
+.final-contact a { color: inherit; text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); text-underline-offset: .2em; }
+.final-contact a:hover { color: var(--accent); }
+
+/* ================= LEGAL / POLICY PAGES ================= */
+.legal-page { min-height: 100vh; }
+.legal-header { position: sticky; inset-block-start: 0; }
+.legal-main { padding-block: calc(var(--header-h) + 2rem) 5rem; }
+.legal-container { max-width: 880px; }
+.legal-heading { display: grid; gap: 1rem; margin-block-end: 2rem; }
+.legal-heading h1 { max-width: 20ch; font-size: clamp(2rem, 5vw, 3.4rem); }
+.legal-heading .eyebrow { color: var(--accent); }
+.legal-warning,
+.legal-review {
+  padding: 1rem 1.2rem;
+  border: 1px solid color-mix(in srgb, var(--accent-3) 55%, transparent);
+  border-inline-start: 4px solid var(--accent-3);
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--accent-3) 10%, var(--bg-2));
+  line-height: 1.9;
+}
+.legal-intro { color: var(--text-2); max-width: 72ch; }
+.legal-toc { display: flex; flex-wrap: wrap; gap: .8rem; margin-block: 1.8rem 3rem; }
+.legal-toc a { padding: .45rem .9rem; border: 1px solid var(--line-2); border-radius: var(--radius-pill); }
+.legal-toc a:hover { color: var(--accent); border-color: var(--accent); }
+.legal-section { margin-block: 3.5rem; scroll-margin-top: calc(var(--header-h) + 1rem); }
+.legal-section > h2 { margin-block-end: .8rem; font-size: clamp(1.6rem, 3vw, 2.25rem); }
+.legal-section > p { margin-block-end: 1.25rem; color: var(--text-2); }
+.legal-card { margin-block: .9rem; padding: clamp(1rem, 3vw, 1.5rem); border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-2); }
+.legal-card h3 { margin-block-end: .45rem; color: var(--accent); font-size: 1.05rem; }
+.legal-card p { color: var(--text-2); line-height: 2; }
+.legal-review { margin-block: 3rem 1.5rem; }
+.legal-back { margin-block-start: 1.5rem; }
+@media (max-width: 640px) {
+  .legal-main { padding-block-start: calc(var(--header-h) + 1.5rem); }
+  .legal-toc { flex-direction: column; }
+}
